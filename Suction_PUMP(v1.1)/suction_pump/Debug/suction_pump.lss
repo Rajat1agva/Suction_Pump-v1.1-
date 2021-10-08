@@ -23,11 +23,11 @@ Idx Name          Size      VMA       LMA       File off  Algn
                   CONTENTS, READONLY, DEBUGGING
   9 .debug_frame  000026ac  00000000  00000000  0002a680  2**2
                   CONTENTS, READONLY, DEBUGGING
- 10 .debug_str    00004851  00000000  00000000  0002cd2c  2**0
+ 10 .debug_str    0000483e  00000000  00000000  0002cd2c  2**0
                   CONTENTS, READONLY, DEBUGGING
- 11 .debug_loc    0000ed27  00000000  00000000  0003157d  2**0
+ 11 .debug_loc    0000ed27  00000000  00000000  0003156a  2**0
                   CONTENTS, READONLY, DEBUGGING
- 12 .debug_ranges 00000a08  00000000  00000000  000402a4  2**0
+ 12 .debug_ranges 00000a08  00000000  00000000  00040291  2**0
                   CONTENTS, READONLY, DEBUGGING
 
 Disassembly of section .text:
@@ -602,26 +602,26 @@ void setup() {
     12f0:	82 e7       	ldi	r24, 0x72	; 114
     12f2:	93 e0       	ldi	r25, 0x03	; 3
     12f4:	0e 94 4e 0f 	call	0x1e9c	; 0x1e9c <_ZN14HardwareSerial5beginEmh>
-  Serial.begin(9600);
-  tft.begin();
+	Serial.begin(9600);
+	tft.begin();
     12f8:	88 e1       	ldi	r24, 0x18	; 24
     12fa:	93 e0       	ldi	r25, 0x03	; 3
     12fc:	0e 94 d9 1b 	call	0x37b2	; 0x37b2 <_ZN14TFT_22_ILI92255beginEv>
-  tft.clear();
+	tft.clear();
     1300:	88 e1       	ldi	r24, 0x18	; 24
     1302:	93 e0       	ldi	r25, 0x03	; 3
     1304:	0e 94 ab 1b 	call	0x3756	; 0x3756 <_ZN14TFT_22_ILI92255clearEv>
-  tft.setOrientation(3);
+	tft.setOrientation(3);
     1308:	63 e0       	ldi	r22, 0x03	; 3
     130a:	88 e1       	ldi	r24, 0x18	; 24
     130c:	93 e0       	ldi	r25, 0x03	; 3
     130e:	0e 94 63 18 	call	0x30c6	; 0x30c6 <_ZN14TFT_22_ILI922514setOrientationEh>
-  tft.setBacklight(HIGH);
+	tft.setBacklight(HIGH);
     1312:	61 e0       	ldi	r22, 0x01	; 1
     1314:	88 e1       	ldi	r24, 0x18	; 24
     1316:	93 e0       	ldi	r25, 0x03	; 3
     1318:	0e 94 54 18 	call	0x30a8	; 0x30a8 <_ZN14TFT_22_ILI922512setBacklightEb>
-  tft.drawRectangle(0, 0, tft.maxX() - 1, tft.maxY() - 1, COLOR_WHITE);
+	tft.drawRectangle(0, 0, tft.maxX() - 1, tft.maxY() - 1, COLOR_WHITE);
     131c:	88 e1       	ldi	r24, 0x18	; 24
     131e:	93 e0       	ldi	r25, 0x03	; 3
     1320:	0e 94 80 18 	call	0x3100	; 0x3100 <_ZN14TFT_22_ILI92254maxYEv>
@@ -644,7 +644,7 @@ void setup() {
     1346:	88 e1       	ldi	r24, 0x18	; 24
     1348:	93 e0       	ldi	r25, 0x03	; 3
     134a:	0e 94 19 1f 	call	0x3e32	; 0x3e32 <_ZN14TFT_22_ILI922513drawRectangleEjjjjj>
-  tft.drawRectangle(1, 1, tft.maxX() - 2, tft.maxY() - 2, COLOR_WHITE);
+	tft.drawRectangle(1, 1, tft.maxX() - 2, tft.maxY() - 2, COLOR_WHITE);
     134e:	88 e1       	ldi	r24, 0x18	; 24
     1350:	93 e0       	ldi	r25, 0x03	; 3
     1352:	0e 94 80 18 	call	0x3100	; 0x3100 <_ZN14TFT_22_ILI92254maxYEv>
@@ -664,7 +664,7 @@ void setup() {
     1372:	88 e1       	ldi	r24, 0x18	; 24
     1374:	93 e0       	ldi	r25, 0x03	; 3
     1376:	0e 94 19 1f 	call	0x3e32	; 0x3e32 <_ZN14TFT_22_ILI922513drawRectangleEjjjjj>
-  tft.drawRectangle(2, 2, tft.maxX() - 3, tft.maxY() - 3, COLOR_WHITE);
+	tft.drawRectangle(2, 2, tft.maxX() - 3, tft.maxY() - 3, COLOR_WHITE);
     137a:	88 e1       	ldi	r24, 0x18	; 24
     137c:	93 e0       	ldi	r25, 0x03	; 3
     137e:	0e 94 80 18 	call	0x3100	; 0x3100 <_ZN14TFT_22_ILI92254maxYEv>
@@ -684,7 +684,7 @@ void setup() {
     139e:	88 e1       	ldi	r24, 0x18	; 24
     13a0:	93 e0       	ldi	r25, 0x03	; 3
     13a2:	0e 94 19 1f 	call	0x3e32	; 0x3e32 <_ZN14TFT_22_ILI922513drawRectangleEjjjjj>
-  tft.drawRectangle(30, 100, 190, 140, COLOR_WHITE);
+	tft.drawRectangle(30, 100, 190, 140, COLOR_WHITE);
     13a6:	0c e8       	ldi	r16, 0x8C	; 140
     13a8:	10 e0       	ldi	r17, 0x00	; 0
     13aa:	2e eb       	ldi	r18, 0xBE	; 190
@@ -696,7 +696,7 @@ void setup() {
     13b6:	88 e1       	ldi	r24, 0x18	; 24
     13b8:	93 e0       	ldi	r25, 0x03	; 3
     13ba:	0e 94 19 1f 	call	0x3e32	; 0x3e32 <_ZN14TFT_22_ILI922513drawRectangleEjjjjj>
-  tft.drawRectangle(29, 99, 191, 141, COLOR_WHITE);
+	tft.drawRectangle(29, 99, 191, 141, COLOR_WHITE);
     13be:	0d e8       	ldi	r16, 0x8D	; 141
     13c0:	10 e0       	ldi	r17, 0x00	; 0
     13c2:	2f eb       	ldi	r18, 0xBF	; 191
@@ -708,7 +708,7 @@ void setup() {
     13ce:	88 e1       	ldi	r24, 0x18	; 24
     13d0:	93 e0       	ldi	r25, 0x03	; 3
     13d2:	0e 94 19 1f 	call	0x3e32	; 0x3e32 <_ZN14TFT_22_ILI922513drawRectangleEjjjjj>
-  tft.drawRectangle(28, 98, 192, 142, COLOR_WHITE);
+	tft.drawRectangle(28, 98, 192, 142, COLOR_WHITE);
     13d6:	0e e8       	ldi	r16, 0x8E	; 142
     13d8:	10 e0       	ldi	r17, 0x00	; 0
     13da:	20 ec       	ldi	r18, 0xC0	; 192
@@ -720,7 +720,7 @@ void setup() {
     13e6:	88 e1       	ldi	r24, 0x18	; 24
     13e8:	93 e0       	ldi	r25, 0x03	; 3
     13ea:	0e 94 19 1f 	call	0x3e32	; 0x3e32 <_ZN14TFT_22_ILI922513drawRectangleEjjjjj>
-  tft.drawRectangle(27, 97, 193, 143, COLOR_WHITE);
+	tft.drawRectangle(27, 97, 193, 143, COLOR_WHITE);
     13ee:	0f e8       	ldi	r16, 0x8F	; 143
     13f0:	10 e0       	ldi	r17, 0x00	; 0
     13f2:	21 ec       	ldi	r18, 0xC1	; 193
@@ -732,32 +732,32 @@ void setup() {
     13fe:	88 e1       	ldi	r24, 0x18	; 24
     1400:	93 e0       	ldi	r25, 0x03	; 3
     1402:	0e 94 19 1f 	call	0x3e32	; 0x3e32 <_ZN14TFT_22_ILI922513drawRectangleEjjjjj>
-  tft.setFont(Terminal12x16);
+	tft.setFont(Terminal12x16);
     1406:	40 e0       	ldi	r20, 0x00	; 0
     1408:	66 eb       	ldi	r22, 0xB6	; 182
     140a:	78 e0       	ldi	r23, 0x08	; 8
     140c:	88 e1       	ldi	r24, 0x18	; 24
     140e:	93 e0       	ldi	r25, 0x03	; 3
     1410:	0e 94 47 19 	call	0x328e	; 0x328e <_ZN14TFT_22_ILI92257setFontEPhb>
-  String s2;
+	String s2;
     1414:	6b e7       	ldi	r22, 0x7B	; 123
     1416:	71 e0       	ldi	r23, 0x01	; 1
     1418:	ce 01       	movw	r24, r28
     141a:	07 96       	adiw	r24, 0x07	; 7
     141c:	0e 94 85 13 	call	0x270a	; 0x270a <_ZN6StringC1EPKc>
-  tft.setGFXFont(&FreeSerif9pt7b);
+	tft.setGFXFont(&FreeSerif9pt7b);
     1420:	6e ed       	ldi	r22, 0xDE	; 222
     1422:	71 e0       	ldi	r23, 0x01	; 1
     1424:	88 e1       	ldi	r24, 0x18	; 24
     1426:	93 e0       	ldi	r25, 0x03	; 3
     1428:	0e 94 06 21 	call	0x420c	; 0x420c <_ZN14TFT_22_ILI922510setGFXFontEPK7GFXfont>
-  s2="Pressure ";
+	s2="Pressure ";
     142c:	6e e1       	ldi	r22, 0x1E	; 30
     142e:	71 e0       	ldi	r23, 0x01	; 1
     1430:	ce 01       	movw	r24, r28
     1432:	07 96       	adiw	r24, 0x07	; 7
     1434:	0e 94 03 14 	call	0x2806	; 0x2806 <_ZN6StringaSEPKc>
-  tft.drawGFXText(15,70, s2,COLOR_WHITE);
+	tft.drawGFXText(15,70, s2,COLOR_WHITE);
     1438:	be 01       	movw	r22, r28
     143a:	69 5f       	subi	r22, 0xF9	; 249
     143c:	7f 4f       	sbci	r23, 0xFF	; 255
@@ -779,13 +779,13 @@ void setup() {
     1460:	ce 01       	movw	r24, r28
     1462:	01 96       	adiw	r24, 0x01	; 1
     1464:	0e 94 14 13 	call	0x2628	; 0x2628 <_ZN6StringD1Ev>
-  s2="0.000";
+	s2="0.000";
     1468:	68 e2       	ldi	r22, 0x28	; 40
     146a:	71 e0       	ldi	r23, 0x01	; 1
     146c:	ce 01       	movw	r24, r28
     146e:	07 96       	adiw	r24, 0x07	; 7
     1470:	0e 94 03 14 	call	0x2806	; 0x2806 <_ZN6StringaSEPKc>
-  tft.drawGFXText(110,70, s2,COLOR_WHITE);
+	tft.drawGFXText(110,70, s2,COLOR_WHITE);
     1474:	be 01       	movw	r22, r28
     1476:	69 5f       	subi	r22, 0xF9	; 249
     1478:	7f 4f       	sbci	r23, 0xFF	; 255
@@ -805,13 +805,13 @@ void setup() {
     1498:	ce 01       	movw	r24, r28
     149a:	01 96       	adiw	r24, 0x01	; 1
     149c:	0e 94 14 13 	call	0x2628	; 0x2628 <_ZN6StringD1Ev>
-  s2="MPa";
+	s2="MPa";
     14a0:	6e e2       	ldi	r22, 0x2E	; 46
     14a2:	71 e0       	ldi	r23, 0x01	; 1
     14a4:	ce 01       	movw	r24, r28
     14a6:	07 96       	adiw	r24, 0x07	; 7
     14a8:	0e 94 03 14 	call	0x2806	; 0x2806 <_ZN6StringaSEPKc>
-  tft.drawGFXText(160,70, s2,COLOR_WHITE);
+	tft.drawGFXText(160,70, s2,COLOR_WHITE);
     14ac:	be 01       	movw	r22, r28
     14ae:	69 5f       	subi	r22, 0xF9	; 249
     14b0:	7f 4f       	sbci	r23, 0xFF	; 255
@@ -831,7 +831,7 @@ void setup() {
     14d0:	ce 01       	movw	r24, r28
     14d2:	01 96       	adiw	r24, 0x01	; 1
     14d4:	0e 94 14 13 	call	0x2628	; 0x2628 <_ZN6StringD1Ev>
-  tft.drawBitmap(170, 10, batt3, 30, 20, COLOR_WHITE);
+	tft.drawBitmap(170, 10, batt3, 30, 20, COLOR_WHITE);
     14d8:	cc 24       	eor	r12, r12
     14da:	ca 94       	dec	r12
     14dc:	dc 2c       	mov	r13, r12
@@ -849,36 +849,36 @@ void setup() {
     14f4:	88 e1       	ldi	r24, 0x18	; 24
     14f6:	93 e0       	ldi	r25, 0x03	; 3
     14f8:	0e 94 e8 20 	call	0x41d0	; 0x41d0 <_ZN14TFT_22_ILI922510drawBitmapEiiPKhiij>
-  while(!Serial){}
-  // starting communication with the 
-  // static pressure transducer
-  if (dPress.begin() < 0) {
+	while(!Serial){}
+	// starting communication with the
+	// static pressure transducer
+	if (dPress.begin() < 0) {
     14fc:	8e e2       	ldi	r24, 0x2E	; 46
     14fe:	92 e0       	ldi	r25, 0x02	; 2
     1500:	0e 94 01 17 	call	0x2e02	; 0x2e02 <_ZN7AMS58125beginEv>
     1504:	97 ff       	sbrs	r25, 7
     1506:	07 c0       	rjmp	.+14     	; 0x1516 <setup+0x250>
-    Serial.println("Error communicating with sensor, check wiring and I2C address");
+		Serial.println("Error communicating with sensor, check wiring and I2C address");
     1508:	62 e3       	ldi	r22, 0x32	; 50
     150a:	71 e0       	ldi	r23, 0x01	; 1
     150c:	82 e7       	ldi	r24, 0x72	; 114
     150e:	93 e0       	ldi	r25, 0x03	; 3
     1510:	0e 94 a1 10 	call	0x2142	; 0x2142 <_ZN5Print7printlnEPKc>
     1514:	ff cf       	rjmp	.-2      	; 0x1514 <setup+0x24e>
-  tft.drawRectangle(30, 100, 190, 140, COLOR_WHITE);
-  tft.drawRectangle(29, 99, 191, 141, COLOR_WHITE);
-  tft.drawRectangle(28, 98, 192, 142, COLOR_WHITE);
-  tft.drawRectangle(27, 97, 193, 143, COLOR_WHITE);
-  tft.setFont(Terminal12x16);
-  String s2;
+	tft.drawRectangle(30, 100, 190, 140, COLOR_WHITE);
+	tft.drawRectangle(29, 99, 191, 141, COLOR_WHITE);
+	tft.drawRectangle(28, 98, 192, 142, COLOR_WHITE);
+	tft.drawRectangle(27, 97, 193, 143, COLOR_WHITE);
+	tft.setFont(Terminal12x16);
+	String s2;
     1516:	ce 01       	movw	r24, r28
     1518:	07 96       	adiw	r24, 0x07	; 7
     151a:	0e 94 14 13 	call	0x2628	; 0x2628 <_ZN6StringD1Ev>
-  // static pressure transducer
-  if (dPress.begin() < 0) {
-    Serial.println("Error communicating with sensor, check wiring and I2C address");
-    while(1){}
-  }
+	// static pressure transducer
+	if (dPress.begin() < 0) {
+		Serial.println("Error communicating with sensor, check wiring and I2C address");
+		while(1){}
+	}
 }
     151e:	2c 96       	adiw	r28, 0x0c	; 12
     1520:	0f b6       	in	r0, 0x3f	; 63
@@ -897,9 +897,9 @@ void setup() {
     153a:	08 95       	ret
 
 0000153c <_Z9fill_areaij>:
-  Previous_Pressure = Current_Pressure;
-  Previous_Area = Current_Area;
-}
+		Previous_Pressure = Current_Pressure;
+		Previous_Area = Current_Area;
+	}
 }
 void fill_area(int area,uint16_t colour)
 {
@@ -908,9 +908,9 @@ void fill_area(int area,uint16_t colour)
     1540:	0f 93       	push	r16
     1542:	1f 93       	push	r17
     1544:	7b 01       	movw	r14, r22
-  
-  int length = area/rectangle_width;
-  tft.fillRectangle(35, 105, 35+length, 135, colour);
+	
+	int length = area/rectangle_width;
+	tft.fillRectangle(35, 105, 35+length, 135, colour);
     1546:	6e e1       	ldi	r22, 0x1E	; 30
     1548:	70 e0       	ldi	r23, 0x00	; 0
     154a:	0e 94 d1 28 	call	0x51a2	; 0x51a2 <__divmodhi4>
@@ -926,7 +926,7 @@ void fill_area(int area,uint16_t colour)
     1560:	88 e1       	ldi	r24, 0x18	; 24
     1562:	93 e0       	ldi	r25, 0x03	; 3
     1564:	0e 94 65 1b 	call	0x36ca	; 0x36ca <_ZN14TFT_22_ILI922513fillRectangleEjjjjj>
-  
+	
 }
     1568:	1f 91       	pop	r17
     156a:	0f 91       	pop	r16
@@ -935,8 +935,8 @@ void fill_area(int area,uint16_t colour)
     1570:	08 95       	ret
 
 00001572 <loop>:
-    while(1){}
-  }
+		while(1){}
+	}
 }
 
 
@@ -960,18 +960,18 @@ void loop() {
     1592:	00 d0       	rcall	.+0      	; 0x1594 <loop+0x22>
     1594:	cd b7       	in	r28, 0x3d	; 61
     1596:	de b7       	in	r29, 0x3e	; 62
-  
-  dPress.readSensor();
+	
+	dPress.readSensor();
     1598:	8e e2       	ldi	r24, 0x2E	; 46
     159a:	92 e0       	ldi	r25, 0x02	; 2
     159c:	0e 94 46 17 	call	0x2e8c	; 0x2e8c <_ZN7AMS581210readSensorEv>
-  pressure = dPress.getPressure_Pa(); //Pressure in pascal
+	pressure = dPress.getPressure_Pa(); //Pressure in pascal
     15a0:	8e e2       	ldi	r24, 0x2E	; 46
     15a2:	92 e0       	ldi	r25, 0x02	; 2
     15a4:	0e 94 11 16 	call	0x2c22	; 0x2c22 <_ZN7AMS581214getPressure_PaEv>
     15a8:	6b 01       	movw	r12, r22
     15aa:	7c 01       	movw	r14, r24
-  if(pressure >= 1700000)
+	if(pressure >= 1700000)
     15ac:	20 e0       	ldi	r18, 0x00	; 0
     15ae:	35 e8       	ldi	r19, 0x85	; 133
     15b0:	4f ec       	ldi	r20, 0xCF	; 207
@@ -982,24 +982,24 @@ void loop() {
 
 
 void loop() {
-  
-  dPress.readSensor();
-  pressure = dPress.getPressure_Pa(); //Pressure in pascal
+	
+	dPress.readSensor();
+	pressure = dPress.getPressure_Pa(); //Pressure in pascal
     15bc:	c0 92 6e 03 	sts	0x036E, r12	; 0x80036e <pressure>
     15c0:	d0 92 6f 03 	sts	0x036F, r13	; 0x80036f <pressure+0x1>
     15c4:	e0 92 70 03 	sts	0x0370, r14	; 0x800370 <pressure+0x2>
     15c8:	f0 92 71 03 	sts	0x0371, r15	; 0x800371 <pressure+0x3>
     15cc:	08 c0       	rjmp	.+16     	; 0x15de <loop+0x6c>
-  if(pressure >= 1700000)
-  {
-    pressure=0;
+	if(pressure >= 1700000)
+	{
+		pressure=0;
     15ce:	10 92 6e 03 	sts	0x036E, r1	; 0x80036e <pressure>
     15d2:	10 92 6f 03 	sts	0x036F, r1	; 0x80036f <pressure+0x1>
     15d6:	10 92 70 03 	sts	0x0370, r1	; 0x800370 <pressure+0x2>
     15da:	10 92 71 03 	sts	0x0371, r1	; 0x800371 <pressure+0x3>
-  }
-  
-  float kPa = (pressure/1000); //pressure in Kilo  pascal
+	}
+	
+	float kPa = (pressure/1000); //pressure in Kilo  pascal
     15de:	20 e0       	ldi	r18, 0x00	; 0
     15e0:	30 e0       	ldi	r19, 0x00	; 0
     15e2:	4a e7       	ldi	r20, 0x7A	; 122
@@ -1013,16 +1013,16 @@ void loop() {
     15fc:	7c 01       	movw	r14, r24
     15fe:	08 ec       	ldi	r16, 0xC8	; 200
     1600:	10 e0       	ldi	r17, 0x00	; 0
-  float final_pressure = 0;
+	float final_pressure = 0;
     1602:	41 2c       	mov	r4, r1
     1604:	51 2c       	mov	r5, r1
     1606:	32 01       	movw	r6, r4
-  int i = 200;
-  
-  
-  while(i)
-  {
-    final_pressure = final_pressure+kPa;  
+	int i = 200;
+	
+	
+	while(i)
+	{
+		final_pressure = final_pressure+kPa;
     1608:	a7 01       	movw	r20, r14
     160a:	96 01       	movw	r18, r12
     160c:	c3 01       	movw	r24, r6
@@ -1030,8 +1030,8 @@ void loop() {
     1610:	0e 94 a7 0c 	call	0x194e	; 0x194e <__addsf3>
     1614:	2b 01       	movw	r4, r22
     1616:	3c 01       	movw	r6, r24
-    i--;
-    delay(1);
+		i--;
+		delay(1);
     1618:	61 e0       	ldi	r22, 0x01	; 1
     161a:	70 e0       	ldi	r23, 0x00	; 0
     161c:	80 e0       	ldi	r24, 0x00	; 0
@@ -1039,19 +1039,19 @@ void loop() {
     1620:	0e 94 5b 12 	call	0x24b6	; 0x24b6 <delay>
     1624:	01 50       	subi	r16, 0x01	; 1
     1626:	11 09       	sbc	r17, r1
-  float kPa = (pressure/1000); //pressure in Kilo  pascal
-  float final_pressure = 0;
-  int i = 200;
-  
-  
-  while(i)
+	float kPa = (pressure/1000); //pressure in Kilo  pascal
+	float final_pressure = 0;
+	int i = 200;
+	
+	
+	while(i)
     1628:	79 f7       	brne	.-34     	; 0x1608 <loop+0x96>
-  {
-    final_pressure = final_pressure+kPa;  
-    i--;
-    delay(1);
-  }
-  final_pressure = final_pressure/200;
+	{
+		final_pressure = final_pressure+kPa;
+		i--;
+		delay(1);
+	}
+	final_pressure = final_pressure/200;
     162a:	20 e0       	ldi	r18, 0x00	; 0
     162c:	30 e0       	ldi	r19, 0x00	; 0
     162e:	48 e4       	ldi	r20, 0x48	; 72
@@ -1062,14 +1062,14 @@ void loop() {
     163a:	2b 01       	movw	r4, r22
     163c:	3c 01       	movw	r6, r24
 
-  
-  Serial.print("Pressure =\t");
+	
+	Serial.print("Pressure =\t");
     163e:	60 e7       	ldi	r22, 0x70	; 112
     1640:	71 e0       	ldi	r23, 0x01	; 1
     1642:	82 e7       	ldi	r24, 0x72	; 114
     1644:	93 e0       	ldi	r25, 0x03	; 3
     1646:	0e 94 94 10 	call	0x2128	; 0x2128 <_ZN5Print5printEPKc>
-  Serial.print(final_pressure,4);
+	Serial.print(final_pressure,4);
     164a:	24 e0       	ldi	r18, 0x04	; 4
     164c:	30 e0       	ldi	r19, 0x00	; 0
     164e:	b3 01       	movw	r22, r6
@@ -1077,21 +1077,21 @@ void loop() {
     1652:	82 e7       	ldi	r24, 0x72	; 114
     1654:	93 e0       	ldi	r25, 0x03	; 3
     1656:	0e 94 ea 11 	call	0x23d4	; 0x23d4 <_ZN5Print5printEdi>
-  Serial.print("kPa");
+	Serial.print("kPa");
     165a:	6c e7       	ldi	r22, 0x7C	; 124
     165c:	71 e0       	ldi	r23, 0x01	; 1
     165e:	82 e7       	ldi	r24, 0x72	; 114
     1660:	93 e0       	ldi	r25, 0x03	; 3
     1662:	0e 94 94 10 	call	0x2128	; 0x2128 <_ZN5Print5printEPKc>
-  //Serial.print(Angle);
-  Serial.print("\n");
+	//Serial.print(Angle);
+	Serial.print("\n");
     1666:	63 e9       	ldi	r22, 0x93	; 147
     1668:	71 e0       	ldi	r23, 0x01	; 1
     166a:	82 e7       	ldi	r24, 0x72	; 114
     166c:	93 e0       	ldi	r25, 0x03	; 3
     166e:	0e 94 94 10 	call	0x2128	; 0x2128 <_ZN5Print5printEPKc>
 
-  Current_Area = map(final_pressure,0,100,0,4500);
+	Current_Area = map(final_pressure,0,100,0,4500);
     1672:	c3 01       	movw	r24, r6
     1674:	b2 01       	movw	r22, r4
     1676:	0e 94 85 0d 	call	0x1b0a	; 0x1b0a <__fixsfsi>
@@ -1115,12 +1115,12 @@ void loop() {
     169c:	0e 94 d2 12 	call	0x25a4	; 0x25a4 <_Z3maplllll>
     16a0:	70 93 63 03 	sts	0x0363, r23	; 0x800363 <Current_Area+0x1>
     16a4:	60 93 62 03 	sts	0x0362, r22	; 0x800362 <Current_Area>
-  Current_Pressure = final_pressure; 
+	Current_Pressure = final_pressure;
     16a8:	40 92 66 03 	sts	0x0366, r4	; 0x800366 <Current_Pressure>
     16ac:	50 92 67 03 	sts	0x0367, r5	; 0x800367 <Current_Pressure+0x1>
     16b0:	60 92 68 03 	sts	0x0368, r6	; 0x800368 <Current_Pressure+0x2>
     16b4:	70 92 69 03 	sts	0x0369, r7	; 0x800369 <Current_Pressure+0x3>
-  stringTwo =  String(Current_Pressure/1000, 3); 
+	stringTwo =  String(Current_Pressure/1000, 3);
     16b8:	20 e0       	ldi	r18, 0x00	; 0
     16ba:	30 e0       	ldi	r19, 0x00	; 0
     16bc:	4a e7       	ldi	r20, 0x7A	; 122
@@ -1143,7 +1143,7 @@ void loop() {
     16e4:	ce 01       	movw	r24, r28
     16e6:	01 96       	adiw	r24, 0x01	; 1
     16e8:	0e 94 14 13 	call	0x2628	; 0x2628 <_ZN6StringD1Ev>
-  if((Current_Pressure-Previous_Pressure > 1)||(Previous_Pressure-Current_Pressure > 1))
+	if((Current_Pressure-Previous_Pressure > 1)||(Previous_Pressure-Current_Pressure > 1))
     16ec:	40 90 66 03 	lds	r4, 0x0366	; 0x800366 <Current_Pressure>
     16f0:	50 90 67 03 	lds	r5, 0x0367	; 0x800367 <Current_Pressure+0x1>
     16f4:	60 90 68 03 	lds	r6, 0x0368	; 0x800368 <Current_Pressure+0x2>
@@ -1180,8 +1180,8 @@ void loop() {
     1744:	0e 94 49 0e 	call	0x1c92	; 0x1c92 <__gesf2>
     1748:	18 16       	cp	r1, r24
     174a:	2c f5       	brge	.+74     	; 0x1796 <loop+0x224>
-  {
-  tft.fillRectangle(110, 50, 155, 80, COLOR_BLACK);
+	{
+		tft.fillRectangle(110, 50, 155, 80, COLOR_BLACK);
     174c:	e1 2c       	mov	r14, r1
     174e:	f1 2c       	mov	r15, r1
     1750:	00 e5       	ldi	r16, 0x50	; 80
@@ -1195,7 +1195,7 @@ void loop() {
     1760:	88 e1       	ldi	r24, 0x18	; 24
     1762:	93 e0       	ldi	r25, 0x03	; 3
     1764:	0e 94 65 1b 	call	0x36ca	; 0x36ca <_ZN14TFT_22_ILI922513fillRectangleEjjjjj>
-  tft.drawGFXText(110,70, stringTwo,COLOR_WHITE);
+		tft.drawGFXText(110,70, stringTwo,COLOR_WHITE);
     1768:	6c e5       	ldi	r22, 0x5C	; 92
     176a:	73 e0       	ldi	r23, 0x03	; 3
     176c:	ce 01       	movw	r24, r28
@@ -1216,8 +1216,8 @@ void loop() {
     178e:	ce 01       	movw	r24, r28
     1790:	01 96       	adiw	r24, 0x01	; 1
     1792:	0e 94 14 13 	call	0x2628	; 0x2628 <_ZN6StringD1Ev>
-  }
-  if((Current_Pressure-Previous_Pressure > 1))   //When Pressure is increasing.
+	}
+	if((Current_Pressure-Previous_Pressure > 1))   //When Pressure is increasing.
     1796:	c0 90 66 03 	lds	r12, 0x0366	; 0x800366 <Current_Pressure>
     179a:	d0 90 67 03 	lds	r13, 0x0367	; 0x800367 <Current_Pressure+0x1>
     179e:	e0 90 68 03 	lds	r14, 0x0368	; 0x800368 <Current_Pressure+0x2>
@@ -1238,9 +1238,9 @@ void loop() {
     17ca:	0e 94 49 0e 	call	0x1c92	; 0x1c92 <__gesf2>
     17ce:	18 16       	cp	r1, r24
     17d0:	64 f4       	brge	.+24     	; 0x17ea <loop+0x278>
- {
-  
-  if(Current_Area >= 0 && Current_Area < 900)
+	{
+		
+		if(Current_Area >= 0 && Current_Area < 900)
     17d2:	80 91 62 03 	lds	r24, 0x0362	; 0x800362 <Current_Area>
     17d6:	90 91 63 03 	lds	r25, 0x0363	; 0x800363 <Current_Area+0x1>
     17da:	84 38       	cpi	r24, 0x84	; 132
@@ -1248,16 +1248,16 @@ void loop() {
     17de:	92 07       	cpc	r25, r18
     17e0:	08 f0       	brcs	.+2      	; 0x17e4 <loop+0x272>
     17e2:	56 c0       	rjmp	.+172    	; 0x1890 <loop+0x31e>
-  {fill_area(Current_Area,COLOR_AZUR);
+		{fill_area(Current_Area,COLOR_AZUR);
     17e4:	6f ef       	ldi	r22, 0xFF	; 255
     17e6:	77 ef       	ldi	r23, 0xF7	; 247
     17e8:	62 c0       	rjmp	.+196    	; 0x18ae <loop+0x33c>
-   fill_area(Current_Area,COLOR_RED); 
-  }
-  Previous_Pressure = Current_Pressure;
-  Previous_Area = Current_Area;
-}
-else if(Previous_Pressure-Current_Pressure > 1)
+			fill_area(Current_Area,COLOR_RED);
+		}
+		Previous_Pressure = Current_Pressure;
+		Previous_Area = Current_Area;
+	}
+	else if(Previous_Pressure-Current_Pressure > 1)
     17ea:	a7 01       	movw	r20, r14
     17ec:	96 01       	movw	r18, r12
     17ee:	c3 01       	movw	r24, r6
@@ -1271,10 +1271,10 @@ else if(Previous_Pressure-Current_Pressure > 1)
     1802:	18 16       	cp	r1, r24
     1804:	0c f0       	brlt	.+2      	; 0x1808 <loop+0x296>
     1806:	6d c0       	rjmp	.+218    	; 0x18e2 <loop+0x370>
-{
- float Previous_length = Previous_Area/rectangle_width;
- float Current_length =  Current_Area/rectangle_width;
- tft.fillRectangle(35+Current_length, 105, 35+Previous_length, 135,COLOR_BLACK);
+	{
+		float Previous_length = Previous_Area/rectangle_width;
+		float Current_length =  Current_Area/rectangle_width;
+		tft.fillRectangle(35+Current_length, 105, 35+Previous_length, 135,COLOR_BLACK);
     1808:	80 91 64 03 	lds	r24, 0x0364	; 0x800364 <Previous_Area>
     180c:	90 91 65 03 	lds	r25, 0x0365	; 0x800365 <Previous_Area+0x1>
     1810:	0e e1       	ldi	r16, 0x1E	; 30
@@ -1319,44 +1319,44 @@ else if(Previous_Pressure-Current_Pressure > 1)
     1872:	88 e1       	ldi	r24, 0x18	; 24
     1874:	93 e0       	ldi	r25, 0x03	; 3
     1876:	0e 94 65 1b 	call	0x36ca	; 0x36ca <_ZN14TFT_22_ILI922513fillRectangleEjjjjj>
- if(Current_Area >= 0 && Current_Area < 900)
+		if(Current_Area >= 0 && Current_Area < 900)
     187a:	80 91 62 03 	lds	r24, 0x0362	; 0x800362 <Current_Area>
     187e:	90 91 63 03 	lds	r25, 0x0363	; 0x800363 <Current_Area+0x1>
     1882:	84 38       	cpi	r24, 0x84	; 132
     1884:	43 e0       	ldi	r20, 0x03	; 3
     1886:	94 07       	cpc	r25, r20
     1888:	18 f4       	brcc	.+6      	; 0x1890 <loop+0x31e>
-  {
-    fill_area(Current_Area,COLOR_GOLD);
+		{
+			fill_area(Current_Area,COLOR_GOLD);
     188a:	60 ea       	ldi	r22, 0xA0	; 160
     188c:	7e ef       	ldi	r23, 0xFE	; 254
     188e:	0f c0       	rjmp	.+30     	; 0x18ae <loop+0x33c>
-  }
-  else if(Current_Area >=900 && Current_Area <3600)
+		}
+		else if(Current_Area >=900 && Current_Area <3600)
     1890:	9c 01       	movw	r18, r24
     1892:	24 58       	subi	r18, 0x84	; 132
     1894:	33 40       	sbci	r19, 0x03	; 3
     1896:	2c 38       	cpi	r18, 0x8C	; 140
     1898:	3a 40       	sbci	r19, 0x0A	; 10
     189a:	18 f4       	brcc	.+6      	; 0x18a2 <loop+0x330>
-  {
-    fill_area(Current_Area,COLOR_GREEN);
+		{
+			fill_area(Current_Area,COLOR_GREEN);
     189c:	60 ee       	ldi	r22, 0xE0	; 224
     189e:	77 e0       	ldi	r23, 0x07	; 7
     18a0:	06 c0       	rjmp	.+12     	; 0x18ae <loop+0x33c>
-  }
-  else if(Current_Area >= 3600 )
+		}
+		else if(Current_Area >= 3600 )
     18a2:	80 31       	cpi	r24, 0x10	; 16
     18a4:	2e e0       	ldi	r18, 0x0E	; 14
     18a6:	92 07       	cpc	r25, r18
     18a8:	24 f0       	brlt	.+8      	; 0x18b2 <loop+0x340>
-  {
-   fill_area(Current_Area,COLOR_RED); 
+		{
+			fill_area(Current_Area,COLOR_RED);
     18aa:	60 e0       	ldi	r22, 0x00	; 0
     18ac:	78 ef       	ldi	r23, 0xF8	; 248
     18ae:	0e 94 9e 0a 	call	0x153c	; 0x153c <_Z9fill_areaij>
-  }
-  Previous_Pressure = Current_Pressure;
+		}
+		Previous_Pressure = Current_Pressure;
     18b2:	80 91 66 03 	lds	r24, 0x0366	; 0x800366 <Current_Pressure>
     18b6:	90 91 67 03 	lds	r25, 0x0367	; 0x800367 <Current_Pressure+0x1>
     18ba:	a0 91 68 03 	lds	r26, 0x0368	; 0x800368 <Current_Pressure+0x2>
@@ -1365,12 +1365,12 @@ else if(Previous_Pressure-Current_Pressure > 1)
     18c6:	90 93 6b 03 	sts	0x036B, r25	; 0x80036b <Previous_Pressure+0x1>
     18ca:	a0 93 6c 03 	sts	0x036C, r26	; 0x80036c <Previous_Pressure+0x2>
     18ce:	b0 93 6d 03 	sts	0x036D, r27	; 0x80036d <Previous_Pressure+0x3>
-  Previous_Area = Current_Area;
+		Previous_Area = Current_Area;
     18d2:	80 91 62 03 	lds	r24, 0x0362	; 0x800362 <Current_Area>
     18d6:	90 91 63 03 	lds	r25, 0x0363	; 0x800363 <Current_Area+0x1>
     18da:	90 93 65 03 	sts	0x0365, r25	; 0x800365 <Previous_Area+0x1>
     18de:	80 93 64 03 	sts	0x0364, r24	; 0x800364 <Previous_Area>
-}
+	}
 }
     18e2:	26 96       	adiw	r28, 0x06	; 6
     18e4:	0f b6       	in	r0, 0x3f	; 63
@@ -1396,10 +1396,10 @@ else if(Previous_Pressure-Current_Pressure > 1)
 
 0000190c <_GLOBAL__sub_I_pressure>:
 {
-  
-  int length = area/rectangle_width;
-  tft.fillRectangle(35, 105, 35+length, 135, colour);
-  
+	
+	int length = area/rectangle_width;
+	tft.fillRectangle(35, 105, 35+length, 135, colour);
+	
 }
     190c:	ef 92       	push	r14
     190e:	0f 93       	push	r16
@@ -1436,10 +1436,10 @@ AMS5812 dPress(Wire,0x10,AMS5812::AMS5812_1000_D);
     1938:	8e e2       	ldi	r24, 0x2E	; 46
     193a:	92 e0       	ldi	r25, 0x02	; 2
 {
-  
-  int length = area/rectangle_width;
-  tft.fillRectangle(35, 105, 35+length, 135, colour);
-  
+	
+	int length = area/rectangle_width;
+	tft.fillRectangle(35, 105, 35+length, 135, colour);
+	
 }
     193c:	0f 91       	pop	r16
     193e:	ef 90       	pop	r14
