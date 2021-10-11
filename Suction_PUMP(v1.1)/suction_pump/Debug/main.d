@@ -39,7 +39,7 @@ main.d main.o: .././main.cpp ..\\..\ArduinoCore\include\core/Arduino.h \
  ..\\..\ArduinoCore\include\libraries\SPI/SPI.h \
  ..\\..\ArduinoCore\include\libraries\TFT_22_ILI9225/TFT_22_ILI9225.h \
  ..\\..\ArduinoCore\include\libraries\TFT_22_ILI9225/gfxfont.h \
- .././FreeSerif9pt7b.h .././icon.h
+ .././FreeSerif18pt7b.h .././FreeSerif12pt7b.h .././icon.h
 
 ..\\..\ArduinoCore\include\core/Arduino.h:
 
@@ -123,6 +123,8 @@ c:\program\ files\ (x86)\atmel\studio\7.0\toolchain\avr8\avr8-gnu-toolchain\avr\
 
 ..\\..\ArduinoCore\include\libraries\TFT_22_ILI9225/gfxfont.h:
 
-.././FreeSerif9pt7b.h:
+.././FreeSerif18pt7b.h:
+
+.././FreeSerif12pt7b.h:
 
 .././icon.h:

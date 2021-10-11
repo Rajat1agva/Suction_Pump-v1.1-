@@ -224,7 +224,10 @@
     </ToolchainSettings>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="FreeSerif9pt7b.h">
+    <Compile Include="FreeSerif12pt7b.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="FreeSerif18pt7b.h">
       <SubType>compile</SubType>
     </Compile>
     <Compile Include="icon.h">

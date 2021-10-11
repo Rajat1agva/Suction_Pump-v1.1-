@@ -122,7 +122,7 @@ enum autoIncMode_t { R2L_BottomUp, BottomUp_R2L, L2R_BottomUp, BottomUp_L2R, R2L
 #define COLOR_SNOW           0xFFDF      /* 255, 250, 250 */
 #define COLOR_YELLOW         0xFFE0      /* 255, 255,   0 */
 #define COLOR_PINK           0x69B4      /* 255, 255,   0 */
-
+#define COLOR_DEEP_PINK      0xf8eb      /* 255, 20,   147 */
 /* Font defines */
 #define FONT_HEADER_SIZE 4 // 1: pixel width of 1 font character, 2: pixel height, 
 #define readFontByte(x) pgm_read_byte(&cfont.font[x])  
