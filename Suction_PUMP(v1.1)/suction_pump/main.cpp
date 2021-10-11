@@ -15,7 +15,6 @@
 #include "FreeSerif18pt7b.h"
 #include "FreeSerif12pt7b.h"
 #include "icon.h"
-
 /************************************/
 #define TFT_RST 8   //Reset 
 #define TFT_RS  9   //Register select
@@ -33,6 +32,7 @@
 #define rectangle_width  30  //width of rectangle
 #define primary_color COLOR_WHITE
 #define secondry_color COLOR_BLACK
+
 /*****************Variables*************************/
 float pressure = 0;
 float Previous_Pressure = 0;
@@ -56,6 +56,7 @@ void setup() {
   tft.begin();  //Tft initialize 
   tft.setOrientation(3);  //Set tft Orientation
   tft.setBacklight(HIGH); //Set back light high
+  tft.setFont(Terminal11x16);
   String s2;
   //Printing AgVa logo on screen
   tft.fillRectangle(0,0,219,176,COLOR_WHITE);
@@ -63,7 +64,7 @@ void setup() {
   s2="AgVa";
   tft.drawGFXText(20,90, s2,COLOR_DEEP_PINK);
   s2="Healthcare";
-  tft.drawGFXText(100,90, s2,COLOR_BLACK);
+  tft.drawGFXText(90,90, s2,COLOR_BLACK);
   delay(5000);
   tft.clear();
  //   tft.drawRectangle(0, 0, tft.maxX() - 1, tft.maxY() - 1, COLOR_GREEN);  //Drawing rectangle at boundary of tft screen.
@@ -74,8 +75,24 @@ void setup() {
   tft.drawRectangle(29, 99, 191, 141, primary_color);
   tft.drawRectangle(28, 98, 192, 142, primary_color);
   tft.drawRectangle(27, 97, 193, 143, primary_color);
- 
-  tft.setFont(Terminal12x16);
+  //Scale
+  tft.drawLine(30,140,30,155,primary_color);
+  tft.drawGFXText(25,173,"0",primary_color);
+  tft.drawLine(50,140,50,150,primary_color);
+  tft.drawLine(70,140,70,150,primary_color);
+  tft.drawLine(90,140,90,150,primary_color);
+  
+  tft.drawLine(110,140,110,155,primary_color);
+   tft.drawText(90,156,"0.05",primary_color);
+  tft.drawLine(130,140,130,150,primary_color);
+  tft.drawLine(150,140,150,150,primary_color);
+  tft.drawLine(170,140,170,150,primary_color);
+  tft.drawLine(190,140,190,155,primary_color);
+  tft.drawText(175,156,"0.1",primary_color);
+  
+  
+  tft.setGFXFont(&FreeSerif18pt7b);
+  
   s2="0.000";
   tft.drawGFXText(30,70, s2,primary_color); //Initially  show pressure zero
   tft.setGFXFont(&FreeSerif12pt7b);
