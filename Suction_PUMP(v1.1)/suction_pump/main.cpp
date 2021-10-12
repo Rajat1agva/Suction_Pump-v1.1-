@@ -24,7 +24,7 @@
 #define TFT_LED 3   // 0 if wired to +5V directly
 
 /*************************************/
-#define TFT_BRIGHTNESS 200  //Set tft brightness
+#define TFT_BRIGHTNESS 255  //Set tft brightness
 #define WHITE COLOR_WHITE
 #define BLACK COLOR_BLACK
 #define MAXAREA 4500       // Maximum area of rectangle
@@ -56,7 +56,7 @@ void setup() {
   tft.begin();  //Tft initialize 
   tft.setOrientation(3);  //Set tft Orientation
   tft.setBacklight(HIGH); //Set back light high
-  tft.setFont(Terminal11x16);
+  tft.setFont(Terminal6x8);
   String s2;
   //Printing AgVa logo on screen
   tft.fillRectangle(0,0,219,176,COLOR_WHITE);
@@ -67,28 +67,27 @@ void setup() {
   tft.drawGFXText(90,90, s2,COLOR_BLACK);
   delay(5000);
   tft.clear();
- //   tft.drawRectangle(0, 0, tft.maxX() - 1, tft.maxY() - 1, COLOR_GREEN);  //Drawing rectangle at boundary of tft screen.
-//   tft.drawRectangle(1, 1, tft.maxX() - 2, tft.maxY() - 2, COLOR_GREEN);
-//   tft.drawRectangle(2, 2, tft.maxX() - 3, tft.maxY() - 3, COLOR_GREEN);
-//   
-  tft.drawRectangle(30, 100, 190, 140,primary_color);  //Draw rectangle to show pressure display pressure value
-  tft.drawRectangle(29, 99, 191, 141, primary_color);
+   tft.drawRectangle(0, 0, tft.maxX() - 1, tft.maxY() - 1, primary_color);  //Drawing rectangle at boundary of tft screen.
+  tft.drawRectangle(1, 1, tft.maxX() - 2, tft.maxY() - 2, primary_color);
+  tft.drawRectangle(2, 2, tft.maxX() - 3, tft.maxY() - 3, primary_color);
+  
+  tft.drawRectangle(30, 100, 190, 140,primary_color);  //Draw rectangle to show pressure display
   tft.drawRectangle(28, 98, 192, 142, primary_color);
   tft.drawRectangle(27, 97, 193, 143, primary_color);
   //Scale
   tft.drawLine(30,140,30,155,primary_color);
-  tft.drawGFXText(25,173,"0",primary_color);
+  tft.drawText(27,158,"0",primary_color);
   tft.drawLine(50,140,50,150,primary_color);
   tft.drawLine(70,140,70,150,primary_color);
   tft.drawLine(90,140,90,150,primary_color);
   
   tft.drawLine(110,140,110,155,primary_color);
-   tft.drawText(90,156,"0.05",primary_color);
+   tft.drawText(97,158,"0.05",primary_color);
   tft.drawLine(130,140,130,150,primary_color);
   tft.drawLine(150,140,150,150,primary_color);
   tft.drawLine(170,140,170,150,primary_color);
   tft.drawLine(190,140,190,155,primary_color);
-  tft.drawText(175,156,"0.1",primary_color);
+  tft.drawText(180,156,"0.1",primary_color);
   
   
   tft.setGFXFont(&FreeSerif18pt7b);
@@ -113,20 +112,20 @@ void setup() {
 
 void loop() {
   
-  dPress.readSensor();
-  pressure = dPress.getPressure_Pa(); //Pressure in pascal
-  if(pressure >= 1700000)
-  {
-    pressure=0;
-  }
-  
-  float kPa = (pressure/1000); //pressure in Kilo  pascal
+ 
   float final_pressure = 0;
   int i = 200;
   
  //Taking 2oo pressure value samples 
   while(i)
-  {
+  {  dPress.readSensor();
+	  pressure = dPress.getPressure_Pa(); //Pressure in pascal
+	  if(pressure >= 1700000)
+	  {
+		  pressure=0;
+	  }
+	  
+	  float kPa = (pressure/1000); //pressure in Kilo  pascal
     final_pressure = final_pressure+kPa;  
     i--;
     delay(1);

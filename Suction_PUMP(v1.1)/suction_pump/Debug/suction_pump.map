@@ -49,7 +49,7 @@ C:\Users\agva\Desktop\Suction_Pump-v1.1-\Suction_PUMP(v1.1)\ArduinoCore\Debug\li
 C:\Users\agva\Desktop\Suction_Pump-v1.1-\Suction_PUMP(v1.1)\ArduinoCore\Debug\libArduinoCore.a(AMS5812.o)
                               main.o (_ZN7AMS5812C1ER7TwoWirehNS_10TransducerE)
 C:\Users\agva\Desktop\Suction_Pump-v1.1-\Suction_PUMP(v1.1)\ArduinoCore\Debug\libArduinoCore.a(DefaultFonts.o)
-                              main.o (Terminal12x16)
+                              main.o (Terminal6x8)
 C:\Users\agva\Desktop\Suction_Pump-v1.1-\Suction_PUMP(v1.1)\ArduinoCore\Debug\libArduinoCore.a(TFT_22_ILI9225.o)
                               main.o (_ZN14TFT_22_ILI9225C1Eaaaah)
 C:\Users\agva\Desktop\Suction_Pump-v1.1-\Suction_PUMP(v1.1)\ArduinoCore\Debug\libArduinoCore.a(Wire.o)
@@ -498,10 +498,10 @@ Discarded input sections
  .bss           0x00000000        0x0 C:\Users\agva\Desktop\Suction_Pump-v1.1-\Suction_PUMP(v1.1)\ArduinoCore\Debug\libArduinoCore.a(DefaultFonts.o)
  .progmem.data.Trebuchet_MS16x21
                 0x00000000      0x281 C:\Users\agva\Desktop\Suction_Pump-v1.1-\Suction_PUMP(v1.1)\ArduinoCore\Debug\libArduinoCore.a(DefaultFonts.o)
+ .progmem.data.Terminal12x16
+                0x00000000      0x964 C:\Users\agva\Desktop\Suction_Pump-v1.1-\Suction_PUMP(v1.1)\ArduinoCore\Debug\libArduinoCore.a(DefaultFonts.o)
  .progmem.data.Terminal11x16
                 0x00000000      0x8a4 C:\Users\agva\Desktop\Suction_Pump-v1.1-\Suction_PUMP(v1.1)\ArduinoCore\Debug\libArduinoCore.a(DefaultFonts.o)
- .progmem.data.Terminal6x8
-                0x00000000      0x2a4 C:\Users\agva\Desktop\Suction_Pump-v1.1-\Suction_PUMP(v1.1)\ArduinoCore\Debug\libArduinoCore.a(DefaultFonts.o)
  .text          0x00000000        0x0 C:\Users\agva\Desktop\Suction_Pump-v1.1-\Suction_PUMP(v1.1)\ArduinoCore\Debug\libArduinoCore.a(TFT_22_ILI9225.o)
  .data          0x00000000        0x0 C:\Users\agva\Desktop\Suction_Pump-v1.1-\Suction_PUMP(v1.1)\ArduinoCore\Debug\libArduinoCore.a(TFT_22_ILI9225.o)
  .bss           0x00000000        0x0 C:\Users\agva\Desktop\Suction_Pump-v1.1-\Suction_PUMP(v1.1)\ArduinoCore\Debug\libArduinoCore.a(TFT_22_ILI9225.o)
@@ -523,10 +523,6 @@ Discarded input sections
                 0x00000000        0xa C:\Users\agva\Desktop\Suction_Pump-v1.1-\Suction_PUMP(v1.1)\ArduinoCore\Debug\libArduinoCore.a(TFT_22_ILI9225.o)
  .text._ZN14TFT_22_ILI922514getOrientationEv
                 0x00000000        0x6 C:\Users\agva\Desktop\Suction_Pump-v1.1-\Suction_PUMP(v1.1)\ArduinoCore\Debug\libArduinoCore.a(TFT_22_ILI9225.o)
- .text._ZN14TFT_22_ILI92254maxXEv
-                0x00000000        0x8 C:\Users\agva\Desktop\Suction_Pump-v1.1-\Suction_PUMP(v1.1)\ArduinoCore\Debug\libArduinoCore.a(TFT_22_ILI9225.o)
- .text._ZN14TFT_22_ILI92254maxYEv
-                0x00000000        0x8 C:\Users\agva\Desktop\Suction_Pump-v1.1-\Suction_PUMP(v1.1)\ArduinoCore\Debug\libArduinoCore.a(TFT_22_ILI9225.o)
  .text._ZN14TFT_22_ILI92258setColorEhhh
                 0x00000000       0x42 C:\Users\agva\Desktop\Suction_Pump-v1.1-\Suction_PUMP(v1.1)\ArduinoCore\Debug\libArduinoCore.a(TFT_22_ILI9225.o)
  .text._ZN14TFT_22_ILI922510splitColorEjRhS0_S0_
@@ -553,10 +549,6 @@ Discarded input sections
                 0x00000000       0xa8 C:\Users\agva\Desktop\Suction_Pump-v1.1-\Suction_PUMP(v1.1)\ArduinoCore\Debug\libArduinoCore.a(TFT_22_ILI9225.o)
  .text._ZN14TFT_22_ILI922512fillTriangleEjjjjjjj
                 0x00000000      0x3e6 C:\Users\agva\Desktop\Suction_Pump-v1.1-\Suction_PUMP(v1.1)\ArduinoCore\Debug\libArduinoCore.a(TFT_22_ILI9225.o)
- .text._ZN14TFT_22_ILI92258drawCharEjjjj
-                0x00000000      0x20c C:\Users\agva\Desktop\Suction_Pump-v1.1-\Suction_PUMP(v1.1)\ArduinoCore\Debug\libArduinoCore.a(TFT_22_ILI9225.o)
- .text._ZN14TFT_22_ILI92258drawTextEjj6Stringj
-                0x00000000       0x74 C:\Users\agva\Desktop\Suction_Pump-v1.1-\Suction_PUMP(v1.1)\ArduinoCore\Debug\libArduinoCore.a(TFT_22_ILI9225.o)
  .text._ZN14TFT_22_ILI922510drawBitmapEiiPKhiijj
                 0x00000000       0x36 C:\Users\agva\Desktop\Suction_Pump-v1.1-\Suction_PUMP(v1.1)\ArduinoCore\Debug\libArduinoCore.a(TFT_22_ILI9225.o)
  .text._ZN14TFT_22_ILI922510drawBitmapEiiPhiij
@@ -1253,7 +1245,7 @@ END GROUP
 .rela.plt
  *(.rela.plt)
 
-.text           0x00000000     0x76d2
+.text           0x00000000     0x7392
  *(.vectors)
  .vectors       0x00000000       0x68 C:/Program Files (x86)/Atmel/Studio/7.0/Packs/atmel/ATmega_DFP/1.6.364/gcc/dev/atmega328p/avr5/crtatmega328p.o
                 0x00000000                __vector_default
@@ -1286,601 +1278,613 @@ END GROUP
                 0x00000bb4      0x299 main.o
  .progmem.data._ZL22FreeSerif18pt7bBitmaps
                 0x00000e4d      0xf2e main.o
- .progmem.data.Terminal12x16
-                0x00001d7b      0x964 C:\Users\agva\Desktop\Suction_Pump-v1.1-\Suction_PUMP(v1.1)\ArduinoCore\Debug\libArduinoCore.a(DefaultFonts.o)
-                0x00001d7b                Terminal12x16
+ .progmem.data.Terminal6x8
+                0x00001d7b      0x2a4 C:\Users\agva\Desktop\Suction_Pump-v1.1-\Suction_PUMP(v1.1)\ArduinoCore\Debug\libArduinoCore.a(DefaultFonts.o)
+                0x00001d7b                Terminal6x8
  .progmem.data.digital_pin_to_timer_PGM
-                0x000026df       0x14 C:\Users\agva\Desktop\Suction_Pump-v1.1-\Suction_PUMP(v1.1)\ArduinoCore\Debug\libArduinoCore.a(wiring_digital.o)
-                0x000026df                digital_pin_to_timer_PGM
+                0x0000201f       0x14 C:\Users\agva\Desktop\Suction_Pump-v1.1-\Suction_PUMP(v1.1)\ArduinoCore\Debug\libArduinoCore.a(wiring_digital.o)
+                0x0000201f                digital_pin_to_timer_PGM
  .progmem.data.digital_pin_to_bit_mask_PGM
-                0x000026f3       0x14 C:\Users\agva\Desktop\Suction_Pump-v1.1-\Suction_PUMP(v1.1)\ArduinoCore\Debug\libArduinoCore.a(wiring_digital.o)
-                0x000026f3                digital_pin_to_bit_mask_PGM
+                0x00002033       0x14 C:\Users\agva\Desktop\Suction_Pump-v1.1-\Suction_PUMP(v1.1)\ArduinoCore\Debug\libArduinoCore.a(wiring_digital.o)
+                0x00002033                digital_pin_to_bit_mask_PGM
  .progmem.data.digital_pin_to_port_PGM
-                0x00002707       0x14 C:\Users\agva\Desktop\Suction_Pump-v1.1-\Suction_PUMP(v1.1)\ArduinoCore\Debug\libArduinoCore.a(wiring_digital.o)
-                0x00002707                digital_pin_to_port_PGM
+                0x00002047       0x14 C:\Users\agva\Desktop\Suction_Pump-v1.1-\Suction_PUMP(v1.1)\ArduinoCore\Debug\libArduinoCore.a(wiring_digital.o)
+                0x00002047                digital_pin_to_port_PGM
  .progmem.data.port_to_output_PGM
-                0x0000271b        0xa C:\Users\agva\Desktop\Suction_Pump-v1.1-\Suction_PUMP(v1.1)\ArduinoCore\Debug\libArduinoCore.a(wiring_digital.o)
-                0x0000271b                port_to_output_PGM
+                0x0000205b        0xa C:\Users\agva\Desktop\Suction_Pump-v1.1-\Suction_PUMP(v1.1)\ArduinoCore\Debug\libArduinoCore.a(wiring_digital.o)
+                0x0000205b                port_to_output_PGM
  .progmem.data.port_to_mode_PGM
-                0x00002725        0xa C:\Users\agva\Desktop\Suction_Pump-v1.1-\Suction_PUMP(v1.1)\ArduinoCore\Debug\libArduinoCore.a(wiring_digital.o)
-                0x00002725                port_to_mode_PGM
-                0x00002730                . = ALIGN (0x2)
- *fill*         0x0000272f        0x1 
+                0x00002065        0xa C:\Users\agva\Desktop\Suction_Pump-v1.1-\Suction_PUMP(v1.1)\ArduinoCore\Debug\libArduinoCore.a(wiring_digital.o)
+                0x00002065                port_to_mode_PGM
+                0x00002070                . = ALIGN (0x2)
+ *fill*         0x0000206f        0x1 
  *(.jumptables)
  *(.jumptables*)
  *(.lowtext)
  *(.lowtext*)
-                0x00002730                __ctors_start = .
+                0x00002070                __ctors_start = .
  *(.ctors)
- .ctors         0x00002730        0x2 main.o
- .ctors         0x00002732        0x2 C:\Users\agva\Desktop\Suction_Pump-v1.1-\Suction_PUMP(v1.1)\ArduinoCore\Debug\libArduinoCore.a(HardwareSerial0.o)
- .ctors         0x00002734        0x2 C:\Users\agva\Desktop\Suction_Pump-v1.1-\Suction_PUMP(v1.1)\ArduinoCore\Debug\libArduinoCore.a(Wire.o)
-                0x00002736                __ctors_end = .
-                0x00002736                __dtors_start = .
+ .ctors         0x00002070        0x2 main.o
+ .ctors         0x00002072        0x2 C:\Users\agva\Desktop\Suction_Pump-v1.1-\Suction_PUMP(v1.1)\ArduinoCore\Debug\libArduinoCore.a(HardwareSerial0.o)
+ .ctors         0x00002074        0x2 C:\Users\agva\Desktop\Suction_Pump-v1.1-\Suction_PUMP(v1.1)\ArduinoCore\Debug\libArduinoCore.a(Wire.o)
+                0x00002076                __ctors_end = .
+                0x00002076                __dtors_start = .
  *(.dtors)
- .dtors         0x00002736        0x2 main.o
-                0x00002738                __dtors_end = .
+ .dtors         0x00002076        0x2 main.o
+                0x00002078                __dtors_end = .
  SORT(*)(.ctors)
  SORT(*)(.dtors)
  *(.init0)
- .init0         0x00002738        0x0 C:/Program Files (x86)/Atmel/Studio/7.0/Packs/atmel/ATmega_DFP/1.6.364/gcc/dev/atmega328p/avr5/crtatmega328p.o
-                0x00002738                __init
+ .init0         0x00002078        0x0 C:/Program Files (x86)/Atmel/Studio/7.0/Packs/atmel/ATmega_DFP/1.6.364/gcc/dev/atmega328p/avr5/crtatmega328p.o
+                0x00002078                __init
  *(.init0)
  *(.init1)
  *(.init1)
  *(.init2)
- .init2         0x00002738        0xc C:/Program Files (x86)/Atmel/Studio/7.0/Packs/atmel/ATmega_DFP/1.6.364/gcc/dev/atmega328p/avr5/crtatmega328p.o
+ .init2         0x00002078        0xc C:/Program Files (x86)/Atmel/Studio/7.0/Packs/atmel/ATmega_DFP/1.6.364/gcc/dev/atmega328p/avr5/crtatmega328p.o
  *(.init2)
  *(.init3)
  *(.init3)
  *(.init4)
- .init4         0x00002744       0x16 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_copy_data.o)
-                0x00002744                __do_copy_data
- .init4         0x0000275a       0x10 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_clear_bss.o)
-                0x0000275a                __do_clear_bss
+ .init4         0x00002084       0x16 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_copy_data.o)
+                0x00002084                __do_copy_data
+ .init4         0x0000209a       0x10 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_clear_bss.o)
+                0x0000209a                __do_clear_bss
  *(.init4)
  *(.init5)
  *(.init5)
  *(.init6)
- .init6         0x0000276a       0x16 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_ctors.o)
-                0x0000276a                __do_global_ctors
+ .init6         0x000020aa       0x16 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_ctors.o)
+                0x000020aa                __do_global_ctors
  *(.init6)
  *(.init7)
  *(.init7)
  *(.init8)
  *(.init8)
  *(.init9)
- .init9         0x00002780        0x8 C:/Program Files (x86)/Atmel/Studio/7.0/Packs/atmel/ATmega_DFP/1.6.364/gcc/dev/atmega328p/avr5/crtatmega328p.o
+ .init9         0x000020c0        0x8 C:/Program Files (x86)/Atmel/Studio/7.0/Packs/atmel/ATmega_DFP/1.6.364/gcc/dev/atmega328p/avr5/crtatmega328p.o
  *(.init9)
  *(.text)
- .text          0x00002788        0x4 C:/Program Files (x86)/Atmel/Studio/7.0/Packs/atmel/ATmega_DFP/1.6.364/gcc/dev/atmega328p/avr5/crtatmega328p.o
-                0x00002788                __vector_22
-                0x00002788                __vector_1
-                0x00002788                __vector_12
-                0x00002788                __bad_interrupt
-                0x00002788                __vector_6
-                0x00002788                __vector_3
-                0x00002788                __vector_23
-                0x00002788                __vector_25
-                0x00002788                __vector_11
-                0x00002788                __vector_13
-                0x00002788                __vector_17
-                0x00002788                __vector_7
-                0x00002788                __vector_5
-                0x00002788                __vector_4
-                0x00002788                __vector_9
-                0x00002788                __vector_2
-                0x00002788                __vector_21
-                0x00002788                __vector_15
-                0x00002788                __vector_8
-                0x00002788                __vector_14
-                0x00002788                __vector_10
-                0x00002788                __vector_20
-                0x0000278c                . = ALIGN (0x2)
+ .text          0x000020c8        0x4 C:/Program Files (x86)/Atmel/Studio/7.0/Packs/atmel/ATmega_DFP/1.6.364/gcc/dev/atmega328p/avr5/crtatmega328p.o
+                0x000020c8                __vector_22
+                0x000020c8                __vector_1
+                0x000020c8                __vector_12
+                0x000020c8                __bad_interrupt
+                0x000020c8                __vector_6
+                0x000020c8                __vector_3
+                0x000020c8                __vector_23
+                0x000020c8                __vector_25
+                0x000020c8                __vector_11
+                0x000020c8                __vector_13
+                0x000020c8                __vector_17
+                0x000020c8                __vector_7
+                0x000020c8                __vector_5
+                0x000020c8                __vector_4
+                0x000020c8                __vector_9
+                0x000020c8                __vector_2
+                0x000020c8                __vector_21
+                0x000020c8                __vector_15
+                0x000020c8                __vector_8
+                0x000020c8                __vector_14
+                0x000020c8                __vector_10
+                0x000020c8                __vector_20
+                0x000020cc                . = ALIGN (0x2)
  *(.text.*)
- .text.setup    0x0000278c      0x342 main.o
-                0x0000278c                setup
+ .text.setup    0x000020cc      0x434 main.o
+                0x000020cc                setup
  .text._Z9fill_areaij
-                0x00002ace       0x36 main.o
-                0x00002ace                _Z9fill_areaij
- .text.loop     0x00002b04      0x3b6 main.o
-                0x00002b04                loop
+                0x00002500       0x36 main.o
+                0x00002500                _Z9fill_areaij
+ .text.loop     0x00002536      0x3b4 main.o
+                0x00002536                loop
  .text.startup._GLOBAL__sub_I_pressure
-                0x00002eba       0x38 main.o
+                0x000028ea       0x38 main.o
  .text.exit._GLOBAL__sub_D_pressure
-                0x00002ef2        0x8 main.o
+                0x00002922        0x8 main.o
  .text.avr-libc.fplib
-                0x00002efa        0xe c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libm.a(addsf3.o)
-                0x00002efa                __subsf3
-                0x00002efc                __addsf3
+                0x0000292a        0xe c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libm.a(addsf3.o)
+                0x0000292a                __subsf3
+                0x0000292c                __addsf3
  .text.avr-libc.fplib
-                0x00002f08       0xcc c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libm.a(addsf3x.o)
-                0x00002f2a                __addsf3x
+                0x00002938       0xcc c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libm.a(addsf3x.o)
+                0x0000295a                __addsf3x
  .text.avr-libc.fplib
-                0x00002fd4        0x8 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libm.a(divsf3.o)
-                0x00002fd4                __divsf3
+                0x00002a04        0x8 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libm.a(divsf3.o)
+                0x00002a04                __divsf3
  .text.avr-libc.fplib
-                0x00002fdc       0xdc c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libm.a(divsf3x.o)
-                0x00002ffc                __divsf3x
-                0x00003002                __divsf3_pse
+                0x00002a0c       0xdc c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libm.a(divsf3x.o)
+                0x00002a2c                __divsf3x
+                0x00002a32                __divsf3_pse
  .text.avr-libc.fplib
-                0x000030b8        0xe c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libm.a(fixsfsi.o)
-                0x000030b8                __fixsfsi
+                0x00002ae8        0xe c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libm.a(fixsfsi.o)
+                0x00002ae8                __fixsfsi
  .text.avr-libc.fplib
-                0x000030c6       0x5e c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libm.a(fixunssfsi.o)
-                0x000030c6                __fixunssfsi
+                0x00002af6       0x5e c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libm.a(fixunssfsi.o)
+                0x00002af6                __fixunssfsi
  .text.avr-libc.fplib
-                0x00003124       0x7a c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libm.a(floatsisf.o)
-                0x00003124                __floatunsisf
-                0x00003128                __floatsisf
+                0x00002b54       0x7a c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libm.a(floatsisf.o)
+                0x00002b54                __floatunsisf
+                0x00002b58                __floatsisf
  .text.avr-libc.fplib
-                0x0000319e        0xc c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libm.a(fp_inf.o)
-                0x0000319e                __fp_inf
+                0x00002bce        0xc c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libm.a(fp_inf.o)
+                0x00002bce                __fp_inf
  .text.avr-libc.fplib
-                0x000031aa        0x6 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libm.a(fp_nan.o)
-                0x000031aa                __fp_nan
+                0x00002bda        0x6 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libm.a(fp_nan.o)
+                0x00002bda                __fp_nan
  .text.avr-libc.fplib
-                0x000031b0        0xe c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libm.a(fp_pscA.o)
-                0x000031b0                __fp_pscA
+                0x00002be0        0xe c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libm.a(fp_pscA.o)
+                0x00002be0                __fp_pscA
  .text.avr-libc.fplib
-                0x000031be        0xe c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libm.a(fp_pscB.o)
-                0x000031be                __fp_pscB
+                0x00002bee        0xe c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libm.a(fp_pscB.o)
+                0x00002bee                __fp_pscB
  .text.avr-libc.fplib
-                0x000031cc       0x22 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libm.a(fp_round.o)
-                0x000031cc                __fp_round
+                0x00002bfc       0x22 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libm.a(fp_round.o)
+                0x00002bfc                __fp_round
  .text.avr-libc.fplib
-                0x000031ee       0x44 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libm.a(fp_split3.o)
-                0x000031ee                __fp_split3
-                0x000031fe                __fp_splitA
+                0x00002c1e       0x44 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libm.a(fp_split3.o)
+                0x00002c1e                __fp_split3
+                0x00002c2e                __fp_splitA
  .text.avr-libc.fplib
-                0x00003232        0xe c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libm.a(fp_zero.o)
-                0x00003232                __fp_zero
-                0x00003234                __fp_szero
+                0x00002c62        0xe c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libm.a(fp_zero.o)
+                0x00002c62                __fp_zero
+                0x00002c64                __fp_szero
  .text.avr-libc.fplib
-                0x00003240        0xa c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libm.a(gesf2.o)
-                0x00003240                __gesf2
-                0x00003240                __gtsf2
+                0x00002c70        0xa c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libm.a(gesf2.o)
+                0x00002c70                __gesf2
+                0x00002c70                __gtsf2
  .text.avr-libc.fplib
-                0x0000324a       0x48 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libm.a(fp_cmp.o)
-                0x0000324a                __fp_cmp
+                0x00002c7a       0x48 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libm.a(fp_cmp.o)
+                0x00002c7a                __fp_cmp
  .text._ZN14HardwareSerial9availableEv
-                0x00003292       0x18 C:\Users\agva\Desktop\Suction_Pump-v1.1-\Suction_PUMP(v1.1)\ArduinoCore\Debug\libArduinoCore.a(HardwareSerial.o)
-                0x00003292                _ZN14HardwareSerial9availableEv
+                0x00002cc2       0x18 C:\Users\agva\Desktop\Suction_Pump-v1.1-\Suction_PUMP(v1.1)\ArduinoCore\Debug\libArduinoCore.a(HardwareSerial.o)
+                0x00002cc2                _ZN14HardwareSerial9availableEv
  .text._ZN14HardwareSerial4peekEv
-                0x000032aa       0x1c C:\Users\agva\Desktop\Suction_Pump-v1.1-\Suction_PUMP(v1.1)\ArduinoCore\Debug\libArduinoCore.a(HardwareSerial.o)
-                0x000032aa                _ZN14HardwareSerial4peekEv
+                0x00002cda       0x1c C:\Users\agva\Desktop\Suction_Pump-v1.1-\Suction_PUMP(v1.1)\ArduinoCore\Debug\libArduinoCore.a(HardwareSerial.o)
+                0x00002cda                _ZN14HardwareSerial4peekEv
  .text._ZN14HardwareSerial4readEv
-                0x000032c6       0x28 C:\Users\agva\Desktop\Suction_Pump-v1.1-\Suction_PUMP(v1.1)\ArduinoCore\Debug\libArduinoCore.a(HardwareSerial.o)
-                0x000032c6                _ZN14HardwareSerial4readEv
+                0x00002cf6       0x28 C:\Users\agva\Desktop\Suction_Pump-v1.1-\Suction_PUMP(v1.1)\ArduinoCore\Debug\libArduinoCore.a(HardwareSerial.o)
+                0x00002cf6                _ZN14HardwareSerial4readEv
  .text._ZN14HardwareSerial17availableForWriteEv
-                0x000032ee       0x1e C:\Users\agva\Desktop\Suction_Pump-v1.1-\Suction_PUMP(v1.1)\ArduinoCore\Debug\libArduinoCore.a(HardwareSerial.o)
-                0x000032ee                _ZN14HardwareSerial17availableForWriteEv
+                0x00002d1e       0x1e C:\Users\agva\Desktop\Suction_Pump-v1.1-\Suction_PUMP(v1.1)\ArduinoCore\Debug\libArduinoCore.a(HardwareSerial.o)
+                0x00002d1e                _ZN14HardwareSerial17availableForWriteEv
  .text._Z14serialEventRunv
-                0x0000330c       0x1c C:\Users\agva\Desktop\Suction_Pump-v1.1-\Suction_PUMP(v1.1)\ArduinoCore\Debug\libArduinoCore.a(HardwareSerial.o)
-                0x0000330c                _Z14serialEventRunv
+                0x00002d3c       0x1c C:\Users\agva\Desktop\Suction_Pump-v1.1-\Suction_PUMP(v1.1)\ArduinoCore\Debug\libArduinoCore.a(HardwareSerial.o)
+                0x00002d3c                _Z14serialEventRunv
  .text._ZN14HardwareSerial17_tx_udr_empty_irqEv
-                0x00003328       0x44 C:\Users\agva\Desktop\Suction_Pump-v1.1-\Suction_PUMP(v1.1)\ArduinoCore\Debug\libArduinoCore.a(HardwareSerial.o)
-                0x00003328                _ZN14HardwareSerial17_tx_udr_empty_irqEv
+                0x00002d58       0x44 C:\Users\agva\Desktop\Suction_Pump-v1.1-\Suction_PUMP(v1.1)\ArduinoCore\Debug\libArduinoCore.a(HardwareSerial.o)
+                0x00002d58                _ZN14HardwareSerial17_tx_udr_empty_irqEv
  .text._ZN14HardwareSerial5writeEh
-                0x0000336c       0x9a C:\Users\agva\Desktop\Suction_Pump-v1.1-\Suction_PUMP(v1.1)\ArduinoCore\Debug\libArduinoCore.a(HardwareSerial.o)
-                0x0000336c                _ZN14HardwareSerial5writeEh
+                0x00002d9c       0x9a C:\Users\agva\Desktop\Suction_Pump-v1.1-\Suction_PUMP(v1.1)\ArduinoCore\Debug\libArduinoCore.a(HardwareSerial.o)
+                0x00002d9c                _ZN14HardwareSerial5writeEh
  .text._ZN14HardwareSerial5flushEv
-                0x00003406       0x44 C:\Users\agva\Desktop\Suction_Pump-v1.1-\Suction_PUMP(v1.1)\ArduinoCore\Debug\libArduinoCore.a(HardwareSerial.o)
-                0x00003406                _ZN14HardwareSerial5flushEv
+                0x00002e36       0x44 C:\Users\agva\Desktop\Suction_Pump-v1.1-\Suction_PUMP(v1.1)\ArduinoCore\Debug\libArduinoCore.a(HardwareSerial.o)
+                0x00002e36                _ZN14HardwareSerial5flushEv
  .text._ZN14HardwareSerial5beginEmh
-                0x0000344a       0xca C:\Users\agva\Desktop\Suction_Pump-v1.1-\Suction_PUMP(v1.1)\ArduinoCore\Debug\libArduinoCore.a(HardwareSerial.o)
-                0x0000344a                _ZN14HardwareSerial5beginEmh
+                0x00002e7a       0xca C:\Users\agva\Desktop\Suction_Pump-v1.1-\Suction_PUMP(v1.1)\ArduinoCore\Debug\libArduinoCore.a(HardwareSerial.o)
+                0x00002e7a                _ZN14HardwareSerial5beginEmh
  .text._ZN5Print17availableForWriteEv
-                0x00003514        0x6 C:\Users\agva\Desktop\Suction_Pump-v1.1-\Suction_PUMP(v1.1)\ArduinoCore\Debug\libArduinoCore.a(HardwareSerial0.o)
-                0x00003514                _ZN5Print17availableForWriteEv
+                0x00002f44        0x6 C:\Users\agva\Desktop\Suction_Pump-v1.1-\Suction_PUMP(v1.1)\ArduinoCore\Debug\libArduinoCore.a(HardwareSerial0.o)
+                0x00002f44                _ZN5Print17availableForWriteEv
  .text.__vector_18
-                0x0000351a       0x64 C:\Users\agva\Desktop\Suction_Pump-v1.1-\Suction_PUMP(v1.1)\ArduinoCore\Debug\libArduinoCore.a(HardwareSerial0.o)
-                0x0000351a                __vector_18
+                0x00002f4a       0x64 C:\Users\agva\Desktop\Suction_Pump-v1.1-\Suction_PUMP(v1.1)\ArduinoCore\Debug\libArduinoCore.a(HardwareSerial0.o)
+                0x00002f4a                __vector_18
  .text.__vector_19
-                0x0000357e       0x4c C:\Users\agva\Desktop\Suction_Pump-v1.1-\Suction_PUMP(v1.1)\ArduinoCore\Debug\libArduinoCore.a(HardwareSerial0.o)
-                0x0000357e                __vector_19
+                0x00002fae       0x4c C:\Users\agva\Desktop\Suction_Pump-v1.1-\Suction_PUMP(v1.1)\ArduinoCore\Debug\libArduinoCore.a(HardwareSerial0.o)
+                0x00002fae                __vector_19
  .text._Z17Serial0_availablev
-                0x000035ca       0x14 C:\Users\agva\Desktop\Suction_Pump-v1.1-\Suction_PUMP(v1.1)\ArduinoCore\Debug\libArduinoCore.a(HardwareSerial0.o)
-                0x000035ca                _Z17Serial0_availablev
+                0x00002ffa       0x14 C:\Users\agva\Desktop\Suction_Pump-v1.1-\Suction_PUMP(v1.1)\ArduinoCore\Debug\libArduinoCore.a(HardwareSerial0.o)
+                0x00002ffa                _Z17Serial0_availablev
  .text.startup._GLOBAL__sub_I___vector_18
-                0x000035de       0x5a C:\Users\agva\Desktop\Suction_Pump-v1.1-\Suction_PUMP(v1.1)\ArduinoCore\Debug\libArduinoCore.a(HardwareSerial0.o)
+                0x0000300e       0x5a C:\Users\agva\Desktop\Suction_Pump-v1.1-\Suction_PUMP(v1.1)\ArduinoCore\Debug\libArduinoCore.a(HardwareSerial0.o)
  .text.initVariant
-                0x00003638        0x2 C:\Users\agva\Desktop\Suction_Pump-v1.1-\Suction_PUMP(v1.1)\ArduinoCore\Debug\libArduinoCore.a(main.o)
-                0x00003638                initVariant
+                0x00003068        0x2 C:\Users\agva\Desktop\Suction_Pump-v1.1-\Suction_PUMP(v1.1)\ArduinoCore\Debug\libArduinoCore.a(main.o)
+                0x00003068                initVariant
  .text.startup.main
-                0x0000363a       0x1e C:\Users\agva\Desktop\Suction_Pump-v1.1-\Suction_PUMP(v1.1)\ArduinoCore\Debug\libArduinoCore.a(main.o)
-                0x0000363a                main
+                0x0000306a       0x1e C:\Users\agva\Desktop\Suction_Pump-v1.1-\Suction_PUMP(v1.1)\ArduinoCore\Debug\libArduinoCore.a(main.o)
+                0x0000306a                main
  .text._ZN5Print5writeEPKhj
-                0x00003658       0x54 C:\Users\agva\Desktop\Suction_Pump-v1.1-\Suction_PUMP(v1.1)\ArduinoCore\Debug\libArduinoCore.a(Print.o)
-                0x00003658                _ZN5Print5writeEPKhj
+                0x00003088       0x54 C:\Users\agva\Desktop\Suction_Pump-v1.1-\Suction_PUMP(v1.1)\ArduinoCore\Debug\libArduinoCore.a(Print.o)
+                0x00003088                _ZN5Print5writeEPKhj
  .text._ZN5Print5writeEPKc
-                0x000036ac       0x2a C:\Users\agva\Desktop\Suction_Pump-v1.1-\Suction_PUMP(v1.1)\ArduinoCore\Debug\libArduinoCore.a(Print.o)
-                0x000036ac                _ZN5Print5writeEPKc
+                0x000030dc       0x2a C:\Users\agva\Desktop\Suction_Pump-v1.1-\Suction_PUMP(v1.1)\ArduinoCore\Debug\libArduinoCore.a(Print.o)
+                0x000030dc                _ZN5Print5writeEPKc
  .text._ZN5Print5printEPKc
-                0x000036d6        0x4 C:\Users\agva\Desktop\Suction_Pump-v1.1-\Suction_PUMP(v1.1)\ArduinoCore\Debug\libArduinoCore.a(Print.o)
-                0x000036d6                _ZN5Print5printEPKc
+                0x00003106        0x4 C:\Users\agva\Desktop\Suction_Pump-v1.1-\Suction_PUMP(v1.1)\ArduinoCore\Debug\libArduinoCore.a(Print.o)
+                0x00003106                _ZN5Print5printEPKc
  .text._ZN5Print5printEc
-                0x000036da        0xe C:\Users\agva\Desktop\Suction_Pump-v1.1-\Suction_PUMP(v1.1)\ArduinoCore\Debug\libArduinoCore.a(Print.o)
-                0x000036da                _ZN5Print5printEc
+                0x0000310a        0xe C:\Users\agva\Desktop\Suction_Pump-v1.1-\Suction_PUMP(v1.1)\ArduinoCore\Debug\libArduinoCore.a(Print.o)
+                0x0000310a                _ZN5Print5printEc
  .text._ZN5Print7printlnEv
-                0x000036e8        0x8 C:\Users\agva\Desktop\Suction_Pump-v1.1-\Suction_PUMP(v1.1)\ArduinoCore\Debug\libArduinoCore.a(Print.o)
-                0x000036e8                _ZN5Print7printlnEv
+                0x00003118        0x8 C:\Users\agva\Desktop\Suction_Pump-v1.1-\Suction_PUMP(v1.1)\ArduinoCore\Debug\libArduinoCore.a(Print.o)
+                0x00003118                _ZN5Print7printlnEv
  .text._ZN5Print7printlnEPKc
-                0x000036f0       0x24 C:\Users\agva\Desktop\Suction_Pump-v1.1-\Suction_PUMP(v1.1)\ArduinoCore\Debug\libArduinoCore.a(Print.o)
-                0x000036f0                _ZN5Print7printlnEPKc
+                0x00003120       0x24 C:\Users\agva\Desktop\Suction_Pump-v1.1-\Suction_PUMP(v1.1)\ArduinoCore\Debug\libArduinoCore.a(Print.o)
+                0x00003120                _ZN5Print7printlnEPKc
  .text._ZN5Print11printNumberEmh
-                0x00003714       0x92 C:\Users\agva\Desktop\Suction_Pump-v1.1-\Suction_PUMP(v1.1)\ArduinoCore\Debug\libArduinoCore.a(Print.o)
-                0x00003714                _ZN5Print11printNumberEmh
+                0x00003144       0x92 C:\Users\agva\Desktop\Suction_Pump-v1.1-\Suction_PUMP(v1.1)\ArduinoCore\Debug\libArduinoCore.a(Print.o)
+                0x00003144                _ZN5Print11printNumberEmh
  .text._ZN5Print5printEmi
-                0x000037a6       0x1a C:\Users\agva\Desktop\Suction_Pump-v1.1-\Suction_PUMP(v1.1)\ArduinoCore\Debug\libArduinoCore.a(Print.o)
-                0x000037a6                _ZN5Print5printEmi
+                0x000031d6       0x1a C:\Users\agva\Desktop\Suction_Pump-v1.1-\Suction_PUMP(v1.1)\ArduinoCore\Debug\libArduinoCore.a(Print.o)
+                0x000031d6                _ZN5Print5printEmi
  .text._ZN5Print5printEji
-                0x000037c0        0xc C:\Users\agva\Desktop\Suction_Pump-v1.1-\Suction_PUMP(v1.1)\ArduinoCore\Debug\libArduinoCore.a(Print.o)
-                0x000037c0                _ZN5Print5printEji
+                0x000031f0        0xc C:\Users\agva\Desktop\Suction_Pump-v1.1-\Suction_PUMP(v1.1)\ArduinoCore\Debug\libArduinoCore.a(Print.o)
+                0x000031f0                _ZN5Print5printEji
  .text._ZN5Print10printFloatEdh
-                0x000037cc      0x1b6 C:\Users\agva\Desktop\Suction_Pump-v1.1-\Suction_PUMP(v1.1)\ArduinoCore\Debug\libArduinoCore.a(Print.o)
-                0x000037cc                _ZN5Print10printFloatEdh
+                0x000031fc      0x1b6 C:\Users\agva\Desktop\Suction_Pump-v1.1-\Suction_PUMP(v1.1)\ArduinoCore\Debug\libArduinoCore.a(Print.o)
+                0x000031fc                _ZN5Print10printFloatEdh
  .text._ZN5Print5printEdi
-                0x00003982        0x4 C:\Users\agva\Desktop\Suction_Pump-v1.1-\Suction_PUMP(v1.1)\ArduinoCore\Debug\libArduinoCore.a(Print.o)
-                0x00003982                _ZN5Print5printEdi
+                0x000033b2        0x4 C:\Users\agva\Desktop\Suction_Pump-v1.1-\Suction_PUMP(v1.1)\ArduinoCore\Debug\libArduinoCore.a(Print.o)
+                0x000033b2                _ZN5Print5printEdi
  .text.__vector_16
-                0x00003986       0x94 C:\Users\agva\Desktop\Suction_Pump-v1.1-\Suction_PUMP(v1.1)\ArduinoCore\Debug\libArduinoCore.a(wiring.o)
-                0x00003986                __vector_16
- .text.micros   0x00003a1a       0x4a C:\Users\agva\Desktop\Suction_Pump-v1.1-\Suction_PUMP(v1.1)\ArduinoCore\Debug\libArduinoCore.a(wiring.o)
-                0x00003a1a                micros
- .text.delay    0x00003a64       0x78 C:\Users\agva\Desktop\Suction_Pump-v1.1-\Suction_PUMP(v1.1)\ArduinoCore\Debug\libArduinoCore.a(wiring.o)
-                0x00003a64                delay
- .text.init     0x00003adc       0x76 C:\Users\agva\Desktop\Suction_Pump-v1.1-\Suction_PUMP(v1.1)\ArduinoCore\Debug\libArduinoCore.a(wiring.o)
-                0x00003adc                init
+                0x000033b6       0x94 C:\Users\agva\Desktop\Suction_Pump-v1.1-\Suction_PUMP(v1.1)\ArduinoCore\Debug\libArduinoCore.a(wiring.o)
+                0x000033b6                __vector_16
+ .text.micros   0x0000344a       0x4a C:\Users\agva\Desktop\Suction_Pump-v1.1-\Suction_PUMP(v1.1)\ArduinoCore\Debug\libArduinoCore.a(wiring.o)
+                0x0000344a                micros
+ .text.delay    0x00003494       0x78 C:\Users\agva\Desktop\Suction_Pump-v1.1-\Suction_PUMP(v1.1)\ArduinoCore\Debug\libArduinoCore.a(wiring.o)
+                0x00003494                delay
+ .text.init     0x0000350c       0x76 C:\Users\agva\Desktop\Suction_Pump-v1.1-\Suction_PUMP(v1.1)\ArduinoCore\Debug\libArduinoCore.a(wiring.o)
+                0x0000350c                init
  .text._Z3maplllll
-                0x00003b52       0x82 C:\Users\agva\Desktop\Suction_Pump-v1.1-\Suction_PUMP(v1.1)\ArduinoCore\Debug\libArduinoCore.a(WMath.o)
-                0x00003b52                _Z3maplllll
+                0x00003582       0x82 C:\Users\agva\Desktop\Suction_Pump-v1.1-\Suction_PUMP(v1.1)\ArduinoCore\Debug\libArduinoCore.a(WMath.o)
+                0x00003582                _Z3maplllll
  .text._ZNK6String14StringIfHelperEv
-                0x00003bd4        0x2 C:\Users\agva\Desktop\Suction_Pump-v1.1-\Suction_PUMP(v1.1)\ArduinoCore\Debug\libArduinoCore.a(WString.o)
-                0x00003bd4                _ZNK6String14StringIfHelperEv
+                0x00003604        0x2 C:\Users\agva\Desktop\Suction_Pump-v1.1-\Suction_PUMP(v1.1)\ArduinoCore\Debug\libArduinoCore.a(WString.o)
+                0x00003604                _ZNK6String14StringIfHelperEv
  .text._ZN6StringD2Ev
-                0x00003bd6       0x10 C:\Users\agva\Desktop\Suction_Pump-v1.1-\Suction_PUMP(v1.1)\ArduinoCore\Debug\libArduinoCore.a(WString.o)
-                0x00003bd6                _ZN6StringD2Ev
-                0x00003bd6                _ZN6StringD1Ev
+                0x00003606       0x10 C:\Users\agva\Desktop\Suction_Pump-v1.1-\Suction_PUMP(v1.1)\ArduinoCore\Debug\libArduinoCore.a(WString.o)
+                0x00003606                _ZN6StringD2Ev
+                0x00003606                _ZN6StringD1Ev
  .text._ZN6String10invalidateEv
-                0x00003be6       0x24 C:\Users\agva\Desktop\Suction_Pump-v1.1-\Suction_PUMP(v1.1)\ArduinoCore\Debug\libArduinoCore.a(WString.o)
-                0x00003be6                _ZN6String10invalidateEv
+                0x00003616       0x24 C:\Users\agva\Desktop\Suction_Pump-v1.1-\Suction_PUMP(v1.1)\ArduinoCore\Debug\libArduinoCore.a(WString.o)
+                0x00003616                _ZN6String10invalidateEv
  .text._ZN6String12changeBufferEj
-                0x00003c0a       0x34 C:\Users\agva\Desktop\Suction_Pump-v1.1-\Suction_PUMP(v1.1)\ArduinoCore\Debug\libArduinoCore.a(WString.o)
-                0x00003c0a                _ZN6String12changeBufferEj
+                0x0000363a       0x34 C:\Users\agva\Desktop\Suction_Pump-v1.1-\Suction_PUMP(v1.1)\ArduinoCore\Debug\libArduinoCore.a(WString.o)
+                0x0000363a                _ZN6String12changeBufferEj
  .text._ZN6String7reserveEj
-                0x00003c3e       0x38 C:\Users\agva\Desktop\Suction_Pump-v1.1-\Suction_PUMP(v1.1)\ArduinoCore\Debug\libArduinoCore.a(WString.o)
-                0x00003c3e                _ZN6String7reserveEj
+                0x0000366e       0x38 C:\Users\agva\Desktop\Suction_Pump-v1.1-\Suction_PUMP(v1.1)\ArduinoCore\Debug\libArduinoCore.a(WString.o)
+                0x0000366e                _ZN6String7reserveEj
  .text._ZN6String4copyEPKcj
-                0x00003c76       0x42 C:\Users\agva\Desktop\Suction_Pump-v1.1-\Suction_PUMP(v1.1)\ArduinoCore\Debug\libArduinoCore.a(WString.o)
-                0x00003c76                _ZN6String4copyEPKcj
+                0x000036a6       0x42 C:\Users\agva\Desktop\Suction_Pump-v1.1-\Suction_PUMP(v1.1)\ArduinoCore\Debug\libArduinoCore.a(WString.o)
+                0x000036a6                _ZN6String4copyEPKcj
  .text._ZN6StringC2EPKc
-                0x00003cb8       0x2a C:\Users\agva\Desktop\Suction_Pump-v1.1-\Suction_PUMP(v1.1)\ArduinoCore\Debug\libArduinoCore.a(WString.o)
-                0x00003cb8                _ZN6StringC2EPKc
-                0x00003cb8                _ZN6StringC1EPKc
+                0x000036e8       0x2a C:\Users\agva\Desktop\Suction_Pump-v1.1-\Suction_PUMP(v1.1)\ArduinoCore\Debug\libArduinoCore.a(WString.o)
+                0x000036e8                _ZN6StringC2EPKc
+                0x000036e8                _ZN6StringC1EPKc
  .text._ZN6String4moveERS_
-                0x00003ce2       0x7a C:\Users\agva\Desktop\Suction_Pump-v1.1-\Suction_PUMP(v1.1)\ArduinoCore\Debug\libArduinoCore.a(WString.o)
-                0x00003ce2                _ZN6String4moveERS_
+                0x00003712       0x7a C:\Users\agva\Desktop\Suction_Pump-v1.1-\Suction_PUMP(v1.1)\ArduinoCore\Debug\libArduinoCore.a(WString.o)
+                0x00003712                _ZN6String4moveERS_
  .text._ZN6StringaSERKS_
-                0x00003d5c       0x2e C:\Users\agva\Desktop\Suction_Pump-v1.1-\Suction_PUMP(v1.1)\ArduinoCore\Debug\libArduinoCore.a(WString.o)
-                0x00003d5c                _ZN6StringaSERKS_
+                0x0000378c       0x2e C:\Users\agva\Desktop\Suction_Pump-v1.1-\Suction_PUMP(v1.1)\ArduinoCore\Debug\libArduinoCore.a(WString.o)
+                0x0000378c                _ZN6StringaSERKS_
  .text._ZN6StringC2ERKS_
-                0x00003d8a       0x12 C:\Users\agva\Desktop\Suction_Pump-v1.1-\Suction_PUMP(v1.1)\ArduinoCore\Debug\libArduinoCore.a(WString.o)
-                0x00003d8a                _ZN6StringC2ERKS_
-                0x00003d8a                _ZN6StringC1ERKS_
+                0x000037ba       0x12 C:\Users\agva\Desktop\Suction_Pump-v1.1-\Suction_PUMP(v1.1)\ArduinoCore\Debug\libArduinoCore.a(WString.o)
+                0x000037ba                _ZN6StringC2ERKS_
+                0x000037ba                _ZN6StringC1ERKS_
  .text._ZN6StringaSEOS_
-                0x00003d9c       0x18 C:\Users\agva\Desktop\Suction_Pump-v1.1-\Suction_PUMP(v1.1)\ArduinoCore\Debug\libArduinoCore.a(WString.o)
-                0x00003d9c                _ZN6StringaSEOS_
+                0x000037cc       0x18 C:\Users\agva\Desktop\Suction_Pump-v1.1-\Suction_PUMP(v1.1)\ArduinoCore\Debug\libArduinoCore.a(WString.o)
+                0x000037cc                _ZN6StringaSEOS_
  .text._ZN6StringaSEPKc
-                0x00003db4       0x2e C:\Users\agva\Desktop\Suction_Pump-v1.1-\Suction_PUMP(v1.1)\ArduinoCore\Debug\libArduinoCore.a(WString.o)
-                0x00003db4                _ZN6StringaSEPKc
+                0x000037e4       0x2e C:\Users\agva\Desktop\Suction_Pump-v1.1-\Suction_PUMP(v1.1)\ArduinoCore\Debug\libArduinoCore.a(WString.o)
+                0x000037e4                _ZN6StringaSEPKc
  .text._ZN6StringC2Efh
-                0x00003de2       0x60 C:\Users\agva\Desktop\Suction_Pump-v1.1-\Suction_PUMP(v1.1)\ArduinoCore\Debug\libArduinoCore.a(WString.o)
-                0x00003de2                _ZN6StringC2Efh
-                0x00003de2                _ZN6StringC1Efh
+                0x00003812       0x60 C:\Users\agva\Desktop\Suction_Pump-v1.1-\Suction_PUMP(v1.1)\ArduinoCore\Debug\libArduinoCore.a(WString.o)
+                0x00003812                _ZN6StringC2Efh
+                0x00003812                _ZN6StringC1Efh
  .text._ZNK6StringixEj
-                0x00003e42       0x22 C:\Users\agva\Desktop\Suction_Pump-v1.1-\Suction_PUMP(v1.1)\ArduinoCore\Debug\libArduinoCore.a(WString.o)
-                0x00003e42                _ZNK6StringixEj
+                0x00003872       0x22 C:\Users\agva\Desktop\Suction_Pump-v1.1-\Suction_PUMP(v1.1)\ArduinoCore\Debug\libArduinoCore.a(WString.o)
+                0x00003872                _ZNK6StringixEj
  .text._ZNK6String6charAtEj
-                0x00003e64        0x4 C:\Users\agva\Desktop\Suction_Pump-v1.1-\Suction_PUMP(v1.1)\ArduinoCore\Debug\libArduinoCore.a(WString.o)
-                0x00003e64                _ZNK6String6charAtEj
+                0x00003894        0x4 C:\Users\agva\Desktop\Suction_Pump-v1.1-\Suction_PUMP(v1.1)\ArduinoCore\Debug\libArduinoCore.a(WString.o)
+                0x00003894                _ZNK6String6charAtEj
  .text._ZN7AMS5812C2ER7TwoWirehNS_10TransducerE
-                0x00003e68      0x368 C:\Users\agva\Desktop\Suction_Pump-v1.1-\Suction_PUMP(v1.1)\ArduinoCore\Debug\libArduinoCore.a(AMS5812.o)
-                0x00003e68                _ZN7AMS5812C1ER7TwoWirehNS_10TransducerE
-                0x00003e68                _ZN7AMS5812C2ER7TwoWirehNS_10TransducerE
+                0x00003898      0x368 C:\Users\agva\Desktop\Suction_Pump-v1.1-\Suction_PUMP(v1.1)\ArduinoCore\Debug\libArduinoCore.a(AMS5812.o)
+                0x00003898                _ZN7AMS5812C1ER7TwoWirehNS_10TransducerE
+                0x00003898                _ZN7AMS5812C2ER7TwoWirehNS_10TransducerE
  .text._ZN7AMS581214getPressure_PaEv
-                0x000041d0        0xc C:\Users\agva\Desktop\Suction_Pump-v1.1-\Suction_PUMP(v1.1)\ArduinoCore\Debug\libArduinoCore.a(AMS5812.o)
-                0x000041d0                _ZN7AMS581214getPressure_PaEv
+                0x00003c00        0xc C:\Users\agva\Desktop\Suction_Pump-v1.1-\Suction_PUMP(v1.1)\ArduinoCore\Debug\libArduinoCore.a(AMS5812.o)
+                0x00003c00                _ZN7AMS581214getPressure_PaEv
  .text._ZN7AMS581213getTransducerEv
-                0x000041dc      0x10e C:\Users\agva\Desktop\Suction_Pump-v1.1-\Suction_PUMP(v1.1)\ArduinoCore\Debug\libArduinoCore.a(AMS5812.o)
-                0x000041dc                _ZN7AMS581213getTransducerEv
+                0x00003c0c      0x10e C:\Users\agva\Desktop\Suction_Pump-v1.1-\Suction_PUMP(v1.1)\ArduinoCore\Debug\libArduinoCore.a(AMS5812.o)
+                0x00003c0c                _ZN7AMS581213getTransducerEv
  .text._ZN7AMS58129readBytesEPjS0_
-                0x000042ea       0xc6 C:\Users\agva\Desktop\Suction_Pump-v1.1-\Suction_PUMP(v1.1)\ArduinoCore\Debug\libArduinoCore.a(AMS5812.o)
-                0x000042ea                _ZN7AMS58129readBytesEPjS0_
+                0x00003d1a       0xc6 C:\Users\agva\Desktop\Suction_Pump-v1.1-\Suction_PUMP(v1.1)\ArduinoCore\Debug\libArduinoCore.a(AMS5812.o)
+                0x00003d1a                _ZN7AMS58129readBytesEPjS0_
  .text._ZN7AMS58125beginEv
-                0x000043b0       0x8a C:\Users\agva\Desktop\Suction_Pump-v1.1-\Suction_PUMP(v1.1)\ArduinoCore\Debug\libArduinoCore.a(AMS5812.o)
-                0x000043b0                _ZN7AMS58125beginEv
+                0x00003de0       0x8a C:\Users\agva\Desktop\Suction_Pump-v1.1-\Suction_PUMP(v1.1)\ArduinoCore\Debug\libArduinoCore.a(AMS5812.o)
+                0x00003de0                _ZN7AMS58125beginEv
  .text._ZN7AMS581210readSensorEv
-                0x0000443a      0x148 C:\Users\agva\Desktop\Suction_Pump-v1.1-\Suction_PUMP(v1.1)\ArduinoCore\Debug\libArduinoCore.a(AMS5812.o)
-                0x0000443a                _ZN7AMS581210readSensorEv
+                0x00003e6a      0x148 C:\Users\agva\Desktop\Suction_Pump-v1.1-\Suction_PUMP(v1.1)\ArduinoCore\Debug\libArduinoCore.a(AMS5812.o)
+                0x00003e6a                _ZN7AMS581210readSensorEv
  .text._ZN14TFT_22_ILI9225C2Eaaaah
-                0x00004582       0x4e C:\Users\agva\Desktop\Suction_Pump-v1.1-\Suction_PUMP(v1.1)\ArduinoCore\Debug\libArduinoCore.a(TFT_22_ILI9225.o)
-                0x00004582                _ZN14TFT_22_ILI9225C2Eaaaah
-                0x00004582                _ZN14TFT_22_ILI9225C1Eaaaah
+                0x00003fb2       0x4e C:\Users\agva\Desktop\Suction_Pump-v1.1-\Suction_PUMP(v1.1)\ArduinoCore\Debug\libArduinoCore.a(TFT_22_ILI9225.o)
+                0x00003fb2                _ZN14TFT_22_ILI9225C2Eaaaah
+                0x00003fb2                _ZN14TFT_22_ILI9225C1Eaaaah
  .text._ZN14TFT_22_ILI922518_orientCoordinatesERjS0_
-                0x000045d0       0x86 C:\Users\agva\Desktop\Suction_Pump-v1.1-\Suction_PUMP(v1.1)\ArduinoCore\Debug\libArduinoCore.a(TFT_22_ILI9225.o)
-                0x000045d0                _ZN14TFT_22_ILI922518_orientCoordinatesERjS0_
+                0x00004000       0x86 C:\Users\agva\Desktop\Suction_Pump-v1.1-\Suction_PUMP(v1.1)\ArduinoCore\Debug\libArduinoCore.a(TFT_22_ILI9225.o)
+                0x00004000                _ZN14TFT_22_ILI922518_orientCoordinatesERjS0_
  .text._ZN14TFT_22_ILI922512setBacklightEb
-                0x00004656       0x1e C:\Users\agva\Desktop\Suction_Pump-v1.1-\Suction_PUMP(v1.1)\ArduinoCore\Debug\libArduinoCore.a(TFT_22_ILI9225.o)
-                0x00004656                _ZN14TFT_22_ILI922512setBacklightEb
+                0x00004086       0x1e C:\Users\agva\Desktop\Suction_Pump-v1.1-\Suction_PUMP(v1.1)\ArduinoCore\Debug\libArduinoCore.a(TFT_22_ILI9225.o)
+                0x00004086                _ZN14TFT_22_ILI922512setBacklightEb
  .text._ZN14TFT_22_ILI922514setOrientationEh
-                0x00004674       0x32 C:\Users\agva\Desktop\Suction_Pump-v1.1-\Suction_PUMP(v1.1)\ArduinoCore\Debug\libArduinoCore.a(TFT_22_ILI9225.o)
-                0x00004674                _ZN14TFT_22_ILI922514setOrientationEh
+                0x000040a4       0x32 C:\Users\agva\Desktop\Suction_Pump-v1.1-\Suction_PUMP(v1.1)\ArduinoCore\Debug\libArduinoCore.a(TFT_22_ILI9225.o)
+                0x000040a4                _ZN14TFT_22_ILI922514setOrientationEh
+ .text._ZN14TFT_22_ILI92254maxXEv
+                0x000040d6        0x8 C:\Users\agva\Desktop\Suction_Pump-v1.1-\Suction_PUMP(v1.1)\ArduinoCore\Debug\libArduinoCore.a(TFT_22_ILI9225.o)
+                0x000040d6                _ZN14TFT_22_ILI92254maxXEv
+ .text._ZN14TFT_22_ILI92254maxYEv
+                0x000040de        0x8 C:\Users\agva\Desktop\Suction_Pump-v1.1-\Suction_PUMP(v1.1)\ArduinoCore\Debug\libArduinoCore.a(TFT_22_ILI9225.o)
+                0x000040de                _ZN14TFT_22_ILI92254maxYEv
  .text._ZN14TFT_22_ILI922515_writeCommand16Ej
-                0x000046a6       0x94 C:\Users\agva\Desktop\Suction_Pump-v1.1-\Suction_PUMP(v1.1)\ArduinoCore\Debug\libArduinoCore.a(TFT_22_ILI9225.o)
-                0x000046a6                _ZN14TFT_22_ILI922515_writeCommand16Ej
+                0x000040e6       0x94 C:\Users\agva\Desktop\Suction_Pump-v1.1-\Suction_PUMP(v1.1)\ArduinoCore\Debug\libArduinoCore.a(TFT_22_ILI9225.o)
+                0x000040e6                _ZN14TFT_22_ILI922515_writeCommand16Ej
  .text._ZN14TFT_22_ILI922512_writeData16Ej
-                0x0000473a       0x92 C:\Users\agva\Desktop\Suction_Pump-v1.1-\Suction_PUMP(v1.1)\ArduinoCore\Debug\libArduinoCore.a(TFT_22_ILI9225.o)
-                0x0000473a                _ZN14TFT_22_ILI922512_writeData16Ej
+                0x0000417a       0x92 C:\Users\agva\Desktop\Suction_Pump-v1.1-\Suction_PUMP(v1.1)\ArduinoCore\Debug\libArduinoCore.a(TFT_22_ILI9225.o)
+                0x0000417a                _ZN14TFT_22_ILI922512_writeData16Ej
  .text._ZN14TFT_22_ILI922514_writeRegisterEjj
-                0x000047cc       0x20 C:\Users\agva\Desktop\Suction_Pump-v1.1-\Suction_PUMP(v1.1)\ArduinoCore\Debug\libArduinoCore.a(TFT_22_ILI9225.o)
-                0x000047cc                _ZN14TFT_22_ILI922514_writeRegisterEjj
+                0x0000420c       0x20 C:\Users\agva\Desktop\Suction_Pump-v1.1-\Suction_PUMP(v1.1)\ArduinoCore\Debug\libArduinoCore.a(TFT_22_ILI9225.o)
+                0x0000420c                _ZN14TFT_22_ILI922514_writeRegisterEjj
  .text._ZN14TFT_22_ILI922512_resetWindowEv
-                0x000047ec       0x40 C:\Users\agva\Desktop\Suction_Pump-v1.1-\Suction_PUMP(v1.1)\ArduinoCore\Debug\libArduinoCore.a(TFT_22_ILI9225.o)
-                0x000047ec                _ZN14TFT_22_ILI922512_resetWindowEv
+                0x0000422c       0x40 C:\Users\agva\Desktop\Suction_Pump-v1.1-\Suction_PUMP(v1.1)\ArduinoCore\Debug\libArduinoCore.a(TFT_22_ILI9225.o)
+                0x0000422c                _ZN14TFT_22_ILI922512_resetWindowEv
  .text._ZN14TFT_22_ILI92257setFontEPhb
-                0x0000482c       0x56 C:\Users\agva\Desktop\Suction_Pump-v1.1-\Suction_PUMP(v1.1)\ArduinoCore\Debug\libArduinoCore.a(TFT_22_ILI9225.o)
-                0x0000482c                _ZN14TFT_22_ILI92257setFontEPhb
+                0x0000426c       0x56 C:\Users\agva\Desktop\Suction_Pump-v1.1-\Suction_PUMP(v1.1)\ArduinoCore\Debug\libArduinoCore.a(TFT_22_ILI9225.o)
+                0x0000426c                _ZN14TFT_22_ILI92257setFontEPhb
  .text._ZN14TFT_22_ILI922510startWriteEv
-                0x00004882       0x7e C:\Users\agva\Desktop\Suction_Pump-v1.1-\Suction_PUMP(v1.1)\ArduinoCore\Debug\libArduinoCore.a(TFT_22_ILI9225.o)
-                0x00004882                _ZN14TFT_22_ILI922510startWriteEv
+                0x000042c2       0x7e C:\Users\agva\Desktop\Suction_Pump-v1.1-\Suction_PUMP(v1.1)\ArduinoCore\Debug\libArduinoCore.a(TFT_22_ILI9225.o)
+                0x000042c2                _ZN14TFT_22_ILI922510startWriteEv
  .text._ZN14TFT_22_ILI92258endWriteEv
-                0x00004900       0x60 C:\Users\agva\Desktop\Suction_Pump-v1.1-\Suction_PUMP(v1.1)\ArduinoCore\Debug\libArduinoCore.a(TFT_22_ILI9225.o)
-                0x00004900                _ZN14TFT_22_ILI92258endWriteEv
+                0x00004340       0x60 C:\Users\agva\Desktop\Suction_Pump-v1.1-\Suction_PUMP(v1.1)\ArduinoCore\Debug\libArduinoCore.a(TFT_22_ILI9225.o)
+                0x00004340                _ZN14TFT_22_ILI92258endWriteEv
  .text._ZN14TFT_22_ILI922510_setWindowEjjjj13autoIncMode_t
-                0x00004960      0x2f2 C:\Users\agva\Desktop\Suction_Pump-v1.1-\Suction_PUMP(v1.1)\ArduinoCore\Debug\libArduinoCore.a(TFT_22_ILI9225.o)
-                0x00004960                _ZN14TFT_22_ILI922510_setWindowEjjjj13autoIncMode_t
+                0x000043a0      0x2f2 C:\Users\agva\Desktop\Suction_Pump-v1.1-\Suction_PUMP(v1.1)\ArduinoCore\Debug\libArduinoCore.a(TFT_22_ILI9225.o)
+                0x000043a0                _ZN14TFT_22_ILI922510_setWindowEjjjj13autoIncMode_t
  .text._ZN14TFT_22_ILI922510_setWindowEjjjj
-                0x00004c52       0x16 C:\Users\agva\Desktop\Suction_Pump-v1.1-\Suction_PUMP(v1.1)\ArduinoCore\Debug\libArduinoCore.a(TFT_22_ILI9225.o)
-                0x00004c52                _ZN14TFT_22_ILI922510_setWindowEjjjj
+                0x00004692       0x16 C:\Users\agva\Desktop\Suction_Pump-v1.1-\Suction_PUMP(v1.1)\ArduinoCore\Debug\libArduinoCore.a(TFT_22_ILI9225.o)
+                0x00004692                _ZN14TFT_22_ILI922510_setWindowEjjjj
  .text._ZN14TFT_22_ILI922513fillRectangleEjjjjj
-                0x00004c68       0x8c C:\Users\agva\Desktop\Suction_Pump-v1.1-\Suction_PUMP(v1.1)\ArduinoCore\Debug\libArduinoCore.a(TFT_22_ILI9225.o)
-                0x00004c68                _ZN14TFT_22_ILI922513fillRectangleEjjjjj
+                0x000046a8       0x8c C:\Users\agva\Desktop\Suction_Pump-v1.1-\Suction_PUMP(v1.1)\ArduinoCore\Debug\libArduinoCore.a(TFT_22_ILI9225.o)
+                0x000046a8                _ZN14TFT_22_ILI922513fillRectangleEjjjjj
  .text._ZN14TFT_22_ILI92255clearEv
-                0x00004cf4       0x5c C:\Users\agva\Desktop\Suction_Pump-v1.1-\Suction_PUMP(v1.1)\ArduinoCore\Debug\libArduinoCore.a(TFT_22_ILI9225.o)
-                0x00004cf4                _ZN14TFT_22_ILI92255clearEv
+                0x00004734       0x5c C:\Users\agva\Desktop\Suction_Pump-v1.1-\Suction_PUMP(v1.1)\ArduinoCore\Debug\libArduinoCore.a(TFT_22_ILI9225.o)
+                0x00004734                _ZN14TFT_22_ILI92255clearEv
  .text._ZN14TFT_22_ILI92255beginEv
-                0x00004d50      0x484 C:\Users\agva\Desktop\Suction_Pump-v1.1-\Suction_PUMP(v1.1)\ArduinoCore\Debug\libArduinoCore.a(TFT_22_ILI9225.o)
-                0x00004d50                _ZN14TFT_22_ILI92255beginEv
+                0x00004790      0x484 C:\Users\agva\Desktop\Suction_Pump-v1.1-\Suction_PUMP(v1.1)\ArduinoCore\Debug\libArduinoCore.a(TFT_22_ILI9225.o)
+                0x00004790                _ZN14TFT_22_ILI92255beginEv
  .text._ZN14TFT_22_ILI92259drawPixelEjjj
-                0x000051d4       0x9a C:\Users\agva\Desktop\Suction_Pump-v1.1-\Suction_PUMP(v1.1)\ArduinoCore\Debug\libArduinoCore.a(TFT_22_ILI9225.o)
-                0x000051d4                _ZN14TFT_22_ILI92259drawPixelEjjj
+                0x00004c14       0x9a C:\Users\agva\Desktop\Suction_Pump-v1.1-\Suction_PUMP(v1.1)\ArduinoCore\Debug\libArduinoCore.a(TFT_22_ILI9225.o)
+                0x00004c14                _ZN14TFT_22_ILI92259drawPixelEjjj
  .text._ZN14TFT_22_ILI92258drawLineEjjjjj
-                0x0000526e      0x162 C:\Users\agva\Desktop\Suction_Pump-v1.1-\Suction_PUMP(v1.1)\ArduinoCore\Debug\libArduinoCore.a(TFT_22_ILI9225.o)
-                0x0000526e                _ZN14TFT_22_ILI92258drawLineEjjjjj
+                0x00004cae      0x162 C:\Users\agva\Desktop\Suction_Pump-v1.1-\Suction_PUMP(v1.1)\ArduinoCore\Debug\libArduinoCore.a(TFT_22_ILI9225.o)
+                0x00004cae                _ZN14TFT_22_ILI92258drawLineEjjjjj
  .text._ZN14TFT_22_ILI922513drawRectangleEjjjjj
-                0x000053d0       0x88 C:\Users\agva\Desktop\Suction_Pump-v1.1-\Suction_PUMP(v1.1)\ArduinoCore\Debug\libArduinoCore.a(TFT_22_ILI9225.o)
-                0x000053d0                _ZN14TFT_22_ILI922513drawRectangleEjjjjj
+                0x00004e10       0x88 C:\Users\agva\Desktop\Suction_Pump-v1.1-\Suction_PUMP(v1.1)\ArduinoCore\Debug\libArduinoCore.a(TFT_22_ILI9225.o)
+                0x00004e10                _ZN14TFT_22_ILI922513drawRectangleEjjjjj
+ .text._ZN14TFT_22_ILI92258drawCharEjjjj
+                0x00004e98      0x20c C:\Users\agva\Desktop\Suction_Pump-v1.1-\Suction_PUMP(v1.1)\ArduinoCore\Debug\libArduinoCore.a(TFT_22_ILI9225.o)
+                0x00004e98                _ZN14TFT_22_ILI92258drawCharEjjjj
+ .text._ZN14TFT_22_ILI92258drawTextEjj6Stringj
+                0x000050a4       0x74 C:\Users\agva\Desktop\Suction_Pump-v1.1-\Suction_PUMP(v1.1)\ArduinoCore\Debug\libArduinoCore.a(TFT_22_ILI9225.o)
+                0x000050a4                _ZN14TFT_22_ILI92258drawTextEjj6Stringj
  .text._ZN14TFT_22_ILI922511_drawBitmapEiiPKhiijjbbb
-                0x00005458      0x316 C:\Users\agva\Desktop\Suction_Pump-v1.1-\Suction_PUMP(v1.1)\ArduinoCore\Debug\libArduinoCore.a(TFT_22_ILI9225.o)
-                0x00005458                _ZN14TFT_22_ILI922511_drawBitmapEiiPKhiijjbbb
+                0x00005118      0x316 C:\Users\agva\Desktop\Suction_Pump-v1.1-\Suction_PUMP(v1.1)\ArduinoCore\Debug\libArduinoCore.a(TFT_22_ILI9225.o)
+                0x00005118                _ZN14TFT_22_ILI922511_drawBitmapEiiPKhiijjbbb
  .text._ZN14TFT_22_ILI922510drawBitmapEiiPKhiij
-                0x0000576e       0x3c C:\Users\agva\Desktop\Suction_Pump-v1.1-\Suction_PUMP(v1.1)\ArduinoCore\Debug\libArduinoCore.a(TFT_22_ILI9225.o)
-                0x0000576e                _ZN14TFT_22_ILI922510drawBitmapEiiPKhiij
+                0x0000542e       0x3c C:\Users\agva\Desktop\Suction_Pump-v1.1-\Suction_PUMP(v1.1)\ArduinoCore\Debug\libArduinoCore.a(TFT_22_ILI9225.o)
+                0x0000542e                _ZN14TFT_22_ILI922510drawBitmapEiiPKhiij
  .text._ZN14TFT_22_ILI922510setGFXFontEPK7GFXfont
-                0x000057aa        0xc C:\Users\agva\Desktop\Suction_Pump-v1.1-\Suction_PUMP(v1.1)\ArduinoCore\Debug\libArduinoCore.a(TFT_22_ILI9225.o)
-                0x000057aa                _ZN14TFT_22_ILI922510setGFXFontEPK7GFXfont
+                0x0000546a        0xc C:\Users\agva\Desktop\Suction_Pump-v1.1-\Suction_PUMP(v1.1)\ArduinoCore\Debug\libArduinoCore.a(TFT_22_ILI9225.o)
+                0x0000546a                _ZN14TFT_22_ILI922510setGFXFontEPK7GFXfont
  .text._ZN14TFT_22_ILI922511drawGFXCharEiihj
-                0x000057b6      0x13c C:\Users\agva\Desktop\Suction_Pump-v1.1-\Suction_PUMP(v1.1)\ArduinoCore\Debug\libArduinoCore.a(TFT_22_ILI9225.o)
-                0x000057b6                _ZN14TFT_22_ILI922511drawGFXCharEiihj
+                0x00005476      0x13c C:\Users\agva\Desktop\Suction_Pump-v1.1-\Suction_PUMP(v1.1)\ArduinoCore\Debug\libArduinoCore.a(TFT_22_ILI9225.o)
+                0x00005476                _ZN14TFT_22_ILI922511drawGFXCharEiihj
  .text._ZN14TFT_22_ILI922511drawGFXTextEii6Stringj
-                0x000058f2       0x7e C:\Users\agva\Desktop\Suction_Pump-v1.1-\Suction_PUMP(v1.1)\ArduinoCore\Debug\libArduinoCore.a(TFT_22_ILI9225.o)
-                0x000058f2                _ZN14TFT_22_ILI922511drawGFXTextEii6Stringj
+                0x000055b2       0x7e C:\Users\agva\Desktop\Suction_Pump-v1.1-\Suction_PUMP(v1.1)\ArduinoCore\Debug\libArduinoCore.a(TFT_22_ILI9225.o)
+                0x000055b2                _ZN14TFT_22_ILI922511drawGFXTextEii6Stringj
  .text._ZN7TwoWire9availableEv
-                0x00005970       0x10 C:\Users\agva\Desktop\Suction_Pump-v1.1-\Suction_PUMP(v1.1)\ArduinoCore\Debug\libArduinoCore.a(Wire.o)
-                0x00005970                _ZN7TwoWire9availableEv
+                0x00005630       0x10 C:\Users\agva\Desktop\Suction_Pump-v1.1-\Suction_PUMP(v1.1)\ArduinoCore\Debug\libArduinoCore.a(Wire.o)
+                0x00005630                _ZN7TwoWire9availableEv
  .text._ZN7TwoWire4readEv
-                0x00005980       0x28 C:\Users\agva\Desktop\Suction_Pump-v1.1-\Suction_PUMP(v1.1)\ArduinoCore\Debug\libArduinoCore.a(Wire.o)
-                0x00005980                _ZN7TwoWire4readEv
+                0x00005640       0x28 C:\Users\agva\Desktop\Suction_Pump-v1.1-\Suction_PUMP(v1.1)\ArduinoCore\Debug\libArduinoCore.a(Wire.o)
+                0x00005640                _ZN7TwoWire4readEv
  .text._ZN7TwoWire4peekEv
-                0x000059a8       0x1e C:\Users\agva\Desktop\Suction_Pump-v1.1-\Suction_PUMP(v1.1)\ArduinoCore\Debug\libArduinoCore.a(Wire.o)
-                0x000059a8                _ZN7TwoWire4peekEv
+                0x00005668       0x1e C:\Users\agva\Desktop\Suction_Pump-v1.1-\Suction_PUMP(v1.1)\ArduinoCore\Debug\libArduinoCore.a(Wire.o)
+                0x00005668                _ZN7TwoWire4peekEv
  .text._ZN7TwoWire5flushEv
-                0x000059c6        0x2 C:\Users\agva\Desktop\Suction_Pump-v1.1-\Suction_PUMP(v1.1)\ArduinoCore\Debug\libArduinoCore.a(Wire.o)
-                0x000059c6                _ZN7TwoWire5flushEv
+                0x00005686        0x2 C:\Users\agva\Desktop\Suction_Pump-v1.1-\Suction_PUMP(v1.1)\ArduinoCore\Debug\libArduinoCore.a(Wire.o)
+                0x00005686                _ZN7TwoWire5flushEv
  .text._ZN7TwoWire16onReceiveServiceEPhi
-                0x000059c8       0x54 C:\Users\agva\Desktop\Suction_Pump-v1.1-\Suction_PUMP(v1.1)\ArduinoCore\Debug\libArduinoCore.a(Wire.o)
-                0x000059c8                _ZN7TwoWire16onReceiveServiceEPhi
+                0x00005688       0x54 C:\Users\agva\Desktop\Suction_Pump-v1.1-\Suction_PUMP(v1.1)\ArduinoCore\Debug\libArduinoCore.a(Wire.o)
+                0x00005688                _ZN7TwoWire16onReceiveServiceEPhi
  .text._ZN7TwoWire16onRequestServiceEv
-                0x00005a1c       0x18 C:\Users\agva\Desktop\Suction_Pump-v1.1-\Suction_PUMP(v1.1)\ArduinoCore\Debug\libArduinoCore.a(Wire.o)
-                0x00005a1c                _ZN7TwoWire16onRequestServiceEv
+                0x000056dc       0x18 C:\Users\agva\Desktop\Suction_Pump-v1.1-\Suction_PUMP(v1.1)\ArduinoCore\Debug\libArduinoCore.a(Wire.o)
+                0x000056dc                _ZN7TwoWire16onRequestServiceEv
  .text._ZN7TwoWire5writeEPKhj
-                0x00005a34       0x5a C:\Users\agva\Desktop\Suction_Pump-v1.1-\Suction_PUMP(v1.1)\ArduinoCore\Debug\libArduinoCore.a(Wire.o)
-                0x00005a34                _ZN7TwoWire5writeEPKhj
+                0x000056f4       0x5a C:\Users\agva\Desktop\Suction_Pump-v1.1-\Suction_PUMP(v1.1)\ArduinoCore\Debug\libArduinoCore.a(Wire.o)
+                0x000056f4                _ZN7TwoWire5writeEPKhj
  .text._ZN7TwoWire5writeEh
-                0x00005a8e       0x5e C:\Users\agva\Desktop\Suction_Pump-v1.1-\Suction_PUMP(v1.1)\ArduinoCore\Debug\libArduinoCore.a(Wire.o)
-                0x00005a8e                _ZN7TwoWire5writeEh
+                0x0000574e       0x5e C:\Users\agva\Desktop\Suction_Pump-v1.1-\Suction_PUMP(v1.1)\ArduinoCore\Debug\libArduinoCore.a(Wire.o)
+                0x0000574e                _ZN7TwoWire5writeEh
  .text._ZN7TwoWireC2Ev
-                0x00005aec       0x20 C:\Users\agva\Desktop\Suction_Pump-v1.1-\Suction_PUMP(v1.1)\ArduinoCore\Debug\libArduinoCore.a(Wire.o)
-                0x00005aec                _ZN7TwoWireC1Ev
-                0x00005aec                _ZN7TwoWireC2Ev
+                0x000057ac       0x20 C:\Users\agva\Desktop\Suction_Pump-v1.1-\Suction_PUMP(v1.1)\ArduinoCore\Debug\libArduinoCore.a(Wire.o)
+                0x000057ac                _ZN7TwoWireC1Ev
+                0x000057ac                _ZN7TwoWireC2Ev
  .text._ZN7TwoWire5beginEv
-                0x00005b0c       0x24 C:\Users\agva\Desktop\Suction_Pump-v1.1-\Suction_PUMP(v1.1)\ArduinoCore\Debug\libArduinoCore.a(Wire.o)
-                0x00005b0c                _ZN7TwoWire5beginEv
+                0x000057cc       0x24 C:\Users\agva\Desktop\Suction_Pump-v1.1-\Suction_PUMP(v1.1)\ArduinoCore\Debug\libArduinoCore.a(Wire.o)
+                0x000057cc                _ZN7TwoWire5beginEv
  .text._ZN7TwoWire8setClockEm
-                0x00005b30        0x8 C:\Users\agva\Desktop\Suction_Pump-v1.1-\Suction_PUMP(v1.1)\ArduinoCore\Debug\libArduinoCore.a(Wire.o)
-                0x00005b30                _ZN7TwoWire8setClockEm
+                0x000057f0        0x8 C:\Users\agva\Desktop\Suction_Pump-v1.1-\Suction_PUMP(v1.1)\ArduinoCore\Debug\libArduinoCore.a(Wire.o)
+                0x000057f0                _ZN7TwoWire8setClockEm
  .text._ZN7TwoWire17beginTransmissionEh
-                0x00005b38       0x14 C:\Users\agva\Desktop\Suction_Pump-v1.1-\Suction_PUMP(v1.1)\ArduinoCore\Debug\libArduinoCore.a(Wire.o)
-                0x00005b38                _ZN7TwoWire17beginTransmissionEh
+                0x000057f8       0x14 C:\Users\agva\Desktop\Suction_Pump-v1.1-\Suction_PUMP(v1.1)\ArduinoCore\Debug\libArduinoCore.a(Wire.o)
+                0x000057f8                _ZN7TwoWire17beginTransmissionEh
  .text._ZN7TwoWire15endTransmissionEh
-                0x00005b4c       0x26 C:\Users\agva\Desktop\Suction_Pump-v1.1-\Suction_PUMP(v1.1)\ArduinoCore\Debug\libArduinoCore.a(Wire.o)
-                0x00005b4c                _ZN7TwoWire15endTransmissionEh
+                0x0000580c       0x26 C:\Users\agva\Desktop\Suction_Pump-v1.1-\Suction_PUMP(v1.1)\ArduinoCore\Debug\libArduinoCore.a(Wire.o)
+                0x0000580c                _ZN7TwoWire15endTransmissionEh
  .text._ZN7TwoWire11requestFromEhhmhh
-                0x00005b72       0xa8 C:\Users\agva\Desktop\Suction_Pump-v1.1-\Suction_PUMP(v1.1)\ArduinoCore\Debug\libArduinoCore.a(Wire.o)
-                0x00005b72                _ZN7TwoWire11requestFromEhhmhh
+                0x00005832       0xa8 C:\Users\agva\Desktop\Suction_Pump-v1.1-\Suction_PUMP(v1.1)\ArduinoCore\Debug\libArduinoCore.a(Wire.o)
+                0x00005832                _ZN7TwoWire11requestFromEhhmhh
  .text._ZN7TwoWire11requestFromEhhh
-                0x00005c1a       0x20 C:\Users\agva\Desktop\Suction_Pump-v1.1-\Suction_PUMP(v1.1)\ArduinoCore\Debug\libArduinoCore.a(Wire.o)
-                0x00005c1a                _ZN7TwoWire11requestFromEhhh
+                0x000058da       0x20 C:\Users\agva\Desktop\Suction_Pump-v1.1-\Suction_PUMP(v1.1)\ArduinoCore\Debug\libArduinoCore.a(Wire.o)
+                0x000058da                _ZN7TwoWire11requestFromEhhh
  .text._ZN7TwoWire11requestFromEhh
-                0x00005c3a        0x6 C:\Users\agva\Desktop\Suction_Pump-v1.1-\Suction_PUMP(v1.1)\ArduinoCore\Debug\libArduinoCore.a(Wire.o)
-                0x00005c3a                _ZN7TwoWire11requestFromEhh
+                0x000058fa        0x6 C:\Users\agva\Desktop\Suction_Pump-v1.1-\Suction_PUMP(v1.1)\ArduinoCore\Debug\libArduinoCore.a(Wire.o)
+                0x000058fa                _ZN7TwoWire11requestFromEhh
  .text.startup._GLOBAL__sub_I__ZN7TwoWire8rxBufferE
-                0x00005c40        0x8 C:\Users\agva\Desktop\Suction_Pump-v1.1-\Suction_PUMP(v1.1)\ArduinoCore\Debug\libArduinoCore.a(Wire.o)
- .text.__empty  0x00005c48        0x2 C:\Users\agva\Desktop\Suction_Pump-v1.1-\Suction_PUMP(v1.1)\ArduinoCore\Debug\libArduinoCore.a(hooks.o)
-                0x00005c48                yield
+                0x00005900        0x8 C:\Users\agva\Desktop\Suction_Pump-v1.1-\Suction_PUMP(v1.1)\ArduinoCore\Debug\libArduinoCore.a(Wire.o)
+ .text.__empty  0x00005908        0x2 C:\Users\agva\Desktop\Suction_Pump-v1.1-\Suction_PUMP(v1.1)\ArduinoCore\Debug\libArduinoCore.a(hooks.o)
+                0x00005908                yield
  .text.analogWrite
-                0x00005c4a       0xbe C:\Users\agva\Desktop\Suction_Pump-v1.1-\Suction_PUMP(v1.1)\ArduinoCore\Debug\libArduinoCore.a(wiring_analog.o)
-                0x00005c4a                analogWrite
+                0x0000590a       0xbe C:\Users\agva\Desktop\Suction_Pump-v1.1-\Suction_PUMP(v1.1)\ArduinoCore\Debug\libArduinoCore.a(wiring_analog.o)
+                0x0000590a                analogWrite
  .text.turnOffPWM
-                0x00005d08       0x52 C:\Users\agva\Desktop\Suction_Pump-v1.1-\Suction_PUMP(v1.1)\ArduinoCore\Debug\libArduinoCore.a(wiring_digital.o)
- .text.pinMode  0x00005d5a       0x78 C:\Users\agva\Desktop\Suction_Pump-v1.1-\Suction_PUMP(v1.1)\ArduinoCore\Debug\libArduinoCore.a(wiring_digital.o)
-                0x00005d5a                pinMode
+                0x000059c8       0x52 C:\Users\agva\Desktop\Suction_Pump-v1.1-\Suction_PUMP(v1.1)\ArduinoCore\Debug\libArduinoCore.a(wiring_digital.o)
+ .text.pinMode  0x00005a1a       0x78 C:\Users\agva\Desktop\Suction_Pump-v1.1-\Suction_PUMP(v1.1)\ArduinoCore\Debug\libArduinoCore.a(wiring_digital.o)
+                0x00005a1a                pinMode
  .text.digitalWrite
-                0x00005dd2       0x5e C:\Users\agva\Desktop\Suction_Pump-v1.1-\Suction_PUMP(v1.1)\ArduinoCore\Debug\libArduinoCore.a(wiring_digital.o)
-                0x00005dd2                digitalWrite
+                0x00005a92       0x5e C:\Users\agva\Desktop\Suction_Pump-v1.1-\Suction_PUMP(v1.1)\ArduinoCore\Debug\libArduinoCore.a(wiring_digital.o)
+                0x00005a92                digitalWrite
  .text._ZN8SPIClass5beginEv
-                0x00005e30       0x6c C:\Users\agva\Desktop\Suction_Pump-v1.1-\Suction_PUMP(v1.1)\ArduinoCore\Debug\libArduinoCore.a(SPI.o)
-                0x00005e30                _ZN8SPIClass5beginEv
+                0x00005af0       0x6c C:\Users\agva\Desktop\Suction_Pump-v1.1-\Suction_PUMP(v1.1)\ArduinoCore\Debug\libArduinoCore.a(SPI.o)
+                0x00005af0                _ZN8SPIClass5beginEv
  .text.twi_init
-                0x00005e9c       0x3c C:\Users\agva\Desktop\Suction_Pump-v1.1-\Suction_PUMP(v1.1)\ArduinoCore\Debug\libArduinoCore.a(twi.o)
-                0x00005e9c                twi_init
+                0x00005b5c       0x3c C:\Users\agva\Desktop\Suction_Pump-v1.1-\Suction_PUMP(v1.1)\ArduinoCore\Debug\libArduinoCore.a(twi.o)
+                0x00005b5c                twi_init
  .text.twi_disable
-                0x00005ed8       0x1a C:\Users\agva\Desktop\Suction_Pump-v1.1-\Suction_PUMP(v1.1)\ArduinoCore\Debug\libArduinoCore.a(twi.o)
-                0x00005ed8                twi_disable
+                0x00005b98       0x1a C:\Users\agva\Desktop\Suction_Pump-v1.1-\Suction_PUMP(v1.1)\ArduinoCore\Debug\libArduinoCore.a(twi.o)
+                0x00005b98                twi_disable
  .text.twi_setFrequency
-                0x00005ef2       0x28 C:\Users\agva\Desktop\Suction_Pump-v1.1-\Suction_PUMP(v1.1)\ArduinoCore\Debug\libArduinoCore.a(twi.o)
-                0x00005ef2                twi_setFrequency
+                0x00005bb2       0x28 C:\Users\agva\Desktop\Suction_Pump-v1.1-\Suction_PUMP(v1.1)\ArduinoCore\Debug\libArduinoCore.a(twi.o)
+                0x00005bb2                twi_setFrequency
  .text.twi_transmit
-                0x00005f1a       0x50 C:\Users\agva\Desktop\Suction_Pump-v1.1-\Suction_PUMP(v1.1)\ArduinoCore\Debug\libArduinoCore.a(twi.o)
-                0x00005f1a                twi_transmit
+                0x00005bda       0x50 C:\Users\agva\Desktop\Suction_Pump-v1.1-\Suction_PUMP(v1.1)\ArduinoCore\Debug\libArduinoCore.a(twi.o)
+                0x00005bda                twi_transmit
  .text.twi_attachSlaveRxEvent
-                0x00005f6a        0xa C:\Users\agva\Desktop\Suction_Pump-v1.1-\Suction_PUMP(v1.1)\ArduinoCore\Debug\libArduinoCore.a(twi.o)
-                0x00005f6a                twi_attachSlaveRxEvent
+                0x00005c2a        0xa C:\Users\agva\Desktop\Suction_Pump-v1.1-\Suction_PUMP(v1.1)\ArduinoCore\Debug\libArduinoCore.a(twi.o)
+                0x00005c2a                twi_attachSlaveRxEvent
  .text.twi_attachSlaveTxEvent
-                0x00005f74        0xa C:\Users\agva\Desktop\Suction_Pump-v1.1-\Suction_PUMP(v1.1)\ArduinoCore\Debug\libArduinoCore.a(twi.o)
-                0x00005f74                twi_attachSlaveTxEvent
+                0x00005c34        0xa C:\Users\agva\Desktop\Suction_Pump-v1.1-\Suction_PUMP(v1.1)\ArduinoCore\Debug\libArduinoCore.a(twi.o)
+                0x00005c34                twi_attachSlaveTxEvent
  .text.twi_releaseBus
-                0x00005f7e        0xc C:\Users\agva\Desktop\Suction_Pump-v1.1-\Suction_PUMP(v1.1)\ArduinoCore\Debug\libArduinoCore.a(twi.o)
-                0x00005f7e                twi_releaseBus
+                0x00005c3e        0xc C:\Users\agva\Desktop\Suction_Pump-v1.1-\Suction_PUMP(v1.1)\ArduinoCore\Debug\libArduinoCore.a(twi.o)
+                0x00005c3e                twi_releaseBus
  .text.twi_handleTimeout
-                0x00005f8a       0x2c C:\Users\agva\Desktop\Suction_Pump-v1.1-\Suction_PUMP(v1.1)\ArduinoCore\Debug\libArduinoCore.a(twi.o)
-                0x00005f8a                twi_handleTimeout
+                0x00005c4a       0x2c C:\Users\agva\Desktop\Suction_Pump-v1.1-\Suction_PUMP(v1.1)\ArduinoCore\Debug\libArduinoCore.a(twi.o)
+                0x00005c4a                twi_handleTimeout
  .text.twi_readFrom
-                0x00005fb6      0x1d2 C:\Users\agva\Desktop\Suction_Pump-v1.1-\Suction_PUMP(v1.1)\ArduinoCore\Debug\libArduinoCore.a(twi.o)
-                0x00005fb6                twi_readFrom
+                0x00005c76      0x1d2 C:\Users\agva\Desktop\Suction_Pump-v1.1-\Suction_PUMP(v1.1)\ArduinoCore\Debug\libArduinoCore.a(twi.o)
+                0x00005c76                twi_readFrom
  .text.twi_writeTo
-                0x00006188      0x1e0 C:\Users\agva\Desktop\Suction_Pump-v1.1-\Suction_PUMP(v1.1)\ArduinoCore\Debug\libArduinoCore.a(twi.o)
-                0x00006188                twi_writeTo
+                0x00005e48      0x1e0 C:\Users\agva\Desktop\Suction_Pump-v1.1-\Suction_PUMP(v1.1)\ArduinoCore\Debug\libArduinoCore.a(twi.o)
+                0x00005e48                twi_writeTo
  .text.twi_stop
-                0x00006368       0x70 C:\Users\agva\Desktop\Suction_Pump-v1.1-\Suction_PUMP(v1.1)\ArduinoCore\Debug\libArduinoCore.a(twi.o)
-                0x00006368                twi_stop
+                0x00006028       0x70 C:\Users\agva\Desktop\Suction_Pump-v1.1-\Suction_PUMP(v1.1)\ArduinoCore\Debug\libArduinoCore.a(twi.o)
+                0x00006028                twi_stop
  .text.__vector_24
-                0x000063d8      0x25a C:\Users\agva\Desktop\Suction_Pump-v1.1-\Suction_PUMP(v1.1)\ArduinoCore\Debug\libArduinoCore.a(twi.o)
-                0x000063d8                __vector_24
+                0x00006098      0x25a C:\Users\agva\Desktop\Suction_Pump-v1.1-\Suction_PUMP(v1.1)\ArduinoCore\Debug\libArduinoCore.a(twi.o)
+                0x00006098                __vector_24
  .text.avr-libc.fplib
-                0x00006632        0xa c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libm.a(cmpsf2.o)
-                0x00006632                __nesf2
-                0x00006632                __eqsf2
-                0x00006632                __cmpsf2
-                0x00006632                __ltsf2
-                0x00006632                __lesf2
+                0x000062f2        0xa c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libm.a(cmpsf2.o)
+                0x000062f2                __nesf2
+                0x000062f2                __eqsf2
+                0x000062f2                __cmpsf2
+                0x000062f2                __ltsf2
+                0x000062f2                __lesf2
  .text.avr-libc.fplib
-                0x0000663c        0x8 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libm.a(mulsf3.o)
-                0x0000663c                __mulsf3
+                0x000062fc        0x8 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libm.a(mulsf3.o)
+                0x000062fc                __mulsf3
  .text.avr-libc.fplib
-                0x00006644       0xd2 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libm.a(mulsf3x.o)
-                0x00006662                __mulsf3x
-                0x00006668                __mulsf3_pse
+                0x00006304       0xd2 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libm.a(mulsf3x.o)
+                0x00006322                __mulsf3x
+                0x00006328                __mulsf3_pse
  .text.avr-libc.fplib
-                0x00006716        0xa c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libm.a(unordsf2.o)
-                0x00006716                __unordsf2
+                0x000063d6        0xa c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libm.a(unordsf2.o)
+                0x000063d6                __unordsf2
  .text.libgcc.mul
-                0x00006720       0x20 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_mulsi3.o)
-                0x00006720                __mulsi3
+                0x000063e0       0x20 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_mulsi3.o)
+                0x000063e0                __mulsi3
  .text.libgcc.div
-                0x00006740       0x28 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_divmodhi4.o)
-                0x00006740                _div
-                0x00006740                __divmodhi4
+                0x00006400       0x28 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_divmodhi4.o)
+                0x00006400                _div
+                0x00006400                __divmodhi4
  .text.libgcc.div
-                0x00006768       0x44 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_udivmodsi4.o)
-                0x00006768                __udivmodsi4
+                0x00006428       0x44 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_udivmodsi4.o)
+                0x00006428                __udivmodsi4
  .text.libgcc.div
-                0x000067ac       0x2e c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_divmodsi4.o)
-                0x000067ac                __divmodsi4
+                0x0000646c       0x2e c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_divmodsi4.o)
+                0x0000646c                __divmodsi4
  .text.libgcc.div
-                0x000067da       0x10 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_negsi2.o)
-                0x000067da                __negsi2
- .text.libgcc   0x000067ea        0xc c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_tablejump2.o)
-                0x000067ea                __tablejump2__
+                0x0000649a       0x10 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_negsi2.o)
+                0x0000649a                __negsi2
+ .text.libgcc   0x000064aa        0xc c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_tablejump2.o)
+                0x000064aa                __tablejump2__
  .text.libgcc.mul
-                0x000067f6       0x16 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_muluhisi3.o)
-                0x000067f6                __muluhisi3
+                0x000064b6       0x16 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_muluhisi3.o)
+                0x000064b6                __muluhisi3
  .text.libgcc.div
-                0x0000680c       0x28 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_udivmodhi4.o)
-                0x0000680c                __udivmodhi4
+                0x000064cc       0x28 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_udivmodhi4.o)
+                0x000064cc                __udivmodhi4
  .text.libgcc.mul
-                0x00006834       0x1e c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_umulhisi3.o)
-                0x00006834                __umulhisi3
+                0x000064f4       0x1e c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_umulhisi3.o)
+                0x000064f4                __umulhisi3
  .text.avr-libc
-                0x00006852       0x40 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libc.a(dtostrf.o)
-                0x00006852                dtostrf
+                0x00006512       0x40 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libc.a(dtostrf.o)
+                0x00006512                dtostrf
  .text.avr-libc
-                0x00006892      0x242 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libc.a(malloc.o)
-                0x00006892                malloc
-                0x000069c2                free
+                0x00006552      0x242 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libc.a(malloc.o)
+                0x00006552                malloc
+                0x00006682                free
  .text.avr-libc
-                0x00006ad4      0x18c c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libc.a(realloc.o)
-                0x00006ad4                realloc
+                0x00006794      0x18c c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libc.a(realloc.o)
+                0x00006794                realloc
  .text.avr-libc
-                0x00006c60       0x12 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libc.a(memcpy.o)
-                0x00006c60                memcpy
+                0x00006920       0x12 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libc.a(memcpy.o)
+                0x00006920                memcpy
  .text.avr-libc
-                0x00006c72        0xe c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libc.a(strcpy.o)
-                0x00006c72                strcpy
+                0x00006932        0xe c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libc.a(strcpy.o)
+                0x00006932                strcpy
  .text.avr-libc
-                0x00006c80       0x44 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libc.a(sprintf.o)
-                0x00006c80                sprintf
+                0x00006940       0x44 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libc.a(sprintf.o)
+                0x00006940                sprintf
  .text.avr-libc
-                0x00006cc4      0x3c2 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libc.a(vfprintf_std.o)
-                0x00006cc4                vfprintf
+                0x00006984      0x3c2 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libc.a(vfprintf_std.o)
+                0x00006984                vfprintf
  .text.avr-libc
-                0x00007086      0x2b4 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libc.a(dtoa_prf.o)
-                0x00007086                dtoa_prf
+                0x00006d46      0x2b4 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libc.a(dtoa_prf.o)
+                0x00006d46                dtoa_prf
  .text.avr-libc
-                0x0000733a      0x1b0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libc.a(ftoa_engine.o)
-                0x0000733a                __ftoa_engine
+                0x00006ffa      0x1b0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libc.a(ftoa_engine.o)
+                0x00006ffa                __ftoa_engine
  .text.avr-libc
-                0x000074ea       0x16 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libc.a(strnlen_P.o)
-                0x000074ea                strnlen_P
+                0x000071aa       0x16 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libc.a(strnlen_P.o)
+                0x000071aa                strnlen_P
  .text.avr-libc
-                0x00007500       0x16 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libc.a(strnlen.o)
-                0x00007500                strnlen
+                0x000071c0       0x16 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libc.a(strnlen.o)
+                0x000071c0                strnlen
  .text.avr-libc
-                0x00007516       0x78 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libc.a(fputc.o)
-                0x00007516                fputc
+                0x000071d6       0x78 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libc.a(fputc.o)
+                0x000071d6                fputc
  .text.avr-libc
-                0x0000758e       0xbc c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libc.a(ultoa_invert.o)
-                0x0000758e                __ultoa_invert
+                0x0000724e       0xbc c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libc.a(ultoa_invert.o)
+                0x0000724e                __ultoa_invert
  .text.libgcc.prologue
-                0x0000764a       0x38 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_prologue.o)
-                0x0000764a                __prologue_saves__
+                0x0000730a       0x38 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_prologue.o)
+                0x0000730a                __prologue_saves__
  .text.libgcc.prologue
-                0x00007682       0x36 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_epilogue.o)
-                0x00007682                __epilogue_restores__
-                0x000076b8                . = ALIGN (0x2)
+                0x00007342       0x36 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_epilogue.o)
+                0x00007342                __epilogue_restores__
+                0x00007378                . = ALIGN (0x2)
  *(.fini9)
- .fini9         0x000076b8        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_exit.o)
-                0x000076b8                _exit
-                0x000076b8                exit
+ .fini9         0x00007378        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_exit.o)
+                0x00007378                _exit
+                0x00007378                exit
  *(.fini9)
  *(.fini8)
  *(.fini8)
  *(.fini7)
  *(.fini7)
  *(.fini6)
- .fini6         0x000076b8       0x16 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_dtors.o)
-                0x000076b8                __do_global_dtors
+ .fini6         0x00007378       0x16 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_dtors.o)
+                0x00007378                __do_global_dtors
  *(.fini6)
  *(.fini5)
  *(.fini5)
@@ -1893,11 +1897,11 @@ END GROUP
  *(.fini1)
  *(.fini1)
  *(.fini0)
- .fini0         0x000076ce        0x4 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_exit.o)
+ .fini0         0x0000738e        0x4 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_exit.o)
  *(.fini0)
-                0x000076d2                _etext = .
+                0x00007392                _etext = .
 
-.data           0x00800100      0x134 load address 0x000076d2
+.data           0x00800100      0x13e load address 0x00007392
                 0x00800100                PROVIDE (__data_start, .)
  *(.data)
  .data          0x00800100        0x6 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libc.a(malloc.o)
@@ -1910,152 +1914,153 @@ END GROUP
  .rodata        0x00800106       0x18 C:\Users\agva\Desktop\Suction_Pump-v1.1-\Suction_PUMP(v1.1)\ArduinoCore\Debug\libArduinoCore.a(TFT_22_ILI9225.o)
  *(.rodata*)
  .rodata.str1.1
-                0x0080011e       0x68 main.o
-                                 0x6b (size before relaxing)
+                0x0080011e       0x71 main.o
+                                 0x76 (size before relaxing)
  .rodata._ZTV14HardwareSerial
-                0x00800186       0x12 C:\Users\agva\Desktop\Suction_Pump-v1.1-\Suction_PUMP(v1.1)\ArduinoCore\Debug\libArduinoCore.a(HardwareSerial.o)
-                0x00800186                _ZTV14HardwareSerial
+                0x0080018f       0x12 C:\Users\agva\Desktop\Suction_Pump-v1.1-\Suction_PUMP(v1.1)\ArduinoCore\Debug\libArduinoCore.a(HardwareSerial.o)
+                0x0080018f                _ZTV14HardwareSerial
  .rodata.str1.1
-                0x00800198        0xf C:\Users\agva\Desktop\Suction_Pump-v1.1-\Suction_PUMP(v1.1)\ArduinoCore\Debug\libArduinoCore.a(Print.o)
+                0x008001a1        0xf C:\Users\agva\Desktop\Suction_Pump-v1.1-\Suction_PUMP(v1.1)\ArduinoCore\Debug\libArduinoCore.a(Print.o)
  .rodata.str1.1
-                0x008001a7       0x7b C:\Users\agva\Desktop\Suction_Pump-v1.1-\Suction_PUMP(v1.1)\ArduinoCore\Debug\libArduinoCore.a(TFT_22_ILI9225.o)
+                0x008001b0       0x7b C:\Users\agva\Desktop\Suction_Pump-v1.1-\Suction_PUMP(v1.1)\ArduinoCore\Debug\libArduinoCore.a(TFT_22_ILI9225.o)
  .rodata._ZTV7TwoWire
-                0x00800222       0x12 C:\Users\agva\Desktop\Suction_Pump-v1.1-\Suction_PUMP(v1.1)\ArduinoCore\Debug\libArduinoCore.a(Wire.o)
-                0x00800222                _ZTV7TwoWire
+                0x0080022b       0x12 C:\Users\agva\Desktop\Suction_Pump-v1.1-\Suction_PUMP(v1.1)\ArduinoCore\Debug\libArduinoCore.a(Wire.o)
+                0x0080022b                _ZTV7TwoWire
  *(.gnu.linkonce.r*)
-                0x00800234                . = ALIGN (0x2)
-                0x00800234                _edata = .
-                0x00800234                PROVIDE (__data_end, .)
+                0x0080023e                . = ALIGN (0x2)
+ *fill*         0x0080023d        0x1 
+                0x0080023e                _edata = .
+                0x0080023e                PROVIDE (__data_end, .)
 
-.bss            0x00800234      0x2bc
-                0x00800234                PROVIDE (__bss_start, .)
+.bss            0x0080023e      0x2bc
+                0x0080023e                PROVIDE (__bss_start, .)
  *(.bss)
  *(.bss*)
- .bss.dPress    0x00800234       0xea main.o
-                0x00800234                dPress
- .bss.tft       0x0080031e       0x44 main.o
-                0x0080031e                tft
+ .bss.dPress    0x0080023e       0xea main.o
+                0x0080023e                dPress
+ .bss.tft       0x00800328       0x44 main.o
+                0x00800328                tft
  .bss.stringTwo
-                0x00800362        0x6 main.o
-                0x00800362                stringTwo
+                0x0080036c        0x6 main.o
+                0x0080036c                stringTwo
  .bss.Current_Area
-                0x00800368        0x2 main.o
-                0x00800368                Current_Area
+                0x00800372        0x2 main.o
+                0x00800372                Current_Area
  .bss.Previous_Area
-                0x0080036a        0x2 main.o
-                0x0080036a                Previous_Area
+                0x00800374        0x2 main.o
+                0x00800374                Previous_Area
  .bss.Current_Pressure
-                0x0080036c        0x4 main.o
-                0x0080036c                Current_Pressure
+                0x00800376        0x4 main.o
+                0x00800376                Current_Pressure
  .bss.Previous_Pressure
-                0x00800370        0x4 main.o
-                0x00800370                Previous_Pressure
- .bss.pressure  0x00800374        0x4 main.o
-                0x00800374                pressure
- .bss.Serial    0x00800378       0x9d C:\Users\agva\Desktop\Suction_Pump-v1.1-\Suction_PUMP(v1.1)\ArduinoCore\Debug\libArduinoCore.a(HardwareSerial0.o)
-                0x00800378                Serial
+                0x0080037a        0x4 main.o
+                0x0080037a                Previous_Pressure
+ .bss.pressure  0x0080037e        0x4 main.o
+                0x0080037e                pressure
+ .bss.Serial    0x00800382       0x9d C:\Users\agva\Desktop\Suction_Pump-v1.1-\Suction_PUMP(v1.1)\ArduinoCore\Debug\libArduinoCore.a(HardwareSerial0.o)
+                0x00800382                Serial
  .bss.timer0_fract
-                0x00800415        0x1 C:\Users\agva\Desktop\Suction_Pump-v1.1-\Suction_PUMP(v1.1)\ArduinoCore\Debug\libArduinoCore.a(wiring.o)
+                0x0080041f        0x1 C:\Users\agva\Desktop\Suction_Pump-v1.1-\Suction_PUMP(v1.1)\ArduinoCore\Debug\libArduinoCore.a(wiring.o)
  .bss.timer0_millis
-                0x00800416        0x4 C:\Users\agva\Desktop\Suction_Pump-v1.1-\Suction_PUMP(v1.1)\ArduinoCore\Debug\libArduinoCore.a(wiring.o)
-                0x00800416                timer0_millis
+                0x00800420        0x4 C:\Users\agva\Desktop\Suction_Pump-v1.1-\Suction_PUMP(v1.1)\ArduinoCore\Debug\libArduinoCore.a(wiring.o)
+                0x00800420                timer0_millis
  .bss.timer0_overflow_count
-                0x0080041a        0x4 C:\Users\agva\Desktop\Suction_Pump-v1.1-\Suction_PUMP(v1.1)\ArduinoCore\Debug\libArduinoCore.a(wiring.o)
-                0x0080041a                timer0_overflow_count
- .bss.Wire      0x0080041e        0xc C:\Users\agva\Desktop\Suction_Pump-v1.1-\Suction_PUMP(v1.1)\ArduinoCore\Debug\libArduinoCore.a(Wire.o)
-                0x0080041e                Wire
+                0x00800424        0x4 C:\Users\agva\Desktop\Suction_Pump-v1.1-\Suction_PUMP(v1.1)\ArduinoCore\Debug\libArduinoCore.a(wiring.o)
+                0x00800424                timer0_overflow_count
+ .bss.Wire      0x00800428        0xc C:\Users\agva\Desktop\Suction_Pump-v1.1-\Suction_PUMP(v1.1)\ArduinoCore\Debug\libArduinoCore.a(Wire.o)
+                0x00800428                Wire
  .bss._ZN7TwoWire14user_onReceiveE
-                0x0080042a        0x2 C:\Users\agva\Desktop\Suction_Pump-v1.1-\Suction_PUMP(v1.1)\ArduinoCore\Debug\libArduinoCore.a(Wire.o)
-                0x0080042a                _ZN7TwoWire14user_onReceiveE
+                0x00800434        0x2 C:\Users\agva\Desktop\Suction_Pump-v1.1-\Suction_PUMP(v1.1)\ArduinoCore\Debug\libArduinoCore.a(Wire.o)
+                0x00800434                _ZN7TwoWire14user_onReceiveE
  .bss._ZN7TwoWire14user_onRequestE
-                0x0080042c        0x2 C:\Users\agva\Desktop\Suction_Pump-v1.1-\Suction_PUMP(v1.1)\ArduinoCore\Debug\libArduinoCore.a(Wire.o)
-                0x0080042c                _ZN7TwoWire14user_onRequestE
+                0x00800436        0x2 C:\Users\agva\Desktop\Suction_Pump-v1.1-\Suction_PUMP(v1.1)\ArduinoCore\Debug\libArduinoCore.a(Wire.o)
+                0x00800436                _ZN7TwoWire14user_onRequestE
  .bss._ZN7TwoWire12transmittingE
-                0x0080042e        0x1 C:\Users\agva\Desktop\Suction_Pump-v1.1-\Suction_PUMP(v1.1)\ArduinoCore\Debug\libArduinoCore.a(Wire.o)
-                0x0080042e                _ZN7TwoWire12transmittingE
+                0x00800438        0x1 C:\Users\agva\Desktop\Suction_Pump-v1.1-\Suction_PUMP(v1.1)\ArduinoCore\Debug\libArduinoCore.a(Wire.o)
+                0x00800438                _ZN7TwoWire12transmittingE
  .bss._ZN7TwoWire14txBufferLengthE
-                0x0080042f        0x1 C:\Users\agva\Desktop\Suction_Pump-v1.1-\Suction_PUMP(v1.1)\ArduinoCore\Debug\libArduinoCore.a(Wire.o)
-                0x0080042f                _ZN7TwoWire14txBufferLengthE
+                0x00800439        0x1 C:\Users\agva\Desktop\Suction_Pump-v1.1-\Suction_PUMP(v1.1)\ArduinoCore\Debug\libArduinoCore.a(Wire.o)
+                0x00800439                _ZN7TwoWire14txBufferLengthE
  .bss._ZN7TwoWire13txBufferIndexE
-                0x00800430        0x1 C:\Users\agva\Desktop\Suction_Pump-v1.1-\Suction_PUMP(v1.1)\ArduinoCore\Debug\libArduinoCore.a(Wire.o)
-                0x00800430                _ZN7TwoWire13txBufferIndexE
+                0x0080043a        0x1 C:\Users\agva\Desktop\Suction_Pump-v1.1-\Suction_PUMP(v1.1)\ArduinoCore\Debug\libArduinoCore.a(Wire.o)
+                0x0080043a                _ZN7TwoWire13txBufferIndexE
  .bss._ZN7TwoWire8txBufferE
-                0x00800431       0x20 C:\Users\agva\Desktop\Suction_Pump-v1.1-\Suction_PUMP(v1.1)\ArduinoCore\Debug\libArduinoCore.a(Wire.o)
-                0x00800431                _ZN7TwoWire8txBufferE
+                0x0080043b       0x20 C:\Users\agva\Desktop\Suction_Pump-v1.1-\Suction_PUMP(v1.1)\ArduinoCore\Debug\libArduinoCore.a(Wire.o)
+                0x0080043b                _ZN7TwoWire8txBufferE
  .bss._ZN7TwoWire9txAddressE
-                0x00800451        0x1 C:\Users\agva\Desktop\Suction_Pump-v1.1-\Suction_PUMP(v1.1)\ArduinoCore\Debug\libArduinoCore.a(Wire.o)
-                0x00800451                _ZN7TwoWire9txAddressE
+                0x0080045b        0x1 C:\Users\agva\Desktop\Suction_Pump-v1.1-\Suction_PUMP(v1.1)\ArduinoCore\Debug\libArduinoCore.a(Wire.o)
+                0x0080045b                _ZN7TwoWire9txAddressE
  .bss._ZN7TwoWire14rxBufferLengthE
-                0x00800452        0x1 C:\Users\agva\Desktop\Suction_Pump-v1.1-\Suction_PUMP(v1.1)\ArduinoCore\Debug\libArduinoCore.a(Wire.o)
-                0x00800452                _ZN7TwoWire14rxBufferLengthE
+                0x0080045c        0x1 C:\Users\agva\Desktop\Suction_Pump-v1.1-\Suction_PUMP(v1.1)\ArduinoCore\Debug\libArduinoCore.a(Wire.o)
+                0x0080045c                _ZN7TwoWire14rxBufferLengthE
  .bss._ZN7TwoWire13rxBufferIndexE
-                0x00800453        0x1 C:\Users\agva\Desktop\Suction_Pump-v1.1-\Suction_PUMP(v1.1)\ArduinoCore\Debug\libArduinoCore.a(Wire.o)
-                0x00800453                _ZN7TwoWire13rxBufferIndexE
+                0x0080045d        0x1 C:\Users\agva\Desktop\Suction_Pump-v1.1-\Suction_PUMP(v1.1)\ArduinoCore\Debug\libArduinoCore.a(Wire.o)
+                0x0080045d                _ZN7TwoWire13rxBufferIndexE
  .bss._ZN7TwoWire8rxBufferE
-                0x00800454       0x20 C:\Users\agva\Desktop\Suction_Pump-v1.1-\Suction_PUMP(v1.1)\ArduinoCore\Debug\libArduinoCore.a(Wire.o)
-                0x00800454                _ZN7TwoWire8rxBufferE
+                0x0080045e       0x20 C:\Users\agva\Desktop\Suction_Pump-v1.1-\Suction_PUMP(v1.1)\ArduinoCore\Debug\libArduinoCore.a(Wire.o)
+                0x0080045e                _ZN7TwoWire8rxBufferE
  .bss._ZN8SPIClass13interruptSaveE
-                0x00800474        0x1 C:\Users\agva\Desktop\Suction_Pump-v1.1-\Suction_PUMP(v1.1)\ArduinoCore\Debug\libArduinoCore.a(SPI.o)
-                0x00800474                _ZN8SPIClass13interruptSaveE
+                0x0080047e        0x1 C:\Users\agva\Desktop\Suction_Pump-v1.1-\Suction_PUMP(v1.1)\ArduinoCore\Debug\libArduinoCore.a(SPI.o)
+                0x0080047e                _ZN8SPIClass13interruptSaveE
  .bss._ZN8SPIClass13interruptMaskE
-                0x00800475        0x1 C:\Users\agva\Desktop\Suction_Pump-v1.1-\Suction_PUMP(v1.1)\ArduinoCore\Debug\libArduinoCore.a(SPI.o)
-                0x00800475                _ZN8SPIClass13interruptMaskE
+                0x0080047f        0x1 C:\Users\agva\Desktop\Suction_Pump-v1.1-\Suction_PUMP(v1.1)\ArduinoCore\Debug\libArduinoCore.a(SPI.o)
+                0x0080047f                _ZN8SPIClass13interruptMaskE
  .bss._ZN8SPIClass13interruptModeE
-                0x00800476        0x1 C:\Users\agva\Desktop\Suction_Pump-v1.1-\Suction_PUMP(v1.1)\ArduinoCore\Debug\libArduinoCore.a(SPI.o)
-                0x00800476                _ZN8SPIClass13interruptModeE
+                0x00800480        0x1 C:\Users\agva\Desktop\Suction_Pump-v1.1-\Suction_PUMP(v1.1)\ArduinoCore\Debug\libArduinoCore.a(SPI.o)
+                0x00800480                _ZN8SPIClass13interruptModeE
  .bss._ZN8SPIClass11initializedE
-                0x00800477        0x1 C:\Users\agva\Desktop\Suction_Pump-v1.1-\Suction_PUMP(v1.1)\ArduinoCore\Debug\libArduinoCore.a(SPI.o)
-                0x00800477                _ZN8SPIClass11initializedE
+                0x00800481        0x1 C:\Users\agva\Desktop\Suction_Pump-v1.1-\Suction_PUMP(v1.1)\ArduinoCore\Debug\libArduinoCore.a(SPI.o)
+                0x00800481                _ZN8SPIClass11initializedE
  .bss.twi_error
-                0x00800478        0x1 C:\Users\agva\Desktop\Suction_Pump-v1.1-\Suction_PUMP(v1.1)\ArduinoCore\Debug\libArduinoCore.a(twi.o)
+                0x00800482        0x1 C:\Users\agva\Desktop\Suction_Pump-v1.1-\Suction_PUMP(v1.1)\ArduinoCore\Debug\libArduinoCore.a(twi.o)
  .bss.twi_rxBufferIndex
-                0x00800479        0x1 C:\Users\agva\Desktop\Suction_Pump-v1.1-\Suction_PUMP(v1.1)\ArduinoCore\Debug\libArduinoCore.a(twi.o)
+                0x00800483        0x1 C:\Users\agva\Desktop\Suction_Pump-v1.1-\Suction_PUMP(v1.1)\ArduinoCore\Debug\libArduinoCore.a(twi.o)
  .bss.twi_rxBuffer
-                0x0080047a       0x20 C:\Users\agva\Desktop\Suction_Pump-v1.1-\Suction_PUMP(v1.1)\ArduinoCore\Debug\libArduinoCore.a(twi.o)
+                0x00800484       0x20 C:\Users\agva\Desktop\Suction_Pump-v1.1-\Suction_PUMP(v1.1)\ArduinoCore\Debug\libArduinoCore.a(twi.o)
  .bss.twi_txBufferLength
-                0x0080049a        0x1 C:\Users\agva\Desktop\Suction_Pump-v1.1-\Suction_PUMP(v1.1)\ArduinoCore\Debug\libArduinoCore.a(twi.o)
+                0x008004a4        0x1 C:\Users\agva\Desktop\Suction_Pump-v1.1-\Suction_PUMP(v1.1)\ArduinoCore\Debug\libArduinoCore.a(twi.o)
  .bss.twi_txBufferIndex
-                0x0080049b        0x1 C:\Users\agva\Desktop\Suction_Pump-v1.1-\Suction_PUMP(v1.1)\ArduinoCore\Debug\libArduinoCore.a(twi.o)
+                0x008004a5        0x1 C:\Users\agva\Desktop\Suction_Pump-v1.1-\Suction_PUMP(v1.1)\ArduinoCore\Debug\libArduinoCore.a(twi.o)
  .bss.twi_txBuffer
-                0x0080049c       0x20 C:\Users\agva\Desktop\Suction_Pump-v1.1-\Suction_PUMP(v1.1)\ArduinoCore\Debug\libArduinoCore.a(twi.o)
+                0x008004a6       0x20 C:\Users\agva\Desktop\Suction_Pump-v1.1-\Suction_PUMP(v1.1)\ArduinoCore\Debug\libArduinoCore.a(twi.o)
  .bss.twi_masterBufferLength
-                0x008004bc        0x1 C:\Users\agva\Desktop\Suction_Pump-v1.1-\Suction_PUMP(v1.1)\ArduinoCore\Debug\libArduinoCore.a(twi.o)
+                0x008004c6        0x1 C:\Users\agva\Desktop\Suction_Pump-v1.1-\Suction_PUMP(v1.1)\ArduinoCore\Debug\libArduinoCore.a(twi.o)
  .bss.twi_masterBufferIndex
-                0x008004bd        0x1 C:\Users\agva\Desktop\Suction_Pump-v1.1-\Suction_PUMP(v1.1)\ArduinoCore\Debug\libArduinoCore.a(twi.o)
+                0x008004c7        0x1 C:\Users\agva\Desktop\Suction_Pump-v1.1-\Suction_PUMP(v1.1)\ArduinoCore\Debug\libArduinoCore.a(twi.o)
  .bss.twi_masterBuffer
-                0x008004be       0x20 C:\Users\agva\Desktop\Suction_Pump-v1.1-\Suction_PUMP(v1.1)\ArduinoCore\Debug\libArduinoCore.a(twi.o)
+                0x008004c8       0x20 C:\Users\agva\Desktop\Suction_Pump-v1.1-\Suction_PUMP(v1.1)\ArduinoCore\Debug\libArduinoCore.a(twi.o)
  .bss.twi_onSlaveReceive
-                0x008004de        0x2 C:\Users\agva\Desktop\Suction_Pump-v1.1-\Suction_PUMP(v1.1)\ArduinoCore\Debug\libArduinoCore.a(twi.o)
+                0x008004e8        0x2 C:\Users\agva\Desktop\Suction_Pump-v1.1-\Suction_PUMP(v1.1)\ArduinoCore\Debug\libArduinoCore.a(twi.o)
  .bss.twi_onSlaveTransmit
-                0x008004e0        0x2 C:\Users\agva\Desktop\Suction_Pump-v1.1-\Suction_PUMP(v1.1)\ArduinoCore\Debug\libArduinoCore.a(twi.o)
+                0x008004ea        0x2 C:\Users\agva\Desktop\Suction_Pump-v1.1-\Suction_PUMP(v1.1)\ArduinoCore\Debug\libArduinoCore.a(twi.o)
  .bss.twi_do_reset_on_timeout
-                0x008004e2        0x1 C:\Users\agva\Desktop\Suction_Pump-v1.1-\Suction_PUMP(v1.1)\ArduinoCore\Debug\libArduinoCore.a(twi.o)
+                0x008004ec        0x1 C:\Users\agva\Desktop\Suction_Pump-v1.1-\Suction_PUMP(v1.1)\ArduinoCore\Debug\libArduinoCore.a(twi.o)
  .bss.twi_timed_out_flag
-                0x008004e3        0x1 C:\Users\agva\Desktop\Suction_Pump-v1.1-\Suction_PUMP(v1.1)\ArduinoCore\Debug\libArduinoCore.a(twi.o)
+                0x008004ed        0x1 C:\Users\agva\Desktop\Suction_Pump-v1.1-\Suction_PUMP(v1.1)\ArduinoCore\Debug\libArduinoCore.a(twi.o)
  .bss.twi_timeout_us
-                0x008004e4        0x4 C:\Users\agva\Desktop\Suction_Pump-v1.1-\Suction_PUMP(v1.1)\ArduinoCore\Debug\libArduinoCore.a(twi.o)
+                0x008004ee        0x4 C:\Users\agva\Desktop\Suction_Pump-v1.1-\Suction_PUMP(v1.1)\ArduinoCore\Debug\libArduinoCore.a(twi.o)
  .bss.twi_inRepStart
-                0x008004e8        0x1 C:\Users\agva\Desktop\Suction_Pump-v1.1-\Suction_PUMP(v1.1)\ArduinoCore\Debug\libArduinoCore.a(twi.o)
+                0x008004f2        0x1 C:\Users\agva\Desktop\Suction_Pump-v1.1-\Suction_PUMP(v1.1)\ArduinoCore\Debug\libArduinoCore.a(twi.o)
  .bss.twi_sendStop
-                0x008004e9        0x1 C:\Users\agva\Desktop\Suction_Pump-v1.1-\Suction_PUMP(v1.1)\ArduinoCore\Debug\libArduinoCore.a(twi.o)
+                0x008004f3        0x1 C:\Users\agva\Desktop\Suction_Pump-v1.1-\Suction_PUMP(v1.1)\ArduinoCore\Debug\libArduinoCore.a(twi.o)
  .bss.twi_slarw
-                0x008004ea        0x1 C:\Users\agva\Desktop\Suction_Pump-v1.1-\Suction_PUMP(v1.1)\ArduinoCore\Debug\libArduinoCore.a(twi.o)
+                0x008004f4        0x1 C:\Users\agva\Desktop\Suction_Pump-v1.1-\Suction_PUMP(v1.1)\ArduinoCore\Debug\libArduinoCore.a(twi.o)
  .bss.twi_state
-                0x008004eb        0x1 C:\Users\agva\Desktop\Suction_Pump-v1.1-\Suction_PUMP(v1.1)\ArduinoCore\Debug\libArduinoCore.a(twi.o)
+                0x008004f5        0x1 C:\Users\agva\Desktop\Suction_Pump-v1.1-\Suction_PUMP(v1.1)\ArduinoCore\Debug\libArduinoCore.a(twi.o)
  *(COMMON)
- COMMON         0x008004ec        0x4 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libc.a(malloc.o)
-                0x008004ec                __brkval
-                0x008004ee                __flp
-                0x008004f0                PROVIDE (__bss_end, .)
-                0x000076d2                __data_load_start = LOADADDR (.data)
-                0x00007806                __data_load_end = (__data_load_start + SIZEOF (.data))
+ COMMON         0x008004f6        0x4 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libc.a(malloc.o)
+                0x008004f6                __brkval
+                0x008004f8                __flp
+                0x008004fa                PROVIDE (__bss_end, .)
+                0x00007392                __data_load_start = LOADADDR (.data)
+                0x000074d0                __data_load_end = (__data_load_start + SIZEOF (.data))
 
-.noinit         0x008004f0        0x0
+.noinit         0x008004fa        0x0
                 [!provide]                PROVIDE (__noinit_start, .)
  *(.noinit*)
                 [!provide]                PROVIDE (__noinit_end, .)
-                0x008004f0                _end = .
-                0x008004f0                PROVIDE (__heap_start, .)
+                0x008004fa                _end = .
+                0x008004fa                PROVIDE (__heap_start, .)
 
 .eeprom         0x00810000        0x0
  *(.eeprom*)
@@ -2183,26 +2188,26 @@ END GROUP
 .debug_pubnames
  *(.debug_pubnames)
 
-.debug_info     0x00000000    0x1a850
+.debug_info     0x00000000    0x1ab01
  *(.debug_info .gnu.linkonce.wi.*)
  .debug_info    0x00000000      0x5f4 C:/Program Files (x86)/Atmel/Studio/7.0/Packs/atmel/ATmega_DFP/1.6.364/gcc/dev/atmega328p/avr5/crtatmega328p.o
- .debug_info    0x000005f4     0x3a8d main.o
- .debug_info    0x00004081     0x1f64 C:\Users\agva\Desktop\Suction_Pump-v1.1-\Suction_PUMP(v1.1)\ArduinoCore\Debug\libArduinoCore.a(HardwareSerial.o)
- .debug_info    0x00005fe5     0x1b16 C:\Users\agva\Desktop\Suction_Pump-v1.1-\Suction_PUMP(v1.1)\ArduinoCore\Debug\libArduinoCore.a(HardwareSerial0.o)
- .debug_info    0x00007afb      0x237 C:\Users\agva\Desktop\Suction_Pump-v1.1-\Suction_PUMP(v1.1)\ArduinoCore\Debug\libArduinoCore.a(main.o)
- .debug_info    0x00007d32     0x28ff C:\Users\agva\Desktop\Suction_Pump-v1.1-\Suction_PUMP(v1.1)\ArduinoCore\Debug\libArduinoCore.a(Print.o)
- .debug_info    0x0000a631      0x2cb C:\Users\agva\Desktop\Suction_Pump-v1.1-\Suction_PUMP(v1.1)\ArduinoCore\Debug\libArduinoCore.a(wiring.o)
- .debug_info    0x0000a8fc      0x230 C:\Users\agva\Desktop\Suction_Pump-v1.1-\Suction_PUMP(v1.1)\ArduinoCore\Debug\libArduinoCore.a(WMath.o)
- .debug_info    0x0000ab2c     0x4338 C:\Users\agva\Desktop\Suction_Pump-v1.1-\Suction_PUMP(v1.1)\ArduinoCore\Debug\libArduinoCore.a(WString.o)
- .debug_info    0x0000ee64      0xa6a C:\Users\agva\Desktop\Suction_Pump-v1.1-\Suction_PUMP(v1.1)\ArduinoCore\Debug\libArduinoCore.a(AMS5812.o)
- .debug_info    0x0000f8ce      0x10e C:\Users\agva\Desktop\Suction_Pump-v1.1-\Suction_PUMP(v1.1)\ArduinoCore\Debug\libArduinoCore.a(DefaultFonts.o)
- .debug_info    0x0000f9dc     0x6d74 C:\Users\agva\Desktop\Suction_Pump-v1.1-\Suction_PUMP(v1.1)\ArduinoCore\Debug\libArduinoCore.a(TFT_22_ILI9225.o)
- .debug_info    0x00016750     0x2910 C:\Users\agva\Desktop\Suction_Pump-v1.1-\Suction_PUMP(v1.1)\ArduinoCore\Debug\libArduinoCore.a(Wire.o)
- .debug_info    0x00019060       0x3e C:\Users\agva\Desktop\Suction_Pump-v1.1-\Suction_PUMP(v1.1)\ArduinoCore\Debug\libArduinoCore.a(hooks.o)
- .debug_info    0x0001909e      0x26d C:\Users\agva\Desktop\Suction_Pump-v1.1-\Suction_PUMP(v1.1)\ArduinoCore\Debug\libArduinoCore.a(wiring_analog.o)
- .debug_info    0x0001930b      0x5fe C:\Users\agva\Desktop\Suction_Pump-v1.1-\Suction_PUMP(v1.1)\ArduinoCore\Debug\libArduinoCore.a(wiring_digital.o)
- .debug_info    0x00019909      0x66b C:\Users\agva\Desktop\Suction_Pump-v1.1-\Suction_PUMP(v1.1)\ArduinoCore\Debug\libArduinoCore.a(SPI.o)
- .debug_info    0x00019f74      0x8dc C:\Users\agva\Desktop\Suction_Pump-v1.1-\Suction_PUMP(v1.1)\ArduinoCore\Debug\libArduinoCore.a(twi.o)
+ .debug_info    0x000005f4     0x3d3e main.o
+ .debug_info    0x00004332     0x1f64 C:\Users\agva\Desktop\Suction_Pump-v1.1-\Suction_PUMP(v1.1)\ArduinoCore\Debug\libArduinoCore.a(HardwareSerial.o)
+ .debug_info    0x00006296     0x1b16 C:\Users\agva\Desktop\Suction_Pump-v1.1-\Suction_PUMP(v1.1)\ArduinoCore\Debug\libArduinoCore.a(HardwareSerial0.o)
+ .debug_info    0x00007dac      0x237 C:\Users\agva\Desktop\Suction_Pump-v1.1-\Suction_PUMP(v1.1)\ArduinoCore\Debug\libArduinoCore.a(main.o)
+ .debug_info    0x00007fe3     0x28ff C:\Users\agva\Desktop\Suction_Pump-v1.1-\Suction_PUMP(v1.1)\ArduinoCore\Debug\libArduinoCore.a(Print.o)
+ .debug_info    0x0000a8e2      0x2cb C:\Users\agva\Desktop\Suction_Pump-v1.1-\Suction_PUMP(v1.1)\ArduinoCore\Debug\libArduinoCore.a(wiring.o)
+ .debug_info    0x0000abad      0x230 C:\Users\agva\Desktop\Suction_Pump-v1.1-\Suction_PUMP(v1.1)\ArduinoCore\Debug\libArduinoCore.a(WMath.o)
+ .debug_info    0x0000addd     0x4338 C:\Users\agva\Desktop\Suction_Pump-v1.1-\Suction_PUMP(v1.1)\ArduinoCore\Debug\libArduinoCore.a(WString.o)
+ .debug_info    0x0000f115      0xa6a C:\Users\agva\Desktop\Suction_Pump-v1.1-\Suction_PUMP(v1.1)\ArduinoCore\Debug\libArduinoCore.a(AMS5812.o)
+ .debug_info    0x0000fb7f      0x10e C:\Users\agva\Desktop\Suction_Pump-v1.1-\Suction_PUMP(v1.1)\ArduinoCore\Debug\libArduinoCore.a(DefaultFonts.o)
+ .debug_info    0x0000fc8d     0x6d74 C:\Users\agva\Desktop\Suction_Pump-v1.1-\Suction_PUMP(v1.1)\ArduinoCore\Debug\libArduinoCore.a(TFT_22_ILI9225.o)
+ .debug_info    0x00016a01     0x2910 C:\Users\agva\Desktop\Suction_Pump-v1.1-\Suction_PUMP(v1.1)\ArduinoCore\Debug\libArduinoCore.a(Wire.o)
+ .debug_info    0x00019311       0x3e C:\Users\agva\Desktop\Suction_Pump-v1.1-\Suction_PUMP(v1.1)\ArduinoCore\Debug\libArduinoCore.a(hooks.o)
+ .debug_info    0x0001934f      0x26d C:\Users\agva\Desktop\Suction_Pump-v1.1-\Suction_PUMP(v1.1)\ArduinoCore\Debug\libArduinoCore.a(wiring_analog.o)
+ .debug_info    0x000195bc      0x5fe C:\Users\agva\Desktop\Suction_Pump-v1.1-\Suction_PUMP(v1.1)\ArduinoCore\Debug\libArduinoCore.a(wiring_digital.o)
+ .debug_info    0x00019bba      0x66b C:\Users\agva\Desktop\Suction_Pump-v1.1-\Suction_PUMP(v1.1)\ArduinoCore\Debug\libArduinoCore.a(SPI.o)
+ .debug_info    0x0001a225      0x8dc C:\Users\agva\Desktop\Suction_Pump-v1.1-\Suction_PUMP(v1.1)\ArduinoCore\Debug\libArduinoCore.a(twi.o)
 
 .debug_abbrev   0x00000000     0x36fc
  *(.debug_abbrev)
@@ -2225,26 +2230,26 @@ END GROUP
  .debug_abbrev  0x00003187      0x283 C:\Users\agva\Desktop\Suction_Pump-v1.1-\Suction_PUMP(v1.1)\ArduinoCore\Debug\libArduinoCore.a(SPI.o)
  .debug_abbrev  0x0000340a      0x2f2 C:\Users\agva\Desktop\Suction_Pump-v1.1-\Suction_PUMP(v1.1)\ArduinoCore\Debug\libArduinoCore.a(twi.o)
 
-.debug_line     0x00000000     0x5d47
+.debug_line     0x00000000     0x5d65
  *(.debug_line .debug_line.* .debug_line_end)
  .debug_line    0x00000000      0x134 C:/Program Files (x86)/Atmel/Studio/7.0/Packs/atmel/ATmega_DFP/1.6.364/gcc/dev/atmega328p/avr5/crtatmega328p.o
- .debug_line    0x00000134      0x50f main.o
- .debug_line    0x00000643      0x4c4 C:\Users\agva\Desktop\Suction_Pump-v1.1-\Suction_PUMP(v1.1)\ArduinoCore\Debug\libArduinoCore.a(HardwareSerial.o)
- .debug_line    0x00000b07      0x28c C:\Users\agva\Desktop\Suction_Pump-v1.1-\Suction_PUMP(v1.1)\ArduinoCore\Debug\libArduinoCore.a(HardwareSerial0.o)
- .debug_line    0x00000d93      0x165 C:\Users\agva\Desktop\Suction_Pump-v1.1-\Suction_PUMP(v1.1)\ArduinoCore\Debug\libArduinoCore.a(main.o)
- .debug_line    0x00000ef8      0x685 C:\Users\agva\Desktop\Suction_Pump-v1.1-\Suction_PUMP(v1.1)\ArduinoCore\Debug\libArduinoCore.a(Print.o)
- .debug_line    0x0000157d      0x299 C:\Users\agva\Desktop\Suction_Pump-v1.1-\Suction_PUMP(v1.1)\ArduinoCore\Debug\libArduinoCore.a(wiring.o)
- .debug_line    0x00001816      0x143 C:\Users\agva\Desktop\Suction_Pump-v1.1-\Suction_PUMP(v1.1)\ArduinoCore\Debug\libArduinoCore.a(WMath.o)
- .debug_line    0x00001959     0x1360 C:\Users\agva\Desktop\Suction_Pump-v1.1-\Suction_PUMP(v1.1)\ArduinoCore\Debug\libArduinoCore.a(WString.o)
- .debug_line    0x00002cb9      0x3ba C:\Users\agva\Desktop\Suction_Pump-v1.1-\Suction_PUMP(v1.1)\ArduinoCore\Debug\libArduinoCore.a(AMS5812.o)
- .debug_line    0x00003073       0xae C:\Users\agva\Desktop\Suction_Pump-v1.1-\Suction_PUMP(v1.1)\ArduinoCore\Debug\libArduinoCore.a(DefaultFonts.o)
- .debug_line    0x00003121     0x17af C:\Users\agva\Desktop\Suction_Pump-v1.1-\Suction_PUMP(v1.1)\ArduinoCore\Debug\libArduinoCore.a(TFT_22_ILI9225.o)
- .debug_line    0x000048d0      0x637 C:\Users\agva\Desktop\Suction_Pump-v1.1-\Suction_PUMP(v1.1)\ArduinoCore\Debug\libArduinoCore.a(Wire.o)
- .debug_line    0x00004f07       0x41 C:\Users\agva\Desktop\Suction_Pump-v1.1-\Suction_PUMP(v1.1)\ArduinoCore\Debug\libArduinoCore.a(hooks.o)
- .debug_line    0x00004f48      0x20f C:\Users\agva\Desktop\Suction_Pump-v1.1-\Suction_PUMP(v1.1)\ArduinoCore\Debug\libArduinoCore.a(wiring_analog.o)
- .debug_line    0x00005157      0x252 C:\Users\agva\Desktop\Suction_Pump-v1.1-\Suction_PUMP(v1.1)\ArduinoCore\Debug\libArduinoCore.a(wiring_digital.o)
- .debug_line    0x000053a9      0x2e3 C:\Users\agva\Desktop\Suction_Pump-v1.1-\Suction_PUMP(v1.1)\ArduinoCore\Debug\libArduinoCore.a(SPI.o)
- .debug_line    0x0000568c      0x6bb C:\Users\agva\Desktop\Suction_Pump-v1.1-\Suction_PUMP(v1.1)\ArduinoCore\Debug\libArduinoCore.a(twi.o)
+ .debug_line    0x00000134      0x52d main.o
+ .debug_line    0x00000661      0x4c4 C:\Users\agva\Desktop\Suction_Pump-v1.1-\Suction_PUMP(v1.1)\ArduinoCore\Debug\libArduinoCore.a(HardwareSerial.o)
+ .debug_line    0x00000b25      0x28c C:\Users\agva\Desktop\Suction_Pump-v1.1-\Suction_PUMP(v1.1)\ArduinoCore\Debug\libArduinoCore.a(HardwareSerial0.o)
+ .debug_line    0x00000db1      0x165 C:\Users\agva\Desktop\Suction_Pump-v1.1-\Suction_PUMP(v1.1)\ArduinoCore\Debug\libArduinoCore.a(main.o)
+ .debug_line    0x00000f16      0x685 C:\Users\agva\Desktop\Suction_Pump-v1.1-\Suction_PUMP(v1.1)\ArduinoCore\Debug\libArduinoCore.a(Print.o)
+ .debug_line    0x0000159b      0x299 C:\Users\agva\Desktop\Suction_Pump-v1.1-\Suction_PUMP(v1.1)\ArduinoCore\Debug\libArduinoCore.a(wiring.o)
+ .debug_line    0x00001834      0x143 C:\Users\agva\Desktop\Suction_Pump-v1.1-\Suction_PUMP(v1.1)\ArduinoCore\Debug\libArduinoCore.a(WMath.o)
+ .debug_line    0x00001977     0x1360 C:\Users\agva\Desktop\Suction_Pump-v1.1-\Suction_PUMP(v1.1)\ArduinoCore\Debug\libArduinoCore.a(WString.o)
+ .debug_line    0x00002cd7      0x3ba C:\Users\agva\Desktop\Suction_Pump-v1.1-\Suction_PUMP(v1.1)\ArduinoCore\Debug\libArduinoCore.a(AMS5812.o)
+ .debug_line    0x00003091       0xae C:\Users\agva\Desktop\Suction_Pump-v1.1-\Suction_PUMP(v1.1)\ArduinoCore\Debug\libArduinoCore.a(DefaultFonts.o)
+ .debug_line    0x0000313f     0x17af C:\Users\agva\Desktop\Suction_Pump-v1.1-\Suction_PUMP(v1.1)\ArduinoCore\Debug\libArduinoCore.a(TFT_22_ILI9225.o)
+ .debug_line    0x000048ee      0x637 C:\Users\agva\Desktop\Suction_Pump-v1.1-\Suction_PUMP(v1.1)\ArduinoCore\Debug\libArduinoCore.a(Wire.o)
+ .debug_line    0x00004f25       0x41 C:\Users\agva\Desktop\Suction_Pump-v1.1-\Suction_PUMP(v1.1)\ArduinoCore\Debug\libArduinoCore.a(hooks.o)
+ .debug_line    0x00004f66      0x20f C:\Users\agva\Desktop\Suction_Pump-v1.1-\Suction_PUMP(v1.1)\ArduinoCore\Debug\libArduinoCore.a(wiring_analog.o)
+ .debug_line    0x00005175      0x252 C:\Users\agva\Desktop\Suction_Pump-v1.1-\Suction_PUMP(v1.1)\ArduinoCore\Debug\libArduinoCore.a(wiring_digital.o)
+ .debug_line    0x000053c7      0x2e3 C:\Users\agva\Desktop\Suction_Pump-v1.1-\Suction_PUMP(v1.1)\ArduinoCore\Debug\libArduinoCore.a(SPI.o)
+ .debug_line    0x000056aa      0x6bb C:\Users\agva\Desktop\Suction_Pump-v1.1-\Suction_PUMP(v1.1)\ArduinoCore\Debug\libArduinoCore.a(twi.o)
 
 .debug_frame    0x00000000     0x26ac
  *(.debug_frame)
@@ -2268,25 +2273,25 @@ END GROUP
 .debug_str      0x00000000     0x486b
  *(.debug_str)
  .debug_str     0x00000000      0x208 C:/Program Files (x86)/Atmel/Studio/7.0/Packs/atmel/ATmega_DFP/1.6.364/gcc/dev/atmega328p/avr5/crtatmega328p.o
- .debug_str     0x00000208     0x242f main.o
-                               0x2578 (size before relaxing)
- .debug_str     0x00002637      0x7d1 C:\Users\agva\Desktop\Suction_Pump-v1.1-\Suction_PUMP(v1.1)\ArduinoCore\Debug\libArduinoCore.a(HardwareSerial.o)
+ .debug_str     0x00000208     0x242d main.o
+                               0x2576 (size before relaxing)
+ .debug_str     0x00002635      0x7d1 C:\Users\agva\Desktop\Suction_Pump-v1.1-\Suction_PUMP(v1.1)\ArduinoCore\Debug\libArduinoCore.a(HardwareSerial.o)
                                0x160e (size before relaxing)
- .debug_str     0x00002e08       0x86 C:\Users\agva\Desktop\Suction_Pump-v1.1-\Suction_PUMP(v1.1)\ArduinoCore\Debug\libArduinoCore.a(HardwareSerial0.o)
+ .debug_str     0x00002e06       0x86 C:\Users\agva\Desktop\Suction_Pump-v1.1-\Suction_PUMP(v1.1)\ArduinoCore\Debug\libArduinoCore.a(HardwareSerial0.o)
                                0x1401 (size before relaxing)
- .debug_str     0x00002e8e       0x37 C:\Users\agva\Desktop\Suction_Pump-v1.1-\Suction_PUMP(v1.1)\ArduinoCore\Debug\libArduinoCore.a(main.o)
+ .debug_str     0x00002e8c       0x37 C:\Users\agva\Desktop\Suction_Pump-v1.1-\Suction_PUMP(v1.1)\ArduinoCore\Debug\libArduinoCore.a(main.o)
                                 0x2ad (size before relaxing)
- .debug_str     0x00002ec5      0x3a1 C:\Users\agva\Desktop\Suction_Pump-v1.1-\Suction_PUMP(v1.1)\ArduinoCore\Debug\libArduinoCore.a(Print.o)
+ .debug_str     0x00002ec3      0x3a1 C:\Users\agva\Desktop\Suction_Pump-v1.1-\Suction_PUMP(v1.1)\ArduinoCore\Debug\libArduinoCore.a(Print.o)
                                0x123b (size before relaxing)
- .debug_str     0x00003266      0x153 C:\Users\agva\Desktop\Suction_Pump-v1.1-\Suction_PUMP(v1.1)\ArduinoCore\Debug\libArduinoCore.a(wiring.o)
+ .debug_str     0x00003264      0x153 C:\Users\agva\Desktop\Suction_Pump-v1.1-\Suction_PUMP(v1.1)\ArduinoCore\Debug\libArduinoCore.a(wiring.o)
                                 0x243 (size before relaxing)
- .debug_str     0x000033b9       0xac C:\Users\agva\Desktop\Suction_Pump-v1.1-\Suction_PUMP(v1.1)\ArduinoCore\Debug\libArduinoCore.a(WMath.o)
+ .debug_str     0x000033b7       0xac C:\Users\agva\Desktop\Suction_Pump-v1.1-\Suction_PUMP(v1.1)\ArduinoCore\Debug\libArduinoCore.a(WMath.o)
                                 0x246 (size before relaxing)
- .debug_str     0x00003465      0x3eb C:\Users\agva\Desktop\Suction_Pump-v1.1-\Suction_PUMP(v1.1)\ArduinoCore\Debug\libArduinoCore.a(WString.o)
+ .debug_str     0x00003463      0x3eb C:\Users\agva\Desktop\Suction_Pump-v1.1-\Suction_PUMP(v1.1)\ArduinoCore\Debug\libArduinoCore.a(WString.o)
                                0x118e (size before relaxing)
- .debug_str     0x00003850       0xb1 C:\Users\agva\Desktop\Suction_Pump-v1.1-\Suction_PUMP(v1.1)\ArduinoCore\Debug\libArduinoCore.a(AMS5812.o)
+ .debug_str     0x0000384e       0xb1 C:\Users\agva\Desktop\Suction_Pump-v1.1-\Suction_PUMP(v1.1)\ArduinoCore\Debug\libArduinoCore.a(AMS5812.o)
                                 0xa8d (size before relaxing)
- .debug_str     0x00003901       0x5b C:\Users\agva\Desktop\Suction_Pump-v1.1-\Suction_PUMP(v1.1)\ArduinoCore\Debug\libArduinoCore.a(DefaultFonts.o)
+ .debug_str     0x000038ff       0x5d C:\Users\agva\Desktop\Suction_Pump-v1.1-\Suction_PUMP(v1.1)\ArduinoCore\Debug\libArduinoCore.a(DefaultFonts.o)
                                 0x1fd (size before relaxing)
  .debug_str     0x0000395c      0x54a C:\Users\agva\Desktop\Suction_Pump-v1.1-\Suction_PUMP(v1.1)\ArduinoCore\Debug\libArduinoCore.a(TFT_22_ILI9225.o)
                                0x2156 (size before relaxing)
@@ -2303,22 +2308,22 @@ END GROUP
  .debug_str     0x00004646      0x225 C:\Users\agva\Desktop\Suction_Pump-v1.1-\Suction_PUMP(v1.1)\ArduinoCore\Debug\libArduinoCore.a(twi.o)
                                 0x4f2 (size before relaxing)
 
-.debug_loc      0x00000000     0xed27
+.debug_loc      0x00000000     0xed2c
  *(.debug_loc)
- .debug_loc     0x00000000      0x388 main.o
- .debug_loc     0x00000388      0x4dc C:\Users\agva\Desktop\Suction_Pump-v1.1-\Suction_PUMP(v1.1)\ArduinoCore\Debug\libArduinoCore.a(HardwareSerial.o)
- .debug_loc     0x00000864      0x1b0 C:\Users\agva\Desktop\Suction_Pump-v1.1-\Suction_PUMP(v1.1)\ArduinoCore\Debug\libArduinoCore.a(HardwareSerial0.o)
- .debug_loc     0x00000a14     0x1c87 C:\Users\agva\Desktop\Suction_Pump-v1.1-\Suction_PUMP(v1.1)\ArduinoCore\Debug\libArduinoCore.a(Print.o)
- .debug_loc     0x0000269b      0x28d C:\Users\agva\Desktop\Suction_Pump-v1.1-\Suction_PUMP(v1.1)\ArduinoCore\Debug\libArduinoCore.a(wiring.o)
- .debug_loc     0x00002928      0x3d6 C:\Users\agva\Desktop\Suction_Pump-v1.1-\Suction_PUMP(v1.1)\ArduinoCore\Debug\libArduinoCore.a(WMath.o)
- .debug_loc     0x00002cfe     0x423d C:\Users\agva\Desktop\Suction_Pump-v1.1-\Suction_PUMP(v1.1)\ArduinoCore\Debug\libArduinoCore.a(WString.o)
- .debug_loc     0x00006f3b      0x465 C:\Users\agva\Desktop\Suction_Pump-v1.1-\Suction_PUMP(v1.1)\ArduinoCore\Debug\libArduinoCore.a(AMS5812.o)
- .debug_loc     0x000073a0     0x5b6f C:\Users\agva\Desktop\Suction_Pump-v1.1-\Suction_PUMP(v1.1)\ArduinoCore\Debug\libArduinoCore.a(TFT_22_ILI9225.o)
- .debug_loc     0x0000cf0f      0xcbb C:\Users\agva\Desktop\Suction_Pump-v1.1-\Suction_PUMP(v1.1)\ArduinoCore\Debug\libArduinoCore.a(Wire.o)
- .debug_loc     0x0000dbca       0xfe C:\Users\agva\Desktop\Suction_Pump-v1.1-\Suction_PUMP(v1.1)\ArduinoCore\Debug\libArduinoCore.a(wiring_analog.o)
- .debug_loc     0x0000dcc8      0x5fc C:\Users\agva\Desktop\Suction_Pump-v1.1-\Suction_PUMP(v1.1)\ArduinoCore\Debug\libArduinoCore.a(wiring_digital.o)
- .debug_loc     0x0000e2c4      0x1e4 C:\Users\agva\Desktop\Suction_Pump-v1.1-\Suction_PUMP(v1.1)\ArduinoCore\Debug\libArduinoCore.a(SPI.o)
- .debug_loc     0x0000e4a8      0x87f C:\Users\agva\Desktop\Suction_Pump-v1.1-\Suction_PUMP(v1.1)\ArduinoCore\Debug\libArduinoCore.a(twi.o)
+ .debug_loc     0x00000000      0x38d main.o
+ .debug_loc     0x0000038d      0x4dc C:\Users\agva\Desktop\Suction_Pump-v1.1-\Suction_PUMP(v1.1)\ArduinoCore\Debug\libArduinoCore.a(HardwareSerial.o)
+ .debug_loc     0x00000869      0x1b0 C:\Users\agva\Desktop\Suction_Pump-v1.1-\Suction_PUMP(v1.1)\ArduinoCore\Debug\libArduinoCore.a(HardwareSerial0.o)
+ .debug_loc     0x00000a19     0x1c87 C:\Users\agva\Desktop\Suction_Pump-v1.1-\Suction_PUMP(v1.1)\ArduinoCore\Debug\libArduinoCore.a(Print.o)
+ .debug_loc     0x000026a0      0x28d C:\Users\agva\Desktop\Suction_Pump-v1.1-\Suction_PUMP(v1.1)\ArduinoCore\Debug\libArduinoCore.a(wiring.o)
+ .debug_loc     0x0000292d      0x3d6 C:\Users\agva\Desktop\Suction_Pump-v1.1-\Suction_PUMP(v1.1)\ArduinoCore\Debug\libArduinoCore.a(WMath.o)
+ .debug_loc     0x00002d03     0x423d C:\Users\agva\Desktop\Suction_Pump-v1.1-\Suction_PUMP(v1.1)\ArduinoCore\Debug\libArduinoCore.a(WString.o)
+ .debug_loc     0x00006f40      0x465 C:\Users\agva\Desktop\Suction_Pump-v1.1-\Suction_PUMP(v1.1)\ArduinoCore\Debug\libArduinoCore.a(AMS5812.o)
+ .debug_loc     0x000073a5     0x5b6f C:\Users\agva\Desktop\Suction_Pump-v1.1-\Suction_PUMP(v1.1)\ArduinoCore\Debug\libArduinoCore.a(TFT_22_ILI9225.o)
+ .debug_loc     0x0000cf14      0xcbb C:\Users\agva\Desktop\Suction_Pump-v1.1-\Suction_PUMP(v1.1)\ArduinoCore\Debug\libArduinoCore.a(Wire.o)
+ .debug_loc     0x0000dbcf       0xfe C:\Users\agva\Desktop\Suction_Pump-v1.1-\Suction_PUMP(v1.1)\ArduinoCore\Debug\libArduinoCore.a(wiring_analog.o)
+ .debug_loc     0x0000dccd      0x5fc C:\Users\agva\Desktop\Suction_Pump-v1.1-\Suction_PUMP(v1.1)\ArduinoCore\Debug\libArduinoCore.a(wiring_digital.o)
+ .debug_loc     0x0000e2c9      0x1e4 C:\Users\agva\Desktop\Suction_Pump-v1.1-\Suction_PUMP(v1.1)\ArduinoCore\Debug\libArduinoCore.a(SPI.o)
+ .debug_loc     0x0000e4ad      0x87f C:\Users\agva\Desktop\Suction_Pump-v1.1-\Suction_PUMP(v1.1)\ArduinoCore\Debug\libArduinoCore.a(twi.o)
 
 .debug_macinfo
  *(.debug_macinfo)
