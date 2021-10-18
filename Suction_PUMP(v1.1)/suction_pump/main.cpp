@@ -15,7 +15,6 @@
 #include <math.h>
 #include "FreeSerif18pt7b.h"
 #include "FreeSerif12pt7b.h"
-#include "icon.h"
 
 /************************************/
 
@@ -85,7 +84,7 @@ void loop() {
   float final_pressure = 0;
   uint8_t i = 200;
   
- //Taking 2oo pressure value samples 
+  //Taking 2oo pressure value samples 
   while(i)
   {  dPress.readSensor();
 	  pressure = dPress.getPressure_Pa(); //Pressure in pascal
@@ -94,38 +93,49 @@ void loop() {
 		  pressure=0;
 	  }
 	  
-	  float kPa = (pressure/1000); //pressure in Kilo  pascal
-    final_pressure = final_pressure+kPa;  
+   float kPa = (pressure/1000); //pressure in Kilo  pascal
+   final_pressure = final_pressure+kPa;  
     i--;
-    delay(1);
+   delay(1);
   }
-  final_pressure = final_pressure/200;
-  Serial.print("Pressure =\t");
-  Serial.print(final_pressure,4);
-  Serial.print("kPa");
-  //Serial.print(Angle);
-  Serial.print("\n");
-  Current_Area = map(final_pressure,0,100,0,4500); //Maping between Pressure and Area
-  Current_Pressure = final_pressure; 
-  stringTwo =  String(Current_Pressure/1000, 3);
+   final_pressure = final_pressure/200;
+  
+   Serial.print("Pressure =\t");
+   Serial.print(final_pressure,4); 
+   Serial.print("kPa");
+   //Serial.print(Angle);
+   Serial.print("\n");
+  
+   Current_Area = map(final_pressure,0,100,0,4500); //Maping between Pressure and Area
+   Current_Pressure = final_pressure; 
+   stringTwo =  String(Current_Pressure/1000, 3);
      
+	
 	 if((Current_Pressure-Previous_Pressure> 1)||(Previous_Pressure-Current_Pressure > 1))   //Printing Pressure Value Screen
   { 
 	  if(third_digit!=stringTwo[4])
-	  {tft.fillRectangle(94, 45, 113, 75,COLOR_BLACK); // Rectangle  to delete Third digit	  
+	  {
+		  
+	   tft.fillRectangle(94, 45, 113, 75,COLOR_BLACK); // Rectangle  to delete Third digit	  
 	   third_digit = stringTwo[4];
+	 
 	  }
+	  
 	  if(second_digit != stringTwo[3])
 	  {
 		  tft.fillRectangle(76, 45, 94, 75, COLOR_BLACK); // Rectangle  to delete second digit
 		  second_digit = stringTwo[3];
 	  }
+	 
 	  if(first_digit != stringTwo[2])
 	  {
+		  
 		tft.fillRectangle(60, 45, 75, 75, COLOR_BLACK); // Rectangle  to delete first digit
 		first_digit = stringTwo[2];   
+	  
 	  }
-        tft.drawGFXText(30,70, stringTwo,primary_color);  //Writing new value from screen
+       
+	    tft.drawGFXText(30,70, stringTwo,primary_color);  //Writing new value from screen
       
    }
    
@@ -152,13 +162,14 @@ void loop() {
 	  
   }
 
+   
     else if(Previous_Pressure-Current_Pressure > 1)  //Pressure is decreasing.
 {
-   float Previous_length = Previous_Area/rectangle_width;
+    float Previous_length = Previous_Area/rectangle_width;
   
-   float Current_length =  Current_Area/rectangle_width;
+    float Current_length =  Current_Area/rectangle_width;
   
-   tft.fillRectangle(35+Current_length, 105, 35+Previous_length, 135,COLOR_BLACK);
+    tft.fillRectangle(35+Current_length, 105, 35+Previous_length, 135,COLOR_BLACK);
   
    if (Current_Area<50)
   {
@@ -177,12 +188,12 @@ void loop() {
   
   else if(Current_Area >= 3600 )
   {
-   fill_area(Current_Area,COLOR_RED); 
+    fill_area(Current_Area,COLOR_RED); 
   }
   
-  Previous_Pressure = Current_Pressure;
+   Previous_Pressure = Current_Pressure;
   
-  Previous_Area = Current_Area;
+   Previous_Area = Current_Area;
 
  }
 }
@@ -192,9 +203,9 @@ void loop() {
 void fill_area(int area,uint16_t colour)
 {
   
-  int length = area/rectangle_width;
+   int length = area/rectangle_width;
   
-  tft.fillRectangle(35, 105, 35+length, 135, colour);
+   tft.fillRectangle(35, 105, 35+length, 135, colour);
   
 }
 
@@ -234,23 +245,23 @@ void AgVa_logo()
 
 void main_screen()
 {
-tft.drawRectangle(0, 0, tft.maxX() - 1, tft.maxY() - 1, primary_color);  //Drawing rectangle at boundary of tft screen.
-tft.drawRectangle(1, 1, tft.maxX() - 2, tft.maxY() - 2, primary_color);
-tft.drawRectangle(2, 2, tft.maxX() - 3, tft.maxY() - 3, primary_color);
+    tft.drawRectangle(0, 0, tft.maxX() - 1, tft.maxY() - 1, primary_color);  //Drawing rectangle at boundary of tft screen.
+    tft.drawRectangle(1, 1, tft.maxX() - 2, tft.maxY() - 2, primary_color);
+    tft.drawRectangle(2, 2, tft.maxX() - 3, tft.maxY() - 3, primary_color);
 
-tft.drawRectangle(30, 100, 190, 140,primary_color);  //Draw rectangle to show pressure display
-tft.drawRectangle(28, 98, 192, 142, primary_color);
-tft.drawRectangle(27, 97, 193, 143, primary_color);	
- tft.setGFXFont(&FreeSerif18pt7b);
+    tft.drawRectangle(30, 100, 190, 140,primary_color);  //Draw rectangle to show pressure display
+    tft.drawRectangle(28, 98, 192, 142, primary_color);
+    tft.drawRectangle(27, 97, 193, 143, primary_color);	
+    tft.setGFXFont(&FreeSerif18pt7b);
  
- String s2="0.000";
- tft.drawGFXText(30,70, s2,primary_color); //Initially  show pressure zero
- tft.setGFXFont(&FreeSerif12pt7b);
- s2="MPa";
- tft.drawGFXText(130,65, s2,primary_color); //Draw MPa text on screen
- tft.setGFXFont(&FreeSerif18pt7b);
- //tft.drawBitmap(170, 10, batt3, 30, 20, primary_color); //Battery icon
- draw_scale();
+    String s2="0.000";
+    tft.drawGFXText(30,70, s2,primary_color); //Initially  show pressure zero
+    tft.setGFXFont(&FreeSerif12pt7b);
+    s2="MPa";
+    tft.drawGFXText(130,65, s2,primary_color); //Draw MPa text on screen
+    tft.setGFXFont(&FreeSerif18pt7b);
+   //tft.drawBitmap(170, 10, batt3, 30, 20, primary_color); //Battery icon
+    draw_scale();
 }
 
 /**********************************************************************/
