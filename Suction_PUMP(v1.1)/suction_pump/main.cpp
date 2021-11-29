@@ -1,4 +1,4 @@
-﻿/* Project-Suction Pump
+/* Project-Suction Pump
    
    Hardware-AMS5812-1000D(Pressure sensor),ATmega328p(micro controller),ILI9225 display lcd display controller ic.
    
@@ -50,12 +50,14 @@ char first_digit = 0;
 char second_digit = 0;
 char third_digit = 0;
 
+
 /************************************************/
 
 TFT_22_ILI9225 tft = TFT_22_ILI9225(TFT_RST, TFT_RS, TFT_CS, TFT_LED, TFT_BRIGHTNESS);
 AMS5812 dPress(Wire,0x10,AMS5812::AMS5812_1000_D);
 void fill_area(int area,uint16_t colour);
-void draw_scale();
+void draw_Mpa_scale();
+void draw_mmHg_scale();
 void AgVa_logo();
 void main_screen();
 
@@ -211,7 +213,7 @@ void fill_area(int area,uint16_t colour)
 
 
 /******************************************************************************/
-void draw_scale()
+void draw_Mpa_scale()
 {
 	 tft.drawLine(30,140,30,155,primary_color);
 	 tft.drawText(27,158,"0",primary_color);
@@ -228,6 +230,25 @@ void draw_scale()
 	 tft.drawText(180,156,"0.1",primary_color);
 }
 /***************************************************************************/
+
+/******************************************************************************/
+void draw_mmHg_scale()
+{
+	tft.drawLine(30,140,30,155,primary_color);
+	tft.drawText(27,158,"0",primary_color);
+	tft.drawLine(50,140,50,150,primary_color);
+	tft.drawLine(70,140,70,150,primary_color);
+	tft.drawLine(90,140,90,150,primary_color);
+	
+	tft.drawLine(110,140,110,155,primary_color);
+	tft.drawText(97,158,"375",primary_color);
+	tft.drawLine(130,140,130,150,primary_color);
+	tft.drawLine(150,140,150,150,primary_color);
+	tft.drawLine(170,140,170,150,primary_color);
+	tft.drawLine(190,140,190,155,primary_color);
+	tft.drawText(180,158,"750",primary_color);
+}
+/***********************/
 
 void AgVa_logo()
 {    String s2;
@@ -261,7 +282,7 @@ void main_screen()
     tft.drawGFXText(130,65, s2,primary_color); //Draw MPa text on screen
     tft.setGFXFont(&FreeSerif18pt7b);
    //tft.drawBitmap(170, 10, batt3, 30, 20, primary_color); //Battery icon
-    draw_scale();
+    draw_mmHg_scale();
 }
 
 /**********************************************************************/
