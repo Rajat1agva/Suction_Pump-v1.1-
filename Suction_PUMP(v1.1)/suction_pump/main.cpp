@@ -50,7 +50,7 @@ String stringTwo;
 char first_digit = 0;
 char second_digit = 0;
 char third_digit = 0;
-bool mode = true;
+bool mode = false;
 const int buttonPin = 4;
 int buttonState = 0;
 
@@ -95,7 +95,7 @@ void loop() {
 	  delay(50);
   }
   if(temp!=mode)
-  {
+  {   stringTwo="0"; 
 	  main_screen();
 	  
   }
