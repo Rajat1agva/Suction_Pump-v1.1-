@@ -87,7 +87,18 @@ void setup() {
 
 /*********************************************************************************/
 void loop() {
-  
+	bool temp = mode;
+  buttonState = digitalRead(buttonPin);
+  if(buttonState)
+  {
+	  mode =!mode;
+	  delay(50);
+  }
+  if(temp!=mode)
+  {
+	  main_screen();
+	  
+  }
   float final_pressure = 0;
   uint8_t i = 200;
   
@@ -303,7 +314,7 @@ void draw_Mpa_scale()
 
 /******************************************************************************/
 void draw_mmHg_scale()
-{
+{   
 	tft.drawLine(30,140,30,155,primary_color);
 	tft.drawText(27,158,"0",primary_color);
 	tft.drawLine(50,140,50,150,primary_color);
@@ -340,20 +351,45 @@ void main_screen()
     tft.drawRectangle(1, 1, tft.maxX() - 2, tft.maxY() - 2, primary_color);
     tft.drawRectangle(2, 2, tft.maxX() - 3, tft.maxY() - 3, primary_color);
 
-    tft.drawRectangle(30, 100, 190, 140,primary_color);  //Draw rectangle to show pressure display
-    tft.drawRectangle(28, 98, 192, 142, primary_color);
-    tft.drawRectangle(27, 97, 193, 143, primary_color);	
+    
     tft.setGFXFont(&FreeSerif18pt7b);
- 
-    String s2="0.000";
-	//String s2="0000";
-   tft.drawGFXText(30,70, s2,primary_color); //Initially  show pressure zero
+    tft.fillRectangle(20, 20,200,170 , COLOR_BLACK);
+	tft.drawRectangle(30, 100, 190, 140,primary_color);  //Draw rectangle to show pressure display
+	tft.drawRectangle(28, 98, 192, 142, primary_color);
+	tft.drawRectangle(27, 97, 193, 143, primary_color);
+  String s2;
+   if(mode)
+   {
+     s2="0.000";
+	 tft.drawGFXText(30,70, s2,primary_color); //Initially  show pressure zero
+   }
+   else
+   {
+	 s2="000";
+	 tft.drawGFXText(60,70, s2,primary_color); //Initially  show pressure zero
+   }
+   
     tft.setGFXFont(&FreeSerif12pt7b);
-    s2="mmHg";
+    if(mode)
+	{
+		s2 ="MPa";
+	}
+	else
+	{
+	    s2="mmHg";	
+	}
+	
     tft.drawGFXText(130,65, s2,primary_color); //Draw MPa text on screen
     tft.setGFXFont(&FreeSerif18pt7b);
    //tft.drawBitmap(170, 10, batt3, 30, 20, primary_color); //Battery icon
-    draw_mmHg_scale();
+    if(mode)
+	{
+		draw_Mpa_scale();
+	}
+	else
+	{
+	    draw_mmHg_scale();
+	}
 }
 
 /**********************************************************************/
