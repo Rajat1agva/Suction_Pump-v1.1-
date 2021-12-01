@@ -47,7 +47,6 @@ int Current_Area = 0;
 int w = 10;
 int h = 15;
 String stringTwo;
-String temp;
 char first_digit = 0;
 char second_digit = 0;
 char third_digit = 0;
@@ -130,56 +129,51 @@ void loop() {
    stringTwo =  String(Current_Pressure/1000,3);
   }
   else
-  {  temp = String(Current_Pressure, 0);
-	  String str1 = "0";
-	  String str2 = "00";
-	  String str3 = "000";
-	  int len = temp.length();
-	  if(len==2)
-	  {
-		  temp=str1 + temp;
-	  }
-// 	  else if (len == 1)
-// 	  {
-// 		  temp = str2 + temp;
-// 	  }
-// 	  else if (len == 0)
-// 	  {
-// 		  temp = str3;
-// 	  }
+  {  
 	  
-	  Current_Pressure = Current_Pressure + 10000;
-	stringTwo =  String(Current_Pressure, 0); 
-	Current_Pressure = Current_Pressure - 10000; 
+	  stringTwo =  String(Current_Pressure, 0); 
+	   if(Current_Pressure<=10)
+	   {stringTwo = "000";
+	   }
+	   Serial.println(stringTwo.length()); 
+	   
+	  if(stringTwo.length() == 2)
+	  {
+		  stringTwo= "0"+stringTwo;
+	  }
+	   if(stringTwo.length() == 1)
+	   {
+		   stringTwo= "00"+stringTwo;
+	   }
   }
-   Serial.println(stringTwo); 
+  
  	
 	 if((Current_Pressure-Previous_Pressure> 1)||(Previous_Pressure-Current_Pressure > 1))   //Printing Pressure Value Screen
   { 
-	  if(third_digit!=stringTwo[4])
+	  if(third_digit!=stringTwo[2])
 	  {
 		  
 	   tft.fillRectangle(94, 45, 120, 75,COLOR_BLACK); // Rectangle  to delete Third digit	  
-	   third_digit = stringTwo[4];
+	   third_digit = stringTwo[2];
 	 
 	  }
 	  
-	  if(second_digit != stringTwo[3])
+	  if(second_digit != stringTwo[1])
 	  {
 		  tft.fillRectangle(76, 45, 94, 75, COLOR_BLACK); // Rectangle  to delete second digit
-		  second_digit = stringTwo[3];
+		  second_digit = stringTwo[1];
 	  }
 	 
-	  if(first_digit != stringTwo[2])
+	  if(first_digit != stringTwo[0])
 	  {
 		  
 		tft.fillRectangle(50, 45, 75, 75, COLOR_BLACK); // Rectangle  to delete first digit
-		first_digit = stringTwo[2];   
+		first_digit = stringTwo[0];   
 	  
 	  }
-	 
+	     
 	       // stringTwo =  String(Current_Pressure, 0);
-			tft.drawGFXText(60,70, temp,primary_color);  //Writing new value from screen
+			tft.drawGFXText(60,70, stringTwo,primary_color);  //Writing new value from screen
 		
       
    }
