@@ -197,27 +197,27 @@ void loop() {
 	  if(third_digit!=stringTwo[2])
 	  {
 		  
-	   tft.fillRectangle(94, 45, 120, 75,COLOR_BLACK); // Rectangle  to delete Third digit	  
+	   tft.fillRectangle(84, 45, 115, 75,COLOR_BLACK); // Rectangle  to delete Third digit	  
 	   third_digit = stringTwo[2];
 	 
 	  }
 	  
 	  if(second_digit != stringTwo[1])
 	  {
-		  tft.fillRectangle(76, 45, 94, 75, COLOR_BLACK); // Rectangle  to delete second digit
+		  tft.fillRectangle(65, 45, 89, 75, COLOR_BLACK); // Rectangle  to delete second digit
 		  second_digit = stringTwo[1];
 	  }
 	 
 	  if(first_digit != stringTwo[0])
 	  {
 		  
-		tft.fillRectangle(50, 45, 75, 75, COLOR_BLACK); // Rectangle  to delete first digit
+		tft.fillRectangle(47, 45, 70, 75, COLOR_BLACK); // Rectangle  to delete first digit
 		first_digit = stringTwo[0];   
 	  
 	  }
 	     
 	       // stringTwo =  String(Current_Pressure, 0);
-			tft.drawGFXText(60,70, stringTwo,primary_color);  //Writing new value from screen
+			tft.drawGFXText(50,70, stringTwo,primary_color);  //Writing new value from screen
 	 }
 	
    }
@@ -327,7 +327,7 @@ void draw_mmHg_scale()
 	tft.drawLine(150,140,150,150,primary_color);
 	tft.drawLine(170,140,170,150,primary_color);
 	tft.drawLine(190,140,190,155,primary_color);
-	tft.drawText(180,158,"750",primary_color);
+	tft.drawText(180,158,"760",primary_color);
 }
 /***********************/
 
@@ -365,8 +365,8 @@ void main_screen()
    }
    else
    {
-	 s2="000";
-	 tft.drawGFXText(60,70, s2,primary_color); //Initially  show pressure zero
+	 s2="0000";
+	 tft.drawGFXText(30,70, s2,primary_color); //Initially  show pressure zero
    }
    
     tft.setGFXFont(&FreeSerif12pt7b);
