@@ -47,6 +47,7 @@ int Current_Area = 0;
 int w = 10;
 int h = 15;
 String stringTwo;
+String stringOne;
 char first_digit = 0;
 char second_digit = 0;
 char third_digit = 0;
@@ -95,8 +96,10 @@ void loop() {
 	  delay(50);
   }
   if(temp!=mode)
-  {   stringTwo="0"; 
+  {  
+	  
 	  main_screen();
+	  
 	  
   }
   float final_pressure = 0;
@@ -140,7 +143,7 @@ void loop() {
    Current_Pressure = final_pressure; 
   if(mode)
   {
-   stringTwo =  String(Current_Pressure/1000,3);
+   stringOne =  String(Current_Pressure/1000,3);
   }
   else
   {  
@@ -162,32 +165,34 @@ void loop() {
   }
   
  	
-	 if((Current_Pressure-Previous_Pressure> 1)||(Previous_Pressure-Current_Pressure > 1))   //Printing Pressure Value Screen
-  { 
+	
+  
 	 if(mode)
-	 {  if(third_digit!=stringTwo[4])
+	 {   
+		 if(third_digit!=stringOne[4])
 		 {
 			 
 			 tft.fillRectangle(94, 45, 113, 75,COLOR_BLACK); // Rectangle  to delete Third digit
-			 third_digit = stringTwo[4];
+			 third_digit = stringOne[4];
 			 
 		 }
 		 
-		 if(second_digit != stringTwo[3])
+		 if(second_digit != stringOne[3])
 		 {
 			 tft.fillRectangle(76, 45, 94, 75, COLOR_BLACK); // Rectangle  to delete second digit
-			 second_digit = stringTwo[3];
+			 second_digit = stringOne[3];
 		 }
 		 
-		 if(first_digit != stringTwo[2])
+		 if(first_digit != stringOne[2])
 		 {
 			 
 			 tft.fillRectangle(60, 45, 75, 75, COLOR_BLACK); // Rectangle  to delete first digit
-			 first_digit = stringTwo[2];
+			 first_digit = stringOne[2];
 			 
 		 }
 		 
-		 tft.drawGFXText(30,70, stringTwo,primary_color);  //Writing new value from screen
+		 
+		 tft.drawGFXText(30,70, stringOne,primary_color);  //Writing new value from screen
 		 
 	 }
 	 
@@ -220,7 +225,7 @@ void loop() {
 			tft.drawGFXText(30,70, stringTwo,primary_color);  //Writing new value from screen
 	 }
 	
-   }
+   
    
    
       if((Current_Pressure-Previous_Pressure > 1))   //When Pressure is increasing.
@@ -358,28 +363,21 @@ void main_screen()
 	tft.drawRectangle(28, 98, 192, 142, primary_color);
 	tft.drawRectangle(27, 97, 193, 143, primary_color);
   String s2;
-   if(mode)
-   {
-     s2="0.000";
-	 tft.drawGFXText(30,70, s2,primary_color); //Initially  show pressure zero
-   }
-   else
-   {
-	 s2="000";
-	 tft.drawGFXText(30,70, s2,primary_color); //Initially  show pressure zero
-   }
+  
    
     tft.setGFXFont(&FreeSerif12pt7b);
     if(mode)
 	{
 		s2 ="MPa";
+		 tft.drawGFXText(130,65, s2,primary_color); //Draw MPa text on screen
 	}
 	else
 	{
 	    s2="mmHg";	
+		 tft.drawGFXText(110,65, s2,primary_color); //Draw MPa text on screen
 	}
 	
-    tft.drawGFXText(130,65, s2,primary_color); //Draw MPa text on screen
+   
     tft.setGFXFont(&FreeSerif18pt7b);
    //tft.drawBitmap(170, 10, batt3, 30, 20, primary_color); //Battery icon
     if(mode)
