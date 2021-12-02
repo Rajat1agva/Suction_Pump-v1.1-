@@ -197,27 +197,27 @@ void loop() {
 	  if(third_digit!=stringTwo[2])
 	  {
 		  
-	   tft.fillRectangle(84, 45, 115, 75,COLOR_BLACK); // Rectangle  to delete Third digit	  
+	   tft.fillRectangle(65, 45, 85, 75,COLOR_BLACK); // Rectangle  to delete Third digit	  
 	   third_digit = stringTwo[2];
 	 
 	  }
 	  
 	  if(second_digit != stringTwo[1])
 	  {
-		  tft.fillRectangle(65, 45, 89, 75, COLOR_BLACK); // Rectangle  to delete second digit
+		  tft.fillRectangle(45, 45, 65, 75, COLOR_BLACK); // Rectangle  to delete second digit
 		  second_digit = stringTwo[1];
 	  }
 	 
 	  if(first_digit != stringTwo[0])
 	  {
 		  
-		tft.fillRectangle(47, 45, 70, 75, COLOR_BLACK); // Rectangle  to delete first digit
+		tft.fillRectangle(25, 45, 50, 75, COLOR_BLACK); // Rectangle  to delete first digit
 		first_digit = stringTwo[0];   
 	  
 	  }
 	     
 	       // stringTwo =  String(Current_Pressure, 0);
-			tft.drawGFXText(50,70, stringTwo,primary_color);  //Writing new value from screen
+			tft.drawGFXText(30,70, stringTwo,primary_color);  //Writing new value from screen
 	 }
 	
    }
@@ -365,7 +365,7 @@ void main_screen()
    }
    else
    {
-	 s2="0000";
+	 s2="000";
 	 tft.drawGFXText(30,70, s2,primary_color); //Initially  show pressure zero
    }
    
