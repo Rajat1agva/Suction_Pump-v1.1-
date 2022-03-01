@@ -16,6 +16,7 @@
 #include "FreeSerif18pt7b.h"
 #include "FreeSerif12pt7b.h"
 
+
 /************************************/
 
 #define TFT_RST 8   //Reset 
@@ -46,9 +47,13 @@ int Current_Area = 0;
 int w = 10;
 int h = 15;
 String stringTwo;
+String stringOne;
 char first_digit = 0;
 char second_digit = 0;
 char third_digit = 0;
+bool mode = false;
+const int buttonPin = 4;
+int buttonState = 0;
 
 
 /************************************************/
@@ -64,6 +69,7 @@ void main_screen();
 /***************************************************************************************/
 
 void setup() {
+  pinMode(buttonPin, INPUT);	
   Serial.begin(9600);
   tft.begin();  //Tft initialize 
   tft.setOrientation(3);  //Set tft Orientation
@@ -82,7 +88,20 @@ void setup() {
 
 /*********************************************************************************/
 void loop() {
-  
+	bool temp = mode;
+  buttonState = digitalRead(buttonPin);
+  if(buttonState)
+  {
+	  mode =!mode;
+	  delay(50);
+  }
+  if(temp!=mode)
+  {  
+	  
+	  main_screen();
+	  
+	  
+  }
   float final_pressure = 0;
   uint8_t i = 200;
   
@@ -94,9 +113,16 @@ void loop() {
 	  {
 		  pressure=0;
 	  }
-	  
+   if(mode)  
+   {
    float kPa = (pressure/1000); //pressure in Kilo  pascal
-   final_pressure = final_pressure+kPa;  
+   final_pressure = final_pressure+kPa;
+   }
+   else
+   {
+	 float mmHg = (pressure/133.322);
+	 final_pressure = final_pressure+mmHg;
+   }
     i--;
    delay(1);
   }
@@ -107,39 +133,99 @@ void loop() {
    Serial.print("kPa");
    //Serial.print(Angle);
    Serial.print("\n");
-  
+  if(mode)
+  {
    Current_Area = map(final_pressure,0,100,0,4500); //Maping between Pressure and Area
+  }
+  else
+  {Current_Area = map(final_pressure,0,750,0,4500); //Maping between Pressure and Area
+  }
    Current_Pressure = final_pressure; 
-   stringTwo =  String(Current_Pressure/1000, 3);
-     
+  if(mode)
+  {
+   stringOne =  String(Current_Pressure/1000,3);
+  }
+  else
+  {  
+	  
+	  stringTwo =  String(Current_Pressure, 0); 
+	   if(Current_Pressure<=10)
+	   {stringTwo = "000";
+	   }
+	   Serial.println(stringTwo.length()); 
+	   
+	  if(stringTwo.length() == 2)
+	  {
+		  stringTwo= "0"+stringTwo;
+	  }
+	   if(stringTwo.length() == 1)
+	   {
+		   stringTwo= "00"+stringTwo;
+	   }
+  }
+  
+ 	
 	
-	 if((Current_Pressure-Previous_Pressure> 1)||(Previous_Pressure-Current_Pressure > 1))   //Printing Pressure Value Screen
-  { 
-	  if(third_digit!=stringTwo[4])
+  
+	 if(mode)
+	 {   
+		 if(third_digit!=stringOne[4])
+		 {
+			 
+			 tft.fillRectangle(94, 45, 113, 75,COLOR_BLACK); // Rectangle  to delete Third digit
+			 third_digit = stringOne[4];
+			 
+		 }
+		 
+		 if(second_digit != stringOne[3])
+		 {
+			 tft.fillRectangle(76, 45, 94, 75, COLOR_BLACK); // Rectangle  to delete second digit
+			 second_digit = stringOne[3];
+		 }
+		 
+		 if(first_digit != stringOne[2])
+		 {
+			 
+			 tft.fillRectangle(60, 45, 75, 75, COLOR_BLACK); // Rectangle  to delete first digit
+			 first_digit = stringOne[2];
+			 
+		 }
+		 
+		 
+		 tft.drawGFXText(30,70, stringOne,primary_color);  //Writing new value from screen
+		 
+	 }
+	 
+	else 
+	 {
+		 
+	  if(third_digit!=stringTwo[2])
 	  {
 		  
-	   tft.fillRectangle(94, 45, 113, 75,COLOR_BLACK); // Rectangle  to delete Third digit	  
-	   third_digit = stringTwo[4];
+	   tft.fillRectangle(65, 45, 85, 75,COLOR_BLACK); // Rectangle  to delete Third digit	  
+	   third_digit = stringTwo[2];
 	 
 	  }
 	  
-	  if(second_digit != stringTwo[3])
+	  if(second_digit != stringTwo[1])
 	  {
-		  tft.fillRectangle(76, 45, 94, 75, COLOR_BLACK); // Rectangle  to delete second digit
-		  second_digit = stringTwo[3];
+		  tft.fillRectangle(45, 45, 65, 75, COLOR_BLACK); // Rectangle  to delete second digit
+		  second_digit = stringTwo[1];
 	  }
 	 
-	  if(first_digit != stringTwo[2])
+	  if(first_digit != stringTwo[0])
 	  {
 		  
-		tft.fillRectangle(60, 45, 75, 75, COLOR_BLACK); // Rectangle  to delete first digit
-		first_digit = stringTwo[2];   
+		tft.fillRectangle(25, 45, 50, 75, COLOR_BLACK); // Rectangle  to delete first digit
+		first_digit = stringTwo[0];   
 	  
 	  }
-       
-	    tft.drawGFXText(30,70, stringTwo,primary_color);  //Writing new value from screen
-      
-   }
+	     
+	       // stringTwo =  String(Current_Pressure, 0);
+			tft.drawGFXText(30,70, stringTwo,primary_color);  //Writing new value from screen
+	 }
+	
+   
    
    
       if((Current_Pressure-Previous_Pressure > 1))   //When Pressure is increasing.
@@ -233,7 +319,7 @@ void draw_Mpa_scale()
 
 /******************************************************************************/
 void draw_mmHg_scale()
-{
+{   
 	tft.drawLine(30,140,30,155,primary_color);
 	tft.drawText(27,158,"0",primary_color);
 	tft.drawLine(50,140,50,150,primary_color);
@@ -246,7 +332,7 @@ void draw_mmHg_scale()
 	tft.drawLine(150,140,150,150,primary_color);
 	tft.drawLine(170,140,170,150,primary_color);
 	tft.drawLine(190,140,190,155,primary_color);
-	tft.drawText(180,158,"750",primary_color);
+	tft.drawText(180,158,"760",primary_color);
 }
 /***********************/
 
@@ -270,19 +356,38 @@ void main_screen()
     tft.drawRectangle(1, 1, tft.maxX() - 2, tft.maxY() - 2, primary_color);
     tft.drawRectangle(2, 2, tft.maxX() - 3, tft.maxY() - 3, primary_color);
 
-    tft.drawRectangle(30, 100, 190, 140,primary_color);  //Draw rectangle to show pressure display
-    tft.drawRectangle(28, 98, 192, 142, primary_color);
-    tft.drawRectangle(27, 97, 193, 143, primary_color);	
+    
     tft.setGFXFont(&FreeSerif18pt7b);
- 
-    String s2="0.000";
-    tft.drawGFXText(30,70, s2,primary_color); //Initially  show pressure zero
+    tft.fillRectangle(20, 20,200,170 , COLOR_BLACK);
+	tft.drawRectangle(30, 100, 190, 140,primary_color);  //Draw rectangle to show pressure display
+	tft.drawRectangle(28, 98, 192, 142, primary_color);
+	tft.drawRectangle(27, 97, 193, 143, primary_color);
+  String s2;
+  
+   
     tft.setGFXFont(&FreeSerif12pt7b);
-    s2="MPa";
-    tft.drawGFXText(130,65, s2,primary_color); //Draw MPa text on screen
+    if(mode)
+	{
+		s2 ="MPa";
+		 tft.drawGFXText(130,65, s2,primary_color); //Draw MPa text on screen
+	}
+	else
+	{
+	    s2="mmHg";	
+		 tft.drawGFXText(110,65, s2,primary_color); //Draw MPa text on screen
+	}
+	
+   
     tft.setGFXFont(&FreeSerif18pt7b);
    //tft.drawBitmap(170, 10, batt3, 30, 20, primary_color); //Battery icon
-    draw_mmHg_scale();
+    if(mode)
+	{
+		draw_Mpa_scale();
+	}
+	else
+	{
+	    draw_mmHg_scale();
+	}
 }
 
 /**********************************************************************/
